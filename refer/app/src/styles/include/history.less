@@ -1,0 +1,261 @@
+.history-back-card {
+    position: relative;
+    line-height: 22px;
+    background-color: #fff;
+    &.center {
+        min-width: 1200px;
+    }
+    &.center .history-back-content{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 8px 0;
+        z-index: 1;
+    }
+    &.custom-back-style {
+        width: 1200px;
+        margin: 0 auto;
+        .history-back-content {
+            position: absolute;
+            width: 54px;
+            height: 26px;
+            background: rgba(255, 255, 255, 0.39);
+            border-radius: 4px;
+            padding: 0;
+            margin: 10px 20px;
+            line-height: 26px;
+            &:hover {
+                background: #A9E1DE;
+                .btn-back {
+                    color: #00A6A7;
+                    &::before {
+                        border-color: #00A6A7;
+                    }
+                    &:hover{
+                        background: #A9E1DE;
+                    }
+                }
+            }
+            .btn-back {
+                font-size: 12px;
+                color: #757575;
+                height: 26px;
+                line-height: 26px;
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.05)!important;
+                }
+                &::before {
+                    left: 10px;
+                    top: 8px;
+                }
+            }
+        }
+    }
+    &.custom-back {
+        width: 1200px;
+        margin: 0 auto;
+        .history-back-content {
+            position: absolute;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            .btn-back:hover {
+                background: rgba(0, 0, 0, 0.05)!important;
+            }
+        }
+        .btn-back {
+            height: 20px;
+            width: 42px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.0);
+            transition: all ease-in-out 0.2s;
+            white-space: nowrap;
+            padding: 0 4px 0 12px;
+            margin-right: 12px;
+            color: #4E5969;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background: rgba(0, 0, 0, 0.05)!important;
+            }
+            &::before {
+                display: none;
+            }
+            &::after {
+                content: '';
+                width: 7px;
+                height: 9px;
+                background-image: url('~@/assets/images/seat/seat-history-back.png');
+                background-size: 100% 100%;
+                position: absolute;
+                left: 2px;
+            }
+        }
+        .page-history-title {
+            font-size: 13px;
+            font-weight: 400;
+            color: #1D2129;
+            line-height: 18px;
+        }
+    }
+    .history-back-content {
+        overflow: hidden;
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-back {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 54px;
+        height: 22px;
+        line-height: 22px;
+        border-radius: 2px;
+        color: #6C7281;
+        font-size: 13px;
+        margin-right: 16px;
+        padding-left: 18px;
+        vertical-align: bottom;
+
+        height: 20px;
+        width: 42px;
+        border-radius: 4px;
+        background: rgba(0,0,0,0.0);
+        transition: all ease-in-out 0.2s;
+        white-space: nowrap;
+        padding: 0 4px 0 12px;
+        margin-right: 12px;
+        color: #4E5969;
+        font-size: 13px;
+        font-weight: 400;
+        display: inline-flex;
+        align-items: center;
+        &:hover {
+            background: rgba(0, 0, 0, 0.05)!important;
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            content: '';
+            width: 7px;
+            height: 9px;
+            background-image: url('~@/assets/images/seat/seat-history-back.png');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 2px;
+        }
+        // &:hover{
+        //     background: #F6F7FA;
+        // }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     left: 6px;
+        //     top: 7px;
+        //     width: 8px;
+        //     height: 8px;
+        //     border: 1px solid #6C7281;
+        //     border-top: none;
+        //     border-right: none;
+        //     transform: rotateZ(45deg);
+        // }
+    }
+    .page-history-title, .page-search-title{
+        display: inline-block;
+        font-size: 13px;
+        color: #3A4256;
+        vertical-align: bottom;
+    }
+}
+
+
+.customBackClass-1 {
+    .history-back-content {
+        display: flex;
+        align-items: center;
+        padding-left:10px;
+        .btn-back {
+            height: 20px;
+            width: 42px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.0);
+            transition: all ease-in-out 0.2s;
+            white-space: nowrap;
+            padding: 0 4px 0 12px;
+            margin-right: 12px;
+            color: #4E5969;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background: rgba(0, 0, 0, 0.05)!important;
+            }
+            &::before {
+                left: 4px;
+                top: 6px;
+                transform: rotateZ(45deg) scale(0.8);
+            }
+        }
+    }
+    .page-history-title {
+        font-size: 13px;
+        font-weight: 400;
+        color: #1D2129;
+        line-height: 18px;
+        font-weight: 400;
+    }
+}
+
+.customBackClass-seat {
+    width: 100%!important;
+    padding-left: 20px;
+    background: transparent;
+    .history-back-content {
+        display: flex;
+        align-items: center;
+        padding-left:10px;
+        .btn-back {
+            height: 20px;
+            width: 42px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.0);
+            transition: all ease-in-out 0.2s;
+            white-space: nowrap;
+            padding: 0 4px 0 12px;
+            margin-right: 12px;
+            color: #4E5969;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background: rgba(0, 0, 0, 0.05)!important;
+            }
+            &::before {
+                display: none;
+            }
+            &::after {
+                content: '';
+                width: 7px;
+                height: 9px;
+                background-image: url('~@/assets/images/seat/seat-history-back.png');
+                background-size: 100% 100%;
+                position: absolute;
+                left: 2px;
+            }
+        }
+    }
+    .page-history-title {
+        font-size: 13px;
+        font-weight: 400;
+        color: #1D2129;
+        line-height: 18px;
+    }
+}

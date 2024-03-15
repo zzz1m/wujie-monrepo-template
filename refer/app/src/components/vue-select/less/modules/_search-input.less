@@ -1,0 +1,52 @@
+/* Search Input */
+/**
+ * Super weird bug... If this declaration is grouped
+ * below, the cancel button will still appear in chrome.
+ * If it's up here on it's own, it'll hide it.
+ */
+ .vs__search::-webkit-search-cancel-button {
+  display: none;
+}
+
+.vs__search::-webkit-search-decoration,
+.vs__search::-webkit-search-results-button,
+.vs__search::-webkit-search-results-decoration,
+.vs__search::-ms-clear {
+  display: none;
+}
+
+.vs__search,
+.vs__search:focus {
+  appearance: none;
+  line-height: 1.4;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-left: none;
+  outline: none;
+  margin: 4px 0 0 0;
+  padding: 0 7px;
+  background: none;
+  box-shadow: none;
+  width: 0;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.vs__search::placeholder {
+  color: inherit;
+}
+
+/**
+    States
+ */
+.vs--unsearchable .vs__search {
+  opacity: 1;
+}
+
+.vs--unsearchable .vs__search:hover {
+  cursor: pointer;
+}
+
+.vs--single.vs--searching:not(.vs--open):not(.vs--loading) .vs__search {
+  opacity: .2;
+}

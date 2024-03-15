@@ -1,0 +1,454 @@
+// 组织管理
+.page-organization{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+
+    .cascader-panel ul {
+        min-width: 100%;
+    }
+    .filter-form {
+        .form-item {
+            margin-bottom: 5px;
+        }
+        .input-wrap {
+            width: 200px;
+            min-width: 200px;
+        }
+        .ui-select{
+            width: 120px;
+            min-width: 120px;
+            &.people-select{
+                width: 200px;
+                min-width: 200px;
+            }
+        }
+        .ui-cascader-new {
+            .input-wrap{
+                width: 120px;
+                min-width: 120px;
+            }
+        }
+        .ops .btn {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .operate-list{
+        float: right;
+        button + button{
+            margin-left: 10px;
+        }
+    }
+    .vxe-table__container{
+        height: calc(~'100% - 40px');
+        margin-right: -30px;
+        position: relative;
+        .pl-tree-cell{
+            overflow: visible;
+        }
+        .plTableBox{
+            .el-table .cell{
+                overflow: visible;
+                &.el-tooltip{
+                    overflow: hidden;
+                }
+            }
+            .tree--btn-wrapper{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                top: 0;
+                margin-top: 0;
+                i{
+                    margin-top: 6px;
+                }
+            }
+            .el-table__header{
+                position: relative;
+                &::after{
+                    content: " ";
+                    position: absolute;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #fff;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 100;
+                }
+            }
+            tr{
+                td:last-child{
+                    .cell{
+                        padding-right: 30px;
+                        &::after{
+                            content: " ";
+                            position: absolute;
+                            width: 30px;
+                            height: 1px;
+                            background-color: #fff;
+                            bottom: -23px;
+                            right: 0;
+                            z-index: 100;
+                        }
+                    }
+                }
+            }
+        }
+        .tip-invented {
+            font-size: 12px;
+            display: inline-block;
+            border-radius: 20px;
+            height: 20px;
+            padding: 0 10px;
+            line-height: 20px;
+            text-align: center;
+            color: #00cfc5;
+            background-color: rgba(0, 207, 197, 0.1);
+            margin-left: 8px;
+            position: relative;
+            top: 1px;
+            cursor: default;
+        }
+    }
+    .tree-row{
+        td{
+            &.tree-node-row{
+                padding: 0;
+                cursor: pointer;
+                .pl-tree-cell{
+                    height: auto;
+                }
+            }
+        }
+        .row-name{
+            display: inline-block;
+            cursor: pointer;
+            height: 60px;
+            line-height: 60px;
+        }
+        .limit-string-container{
+            vertical-align: middle;
+            line-height: 20px;
+            height: 20px;
+        }
+        .nari-tooltip{
+            line-height: 20px;
+            height: 20px;
+            div{
+                line-height: 20px;
+                height: 20px;
+            }
+        }
+        .ui-dropmenu-label{
+            padding-right: 0;
+            .ui-icon-arrow-down, .ui-icon-arrow-up{
+                display: none;
+            }
+        }
+        .ui-dropmenu-list{
+            width: 126px;
+            left: -36px;
+            li{
+                text-align: center;
+            }
+            &::before{
+                left: 50%;
+                margin-left: -6px;
+            }
+        }
+        .operate-btn__more{
+            opacity: 0;
+            &.no-hide{
+                opacity: 1;
+            }
+            .operate-btn-dot{
+                position: relative;
+                top: -2px;
+            }
+        }
+        &:hover{
+            .operate-btn__more{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// 弹框：添加、编辑部门
+.org-dep__manage {
+    // .dialog-header {
+    //     margin-bottom: 28px;
+    // }
+    .manage-tip{
+        display: inline-block;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 20px;
+        color: #161B26;
+    }
+    .form-item--id {
+        margin-bottom: 14px;
+    }
+}
+
+// 弹框：组织变更
+.org-change {
+    .dialog-body {
+        margin-right: -30px;
+        padding-right: 30px;
+    }
+    dl {
+        overflow: hidden;
+    }
+    dt {
+        line-height: 20px;
+    }
+    dd {
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid @border-color-base;
+        border-radius: 2px;
+        margin-top: 20px;
+        &:hover {
+            border-color: @primary-color;
+        }
+        &.active {
+            color: #fff;
+            background-color: @primary-color;
+            border-color: @primary-color;
+        }
+    }
+}
+
+// 弹框：部门更名
+.org-dep__change-name {
+    .item-label {
+        padding-right: 14px;
+    }
+}
+
+// 弹框： 负责人变更
+.org-dep__change-leader {
+    .dialog-body {
+        min-height: 308px;
+    }
+    .radio-group {
+        margin-left: 13px;
+        .radio-inner {
+            margin-right: 12px;
+        }
+    }
+    .leader-text {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .email-text {
+        font-size: 13px;
+        line-height: 18px;
+        color: @secondary-color;
+        margin-top: 4px;
+    }
+    .table {
+        border: 1px solid @border-color-usual;
+        th {
+            height: 42px;
+            padding: 0;
+        }
+        td {
+            padding: 11px 0;
+        }
+        tr:last-child td {
+            border: none;
+        }
+    }
+}
+
+// 弹框：部门撤销
+.org-dep__cancel {
+    .desc-text {
+        line-height: 20px;
+        margin-bottom: 21px;
+    }
+    .sec-container {
+        overflow: hidden;
+        height: 415px;
+    }
+    .sec {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid @border-color-base;
+        &-header {
+            flex: none;
+            position: relative;
+            z-index: 1000;
+            height: 46px;
+            padding: 13px 20px;
+            background-color: #F4F5F8;
+            .title-text {
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+        &-content {
+            flex: 1;
+            overflow: auto;
+        }
+        &-left {
+            float: left;
+            width: 230px;
+            .sec-content {
+                padding: 4px 10px 0 10px;
+            }
+        }
+        &-right {
+            float: right;
+            width: 504px;
+            .sec-content {
+                padding: 15px 0 0 20px;
+            }
+            .select-status {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                width: 100px;
+                transform: translateY(-50%);
+                font-size: 13px;
+            }
+        }
+    }
+    .form-item:last-child {
+        margin-bottom: 0;
+    }
+    .form-item--dep {
+        .item-content {
+            display: flex;
+        }
+        .btn-transfer {
+            flex: none;
+            align-self: flex-start;
+            margin: 0 20px;
+        }
+    }
+    .ui-tree {
+        min-width: 100%;
+        width: fit-content;
+    }
+    .dep-tree {
+        color: #212121;
+        padding: 0;
+        .ui-tree-node-content {
+            height: 40px;
+        }
+        .ui-tree-node-expand-icon {
+            font-size: 12px;
+            padding: 0;
+            margin: 0 8px 0 10px;
+            &.is-leaf {
+                margin: 0;
+            }
+        }
+        .ui-tree-node:focus > .ui-tree-node-content {
+            background-color: @background-gray-color;
+        }
+        .ui-tree-node-content:hover {
+            background-color: @background-gray-color;
+        }
+        .is-current > .ui-tree-node-content {
+            background-color: @background-gray-color!important;
+        }
+        .ui-tree-node>.ui-tree-node-children {
+            overflow: visible;
+        }
+    }
+    .user-table {
+        margin-top: 3px;
+        td:first-of-type .cell, th:first-of-type .cell {
+            padding-left: 0;
+        }
+        th, td {
+            border: none;
+            padding: 0;
+        }
+        th {
+            height: 32px;
+            .cell {
+                font-size: 13px;
+            }
+        }
+        td {
+            height: 36px;
+        }
+    }
+    .dep-form {
+        .item-label {
+            text-align: left;
+        }
+    }
+    .desc-form {
+        margin-top: 12px;
+        .item-label {
+            text-align: left;
+        }
+        .input-wrap {
+            width: 100%;
+        }
+        textarea.input {
+            min-height: 58px;
+        }
+    }
+    .dep-select {
+        flex: 1;
+    }
+
+}
+
+// 弹框：部门合并
+.org-dep__merge {
+    .tag-list {
+        margin-bottom: -10px;
+    }
+    .tag-item {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 17px;
+        border-radius: 11px;
+        padding: 3px 10px;
+        background-color: #F0F2F6;
+        margin: 0 8px 10px;
+    }
+}
+.no-scroll{
+    .dialog-container{
+       .dialog-body {
+           overflow: unset;
+       }
+    }
+}
+.org-dep__change-name, .org-dep__change-leader, .org-dep__transfer {
+    .dep-text {
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .form-item:last-child {
+        margin-bottom: 20px;
+    }
+
+}
+
+.bossui-reset{
+    .el-tooltip__popper.is-dark{
+        background: #2F4050;
+        border-color: #2F4050;
+        color: #fff;
+        max-width: 200px;
+    }
+}

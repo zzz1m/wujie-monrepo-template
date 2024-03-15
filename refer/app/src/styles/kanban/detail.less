@@ -1,0 +1,68 @@
+.bossui-new .common-content-bg .page-main .flex-list-ui-page.kanban-detail-list {
+    margin-top: 0;
+}   
+// 看板数据详情页
+.kanban-detail-list{
+    a.disabled{
+        cursor: auto;
+        color: #151B26;
+        &:hover{
+            color: #151B26;
+        }
+    }
+    .ui-table-pro th > .cell {
+        height: 40px;
+        line-height: 40px;
+    }
+    .ui-table-pro .sort-caret{
+        &.descending  {
+            bottom: 7px;
+        }
+        &.ascending {
+            top: 3px;
+        }
+    }
+
+    .kanban-multiple-select {
+        &.ui-select:not(.ctrl-select) {
+            width: 160px;
+        }
+        input {
+            margin-top: 2px;
+        }
+        .ui-select-inner {
+            padding-right: 2px;
+            padding: 4px 2px 1px 11px;
+            min-height: 32px;
+        }
+    }
+
+    .pager{
+        .ui-select-dropdown{
+            top: unset !important;
+            bottom: 26px;
+        }
+    }
+    .search-panel {
+        .ui-cascader-new .cascader-viewer {
+            overflow-y: hidden;
+        }
+        .cascader-panel ul {
+            width: 100%;
+            height: auto;
+            max-height: 190px;
+            border: none;
+            .cascader-item {
+                padding: 0 15px;
+                .svg-icon {
+                    right: 7px;
+                }
+            }
+        }
+        .dept-container {
+            .ui-tree-viewer .tree-box .ui-tree {
+                width: 380px;
+            }
+        }
+    }
+}

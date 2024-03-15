@@ -1,0 +1,257 @@
+// ---------- 表格 ----------
+@table-row-lineHeight: 20px; // 每行的文字行高
+@table-first-col-left: 15px; // 第一列的左侧留白
+.ui-table-pro {
+    color: @default-color;
+    &.ui-table-pro-new {
+        .cell {
+            overflow: visible;
+        }
+    }
+    .cell {
+        line-height: @table-row-lineHeight;
+    }
+    thead {
+        color: @secondary-color;
+    }
+    th {
+        height: 50px;
+        font-weight: normal;
+    }
+    td {
+        height: 52px;
+    }
+    td, th {
+        &:first-of-type .cell {
+            padding-left: @table-first-col-left;
+        }
+    }
+
+    td{
+        .ui-tag {
+            padding: 1px 6px 0;
+            min-width: 44px;
+            text-align: center;
+            margin-right: 8px;
+            // display: flex;
+            // justify-content: center;
+        }
+        a {
+            color: @link-primary-color;
+            &:hover {
+                color: @link-primary-hover-color;
+            }
+        }
+    }
+    .op {
+        .dot-menu-more {
+            float: right;
+            .dot-meun-list {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+
+                &:before,
+                &:after,
+                & {
+                    width: 3px;
+                    height: 3px;
+                    background: #9CA6AF;
+                    border-radius: 3px;
+                }
+                &:before,
+                &:after {
+                    content: '';
+                    position: absolute;
+                }
+                &:before {
+                    left: -6px;
+                }
+                &:after {
+                    right: -6px;
+                }
+            }
+            .ui-icon-more {
+                color: #9CA6AF;
+            }
+            .ui-icon-arrow-down {
+                display: none;
+            }
+            .ui-dropmenu-label {
+                padding: 0 10px;
+
+                &:hover {
+                    .dot-meun-list {
+                        &:before,
+                        &:after,
+                        & {
+                            background: @primary-color;
+                        }
+                    }
+                }
+            }
+            .ui-dropmenu-list {
+                min-width: 144px;
+                right: -10px;
+                &:before {
+                    left: auto;
+                    right: 15px;
+                }
+                ul {
+                    max-height: none;
+                }
+            }
+        }
+        a {
+            font-weight: bold;
+            color: @link-primary-color;
+            &:hover {
+                color: @link-primary-hover-color;
+            }
+        }
+    }
+}
+.ui-table {
+    margin-top: 0;
+    thead tr :hover {
+        background: none;
+    }
+    tr {
+        &:last-of-type {
+            td {
+                border-bottom-color: transparent;
+            }
+        }
+        &.row-pageloading,
+        &.row-nodata {
+            td {
+                padding: 0;
+                .data-tips {
+                    height: calc(~'100vh - 300px');
+                }
+            }
+        }
+    }
+    th {
+        height: 50px;
+        color: @secondary-color;
+        background: none;
+    }
+    th, td {
+        line-height: @table-row-lineHeight;
+        .ui-tag {
+            padding: 1px 6px 0;
+            min-width: 44px;
+            text-align: center;
+            margin-right: 8px;
+            // display: flex;
+            // justify-content: center;
+        }
+        &.text-center .ui-tag{
+            display: inline-block;
+        }
+        .checkbox {
+            margin-top: -3px;
+            margin-right: 3px;
+        }
+        &:first-of-type {
+            padding-left: @table-first-col-left;
+        }
+        &.col-op {
+            width: 130px;
+        }
+        .op {
+            .dot-menu-more {
+                float: right;
+                .dot-meun-list {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &:before,
+                    &:after,
+                    & {
+                        width: 3px;
+                        height: 3px;
+                        background: #9CA6AF;
+                        border-radius: 3px;
+                    }
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: absolute;
+                    }
+                    &:before {
+                        left: -6px;
+                    }
+                    &:after {
+                        right: -6px;
+                    }
+                }
+                .ui-icon-more {
+                    color: #9CA6AF;
+                }
+                .ui-icon-arrow-down {
+                    display: none;
+                }
+                .ui-dropmenu-label {
+                    padding: 0 10px;
+
+                    &:hover {
+                        .dot-meun-list {
+                            &:before,
+                            &:after,
+                            & {
+                                background: @primary-color;
+                            }
+                        }
+                    }
+                }
+                .ui-dropmenu-list {
+                    min-width: 144px;
+                    right: -10px;
+                    &:before {
+                        left: auto;
+                        right: 15px;
+                    }
+                    ul {
+                        max-height: none;
+                    }
+                }
+            }
+            a {
+                color: @link-primary-color;
+                font-weight: bold;
+                &:hover {
+                    color: @link-primary-hover-color;
+                }
+            }
+        }
+    }
+
+    td {
+        height: 52px;
+        .btn + .btn {
+            margin-left: 10px;
+        }
+    }
+    &+.pager {
+        margin-top: 0;
+    }
+}
+.ui-table-pro td, .ui-table-pro th.is-leaf, .ui-table th, .ui-table td {
+    border-color: @border-color-usual;
+}
+.articleTable.ui-table-pro th.is-leaf {
+    background: #F8F8F8;
+}
+.ui-table-fixed-header {
+    .table-header {
+        th {
+            background-color: #fff!important;
+        }
+    }
+}
+.ui-table-empty-block {
+    min-height: 200px;
+}

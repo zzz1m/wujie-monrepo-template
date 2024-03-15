@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="完整-待入职-确定入职" transform="translate(-250.000000, -178.000000)">
+            <g id="编组-4" transform="translate(250.000000, 178.000000)">
+                <circle id="椭圆形" fill="#E7E0FF" cx="10" cy="10" r="10"></circle>
+                <path d="M7,5 L13,5 C14.1045695,5 15,5.8954305 15,7 L15,13 C15,14.1045695 14.1045695,15 13,15 L7,15 C5.8954305,15 5,14.1045695 5,13 L5,7 C5,5.8954305 5.8954305,5 7,5 Z" id="矩形" fill="#6A4FEA"></path>
+                <path d="M7.5,8 L12.5,8 C12.7761424,8 13,8.22385763 13,8.5 C13,8.77614237 12.7761424,9 12.5,9 L7.5,9 C7.22385763,9 7,8.77614237 7,8.5 C7,8.22385763 7.22385763,8 7.5,8 Z" id="矩形" fill="#E7E0FF"></path>
+                <path d="M7.5,11 L10.5,11 C10.7761424,11 11,11.2238576 11,11.5 C11,11.7761424 10.7761424,12 10.5,12 L7.5,12 C7.22385763,12 7,11.7761424 7,11.5 C7,11.2238576 7.22385763,11 7.5,11 Z" id="矩形复制-3" fill="#E7E0FF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

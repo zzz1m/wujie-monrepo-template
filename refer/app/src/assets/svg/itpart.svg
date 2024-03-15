@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 8</title>
+    <defs>
+        <linearGradient x1="13.0013021%" y1="0%" x2="90.9244792%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF8D7C" offset="0%"></stop>
+            <stop stop-color="#FF4332" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F5E1E3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IT工单-新" transform="translate(-1155.000000, -83.000000)">
+            <g id="编组-9" transform="translate(1135.000000, 68.000000)">
+                <g id="编组-8" transform="translate(20.000000, 15.000000)">
+                    <g id="编组-2">
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="36" height="36" rx="10"></rect>
+                        <g id="编组-3" transform="translate(12.000000, 14.000000)" fill="#3F82FB">
+                            <path d="M7.29320839,2.54406406 L5.46846418,7.87988592 C5.16797015,8.09023174 4.75385263,8.01715218 4.54350681,7.71665815 C4.46536398,7.60502553 4.42344976,7.47205833 4.42344976,7.33579335 L4.42344976,-3.33585038 C4.42344976,-3.70265009 4.72079967,-4 5.08759938,-4 C5.22386436,-4 5.35683156,-3.95808578 5.46846418,-3.87994295 L7.29320839,1.45587892 C7.59370242,1.66622474 7.66678199,2.08034226 7.45643617,2.38083629 C7.41197206,2.44435644 7.35672854,2.49959995 7.29320839,2.54406406 Z" id="三角形" transform="translate(6.000000, 2.000000) rotate(-270.000000) translate(-6.000000, -2.000000) "></path>
+                        </g>
+                    </g>
+                    <g id="hard-drive-2-fill" transform="translate(8.000000, 8.000000)">
+                        <polygon id="路径" points="0 0 20 0 20 20 0 20"></polygon>
+                        <path d="M17.5,2.5 L17.5,17.5 C17.5,17.9602373 17.126904,18.3333333 16.6666667,18.3333333 L3.33333333,18.3333333 C2.87309604,18.3333333 2.5,17.9602373 2.5,17.5 L2.5,2.5 C2.5,2.03976271 2.87309604,1.66666667 3.33333333,1.66666667 L16.6666667,1.66666667 C17.126904,1.66666667 17.5,2.03976271 17.5,2.5 Z M4.16666667,13.3333333 L4.16666667,16.6666667 L15.8333333,16.6666667 L15.8333333,13.3333333 L4.16666667,13.3333333 Z M12.5,14.1666667 L14.1666667,14.1666667 L14.1666667,15.8333333 L12.5,15.8333333 L12.5,14.1666667 Z" id="形状" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

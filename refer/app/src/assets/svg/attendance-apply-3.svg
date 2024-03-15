@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9CACFF" offset="0%"></stop>
+            <stop stop-color="#6374FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.8,10.8108902 L26.1109426,10.8108902 C26.6600509,10.8108902 27.1064394,11.2536595 27.1109095,11.8027496 L27.1560061,17.3422742 C27.1584518,17.6427029 27.0256935,17.9283117 26.7944461,18.1201138 L19.9907968,23.7632247 C19.9835563,23.7692302 19.9764008,23.7753376 19.9693326,23.781545 L14.4598712,28.62003 C14.0448962,28.9844668 13.413058,28.9434975 13.0486213,28.5285224 C12.8883722,28.3460509 12.8,28.1115002 12.8,27.8686513 L12.8,11.8108902 C12.8,11.2586054 13.2477153,10.8108902 13.8,10.8108902 Z" id="path-3"></path>
+        <filter x="-48.8%" y="-22.0%" width="197.5%" height="180.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.313933534   0 0 0 0 0.389085842   0 0 0 0 0.915151998  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要休假" transform="translate(-180.000000, -276.000000)">
+            <g id="mk_控件备份-4" transform="translate(160.000000, 258.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4备份" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g id="Rectangle-6">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M13.8,10.8108902 L26.1057908,10.8108902 C26.6569199,10.8108902 27.1041549,11.2568033 27.1057864,11.8079299 L27.1533055,27.8599289 C27.1549404,28.4122113 26.7085525,28.8612499 26.1562702,28.8628849 C25.9124026,28.8636068 25.6766763,28.7751898 25.4934387,28.614268 L20.6398066,24.3517414 C20.2623416,24.0202464 19.6975293,24.0202464 19.3200643,24.3517414 L14.4598712,28.62003 C14.0448962,28.9844668 13.413058,28.9434975 13.0486213,28.5285224 C12.8883722,28.3460509 12.8,28.1115002 12.8,27.8686513 L12.8,11.8108902 C12.8,11.2586054 13.2477153,10.8108902 13.8,10.8108902 Z" id="Rectangle-6-Copy" fill="url(#linearGradient-5)" opacity="0.849999964"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,416 @@
+////
+
+
+.top-tip {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    i.ui-icon-warning {
+       font-size: 20px;
+       color:rgba(253,209,58,1);
+    }
+}
+
+.manager-search {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    .filter-box {
+        display: flex;
+        flex-wrap: wrap;
+        .input-wrap {
+            width: 200px;
+            min-width: 200px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .ui-select {
+            width: 140px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+    }
+    // .btn {
+    //     height: 26px;
+    // }
+    .btns {
+        margin-top: 10px;
+        .btn {
+            width: 70px;
+            margin-right: 10px;
+        }
+    }
+    .add {
+        margin-top: 10px;
+        width: 80px;
+    }
+}
+
+.data-list {
+    .ui-table td {
+        font-size: 14px;
+        height: 52px;
+        a {
+            display: inline-block;
+        }
+    }
+    .title-styl {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover {
+            color: #00C2B3;
+        }
+        .table-tag-list {
+            white-space: nowrap;
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+    .img-styl {
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+    }
+}
+
+.entrance-dialog {
+    .upload-styl {
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+            width: 46px;
+            height: 46px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .tip {
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    .consult-group {
+        display: flex;
+        .input-wrap {
+            width: 187px;
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+    .consult-item {
+        display: flex;
+        margin-bottom: 10px;
+        .input-wrap {
+            width: 130px;
+            margin-right: 10px;
+        }
+        .consult-btn {
+            width: 124px;
+            span {
+                margin-left: 10px;
+                cursor: pointer;
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .ui-select {
+            width: 244px;
+        }
+    }
+    
+}
+.dialog-homepage-small {
+    
+}
+
+.question-dialog {
+    .upload-styl {
+        ul.show {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 48%;
+                margin-right:2%;
+                display: flex;
+                a {
+                    max-width: 170px;
+                }
+            }
+        }
+        p.tip {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    
+}
+.companynews-dialog {
+    .upload-styl {
+        width: 342px;
+        height: 160px;
+        .has-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: #000;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            // img {
+            //     max-width: 100%;
+            //     max-height: 100%;
+            // }
+            i.ui-icon-circle-close {
+                font-size: 14px;
+                position: absolute;
+                top: 0px;
+                right: -16px;
+                cursor: pointer;
+            }
+
+        }
+        .no-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fcfcfc;
+            border: 1px solid #e3e7ed;
+            cursor: pointer;
+            i.ui-icon-plus {
+                font-size: 32px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .upload-video-styl {
+        
+        .has-video {
+            display: flex;
+            align-items: center;
+            .name {
+                max-width: 300px;
+            }
+        }
+        
+    }
+    .drag-tip {
+        color: #FD6261;
+        line-height: 1.6;
+        font-size: 13px;
+    }
+}
+
+.authset-dialog {
+    .manager-select {
+        width: 480px;
+        z-index: auto;
+    }
+}
+
+
+// 标签弹窗
+.tag-dialog {
+    ::v-deep .dialog-container {
+        width: 427px;
+    }
+    .color-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 130px;
+        li {
+            width:29px;
+            height:29px;
+            border-radius: 50%;
+            box-shadow:0px 1px 4px 0px rgba(0,0,0,0.1);
+            border:5px solid rgba(255,255,255,1);
+            margin-right: 12px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            position: relative;
+            b {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: rgba(255,255,255,0.4);
+            }
+        }
+    }
+}
+
+
+
+
+
+////排序
+.drag-sort-dialog {
+    ::v-deep .dialog-container {
+        width: 500px;
+    }
+    .sort-styl {
+        padding: 20px 0px;
+        .drag-item {
+            width: 440px;
+            height: 38px;
+            background:rgba(248,249,252,1);
+            border-radius:4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            margin-bottom: 10px;
+            &.sortable-ghost {
+                border-bottom: 1px solid #00C2B3;
+            }
+            p.info {
+                font-size:14px;
+                font-weight:400;
+                color:rgba(33,33,33,1);
+                padding-right: 20px;
+            }
+            i.ti-menu {
+                font-size: 12px;
+            }
+        }
+        .hompage-tag-icon {
+            margin-right: 10px;
+        }
+    }
+    .select-layout {
+        position: absolute;
+        top: 30px;
+        left: 128px;
+    }
+}
+
+/////富文本
+.editor-box {
+    position: relative;
+    // width: 504px;
+    .amount-tip {
+        position: absolute;
+        right: 10px;
+        bottom: -32px;
+    }
+}
+::v-deep.quill-editor-form.form-item  {
+    
+    .item-content {
+        line-height: 24px;
+    }
+}
+::v-deep .ql-snow {
+    border: 1px solid #e3e7ed !important;
+    background: #fff;
+    .quill-add-btn {
+        color: #5DD5C8;
+    }
+    .ql-formats {
+        margin-right: 5px;
+        button {
+            padding: 3px 0;
+        }
+    }
+}
+::v-deep .ql-container {
+    min-height: 160px;
+}
+::v-deep .ql-editor {
+    min-height: 160px;
+    // max-height: 300px;
+    // overflow: auto;
+}
+::v-deep .ql-blank::before {
+    font-style: normal;
+    color: #d1d4db;
+}
+
+::v-deep .ui-select-dropdown{
+    z-index: 9999;
+}
+.consult-dialog {
+    ::v-deep .dialog-body {
+        padding-bottom: 0;
+    }
+    .ui-form {
+        margin-top: 0;
+    }
+    .form-item {
+        .item-content {
+            .input-wrap {
+                width: 384px;
+            }
+        }
+        .consult-group {
+            display: flex;
+            .input-wrap {
+                width: 187px;
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .consult-item {
+            display: flex;
+            margin-bottom: 10px;
+            .input-wrap {
+                width: 130px;
+                margin-right: 10px;
+            }
+            .consult-btn {
+                width: 124px;
+                span {
+                    margin-left: 10px;
+                    cursor: pointer;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .ui-select {
+                width: 244px;
+            }
+        }
+    }
+    
+}
+.edit-manager-page {
+    padding: 0 30px 65px 30px;
+    .save-tip-btn {
+        text-align: center;
+        .btn {
+            margin-right: 10px;
+        }
+    }
+}
+.rule-page, .security-page, .question-page, .companynews-page, .broadcast-page, .announcement-page {
+    ::v-deep .ui-table-pro th, ::v-deep .ui-table-pro td {
+        .cell {
+           padding-right: 30px;
+       }
+   }
+}
+.tag-page {
+    .hompage-tag-icon {
+        cursor: default;
+    }
+}

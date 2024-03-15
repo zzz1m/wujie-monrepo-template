@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4BDDB3" offset="0%"></stop>
+            <stop stop-color="#2DC588" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20,15 L20,13 L21,13 C21.552,13 22,12.552 22,12 L22,9 L20,9 L21,7 L22,7 C23.1,7 24,7.9 24,9 L24,12 C24,13.657 22.657,15 21,15 L20,15 Z" id="path-3"></path>
+        <filter x="-225.0%" y="-50.0%" width="450.0%" height="225.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.784313725   0 0 0 0 0.556862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0,15 L0,13 L1,13 C1.552,13 2,12.552 2,12 L2,9 L0,9 L1,7 L2,7 C3.1,7 4,7.9 4,9 L4,12 C4,13.657 2.657,15 1,15 L0,15 Z" id="path-5"></path>
+        <filter x="-225.0%" y="-50.0%" width="450.0%" height="225.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.784313725   0 0 0 0 0.556862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公出申请" transform="translate(-750.000000, -180.000000)">
+            <g id="mk_控件备份-2" transform="translate(730.000000, 162.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4备份" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g transform="translate(8.000000, 8.000000)">
+                        <polygon id="路径" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M12.485,3.121 L20.243,5.061 C20.688,5.171 21,5.571 21,6.031 L21,7 L20.579,15 C20.044,16.35 19.027,17.486 17.683,18.158 L12.894,20.553 C12.331,20.834 11.669,20.834 11.106,20.553 L6.316,18.158 C4.974,17.486 3.957,16.35 3.422,15 L3,7 L3,6.03 C3,5.572 3.312,5.172 3.757,5.06 L11.515,3.121 C11.833,3.041 12.167,3.041 12.485,3.121 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <g id="形状结合" opacity="0.9">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="形状结合备份" opacity="0.9" transform="translate(2.000000, 11.000000) scale(-1, 1) translate(-2.000000, -11.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

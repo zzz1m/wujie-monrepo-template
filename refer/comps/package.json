@@ -1,0 +1,28 @@
+{
+  "name": "@noah/components",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./global": {
+      "import": "./src/components/index.js"
+    }
+  },
+  "scripts": {
+    "format": "prettier --write \"./**/*.{vue,js}\" "
+  },
+  "keywords": [],
+  "author": "BZL/FE技术中心/FE七组/Noah项目组",
+  "license": "ISC",
+  "dependencies": {
+    "@boss/utils": "^1.5.12",
+    "@noah/tools": "workspace:^",
+    "magpie-monitor": "2.3.8",
+    "exif-js": "^2.3.0",
+    "popper.js": "^1.16.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.1.0"
+  }
+}

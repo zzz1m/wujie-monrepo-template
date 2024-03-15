@@ -1,0 +1,325 @@
+.evaluate-dialog {
+    .dialog-header {
+        background: #FFFFFF;
+    }
+    .evaluate-form {
+        padding: 0 24px;
+        background: #FFFFFF;
+        .detail-item {
+            display: flex;
+            font-weight: bold;
+            color: #1D2129;
+            font-size: 16px;
+            align-items: center;
+            margin-bottom: 14px;
+            .nari-tooltip .tooltip {
+                display: block;
+                max-width: 230px;
+            }
+            .content {
+                &.stage {
+                    width: 200px;
+                    white-space: nowrap;
+                    margin-top: -6px;
+                    &.stage-width {
+                        .nari-tooltip {
+                            width: auto;
+                        }
+                    }
+                    .nari-tooltip {
+                        max-width: 106px;
+                        display: inline-block;
+                    }
+                    
+                    .recruit-type {
+                        display: inline-block;
+                        position: relative;
+                        height: 20px;
+                        background: #ECF3FF;
+                        border-radius: 2px;
+                        line-height: 20px; 
+                        padding: 0 7px;
+                        padding-left: 18px;
+                        font-size: 12px;
+                        margin-left: 10px;
+                        font-weight: normal;
+                        &:before {
+                            display: block;
+                            content: '';
+                            border-radius: 50%;
+                            width: 6px;
+                            height: 6px;
+                            position: absolute;
+                            top: 7px;
+                            left: 6px;
+                        }
+                        &.yellow {
+                            background: #FFF6EE;
+                            &:before {
+                                background: #FFA958;
+                            }
+                        }
+                        &.green {
+                            background: #E5FAF9;
+                            &:before {
+                                background: #00CFC5;
+                            }
+                        }
+                        &.blue {
+                            background: #ECF3FF;
+                            &:before {
+                                background: #4B8CFB;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon-wrapper {
+                cursor: pointer;
+                padding: 3px 3px;
+                border-radius: 2px;
+                margin-left: 12px;
+                &:hover {
+                    background: #E5E6EB;
+                }
+            }
+            .icon {
+                width: 14px;
+                height: 14px;
+                background-size: 100%;
+                background-image: url('~@/assets/images/recruit/default-change-position.png');
+            }
+        }
+        .form-item {
+            margin-bottom: 14px;
+        }
+        .interview-result {
+            .item-label {
+                float: inherit;
+                text-align: left;
+                font-size: 15px;
+                color: #1D2129;
+                font-weight: bold;
+            }
+            .suggset-level {
+                display: flex;
+                justify-content: space-between;
+                .ui-select {
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                    
+                }
+            }
+            .input-wrap-textarea, .input-wrap {
+                min-width: 100%;
+            }
+        }
+        .interview-desc {
+            color: #4E5969;
+            margin-bottom: 10px;
+        }
+    }
+    .ui-form-asterisk .form-item {
+        &.form-item-required {
+            .item-label::before {
+                content: '*';
+                display: inline-block;
+                margin-right: 4px;
+                font-size: 12px;
+                color: #FA594A;
+                position: absolute;
+                top: 12px;
+                left: -4px;
+            }
+        }
+        .item-label{
+            position: relative;
+            padding-left: 10px;
+        }
+        .item-content {
+            padding-left: 10px;
+        }
+    }
+}
+.evaluate-template {
+    color: #1D2129;
+    &.evaluate-dialog {
+        .dialog-container {
+            padding-bottom: 0;
+        }
+    }
+    .tml-item {
+        .title-wrap {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                font-weight: bold;
+                width: 388px;
+            }
+            span {
+                color: #00A6A7;
+                cursor: pointer;
+                &:hover {
+                    color: #00BEBD;
+                }
+            }
+        }
+        .item-label {
+            float: inherit;
+            text-align: left;
+            font-weight: bold;
+        }
+        .input-wrap-textarea {
+            min-width: 100%;
+        }
+        .score {
+            display: flex;
+            .score-item {
+                width: 36px;
+                height: 36px;
+                border-radius: 18px;
+                text-align: center;
+                line-height: 35px;
+                background: #FFFFFF;
+                border: 1px solid #E5E6EB;
+                margin-right: 16px;
+                cursor: pointer;
+                &.active, &:hover {
+                    color: #00a6a7;
+                    font-weight: bold;
+                    border: 1px solid #00BEBD;
+                }
+            }
+        }
+    }
+    .evaluate-desc {
+        line-height: 22px;
+    }
+    .evaluate-tips {
+        color: #4E5969;
+        span {
+           color: rgb(245, 63, 63);
+        }
+    }
+}
+.preview-left-dialog {
+    position: fixed;
+    right: -200px;
+    top: 0px;
+    width: 648px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.2s;
+    &.show-preview-left {
+        right: 500px;
+    }
+    .title {
+        width: 100%;
+        height: 48px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 0px 0px #E5E6EB;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2129;
+        line-height: 22px;
+        padding: 13px 24px;
+    }
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        svg {
+            width: 10px;
+            margin: 5px 7px;
+        }
+    }
+    .content {
+        flex: 1;
+        padding: 24px;
+        height: 100%;
+        .tab-content {
+            height: calc(~'100% - 40px');
+            overflow: auto;
+            margin-right: -24px;
+            padding: 20px 24px 24px 0;
+            text-align: center;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+            }
+            .question {
+                padding: 20px;
+                background: linear-gradient(270deg, #F4FDFE 0%, #F3F9FF 100%);
+                border-radius: 6px;
+                margin-bottom: 10px;
+                text-align: left;
+                .question-title {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #1D2129;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    white-space: pre-line;
+                }
+                .question-tag {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #1D2129;
+                    line-height: 20px;
+                    .tag {
+                        width: 36px;
+                        height: 20px;
+                        background: #4B8CFB;
+                        border-radius: 4px;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 500;
+                        display: inline-block;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            .question-empty {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 140px;
+                }
+                .no-data-title {
+                    line-height:18px;
+                    color:#86909C;
+                }
+            }
+        }
+        .recruit-process-page {
+            background:#fff;
+            padding: 0;
+            height: 41px;
+            overflow: hidden;
+            margin-top: -10px;
+            .first-tab .ui-tab-nav-wrap .ui-tab-nav {
+                margin-left: -16px;
+                .ui-tab-nav-item {
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import './setting.less';
+@import './setting-option.less';
+
+.page-attendance-group{
+    .attendance-tag{
+        display: inline-block;
+        line-height: 17px;
+        padding: 1px 10px;
+        background: #E3E5E9;
+        border-radius: 10px;
+        color: #6C7281;
+        font-size: 12px;
+        background-color: #E3E5E9;
+        &.using{
+            background-color: #E5FAF9;
+            color: #00CFC5;
+        }
+        &.no-use{
+            background-color: #cfe3fe;
+            color: #3083f0;
+        }
+    }
+    .data-list  {
+        .ui-table-pro {
+            td{
+                height: auto;
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+    }
+    .attendance-times{
+        li{
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            & + li{
+                margin-top: 4px;
+            }
+        }
+    }
+}

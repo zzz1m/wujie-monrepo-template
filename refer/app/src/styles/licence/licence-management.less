@@ -1,0 +1,134 @@
+@primaryColor: #00CFC5;
+
+.licence-management-page {
+    
+}
+
+
+.licence-management-edit {
+   
+}
+
+.licence-detail-dialog {
+    .tab-con {
+        min-height: 500px;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    .dialog-container {
+        padding-right: 0px;
+        .dialog-body {
+            max-height: calc(~'100vh - 108px');
+        }
+    }
+
+    .pane-detail-content {
+        max-height: calc(~'100vh - 160px');
+        overflow: auto;
+        padding-right: 30px;
+    }
+
+    .ui-tab-header {
+        padding-right: 30px;
+    }
+
+    .ui-table-pro th {
+        height: 44px;
+        padding: 0;
+    }
+    
+    .ui-table-pro td {
+        height: 48px;
+        padding: 0;
+    }
+
+    .table-wrap {
+        background: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #E3E7ED;
+        // border-bottom: none;
+
+        &.has-data {
+            border-bottom: none;
+        }
+    }
+
+    .detail-warp {
+        display: flex;
+        flex-wrap: wrap;
+
+        .field-item {
+            width: 50%;
+
+            .label-content {
+                .label-text {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #646F79;
+                }
+            }
+            .value-content {
+                margin-top: 16px;
+                margin-bottom: 20px;
+                .value-text {
+                    font-size: 14px; 
+                    font-weight: 400;
+                    color: #151B26;
+
+                    &.textarea {
+                        white-space: pre-wrap;
+                    }
+
+                    .file-item {
+                        display: inline-block;
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            .file-content {
+                .file-name {
+                    display: inline-block;
+                    max-width: 80%;
+                    font-weight: 400;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+
+                i {
+                    cursor: pointer;
+                    color: #00cfc5;
+                    font-size: 16px;
+                    margin-left: 8px;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+
+        }
+    }
+}
+.licence-dialog {
+    .form-content {
+        display: flex;
+        justify-content: space-between;
+        .input-wrap {
+            min-width: 286px;
+        } 
+    }
+    .input-wrap {
+        min-width: 608px;
+    } 
+    .input-wrap-textarea {
+        min-width: 608px;
+    }
+    .form-item{
+        .input-wrap{
+            .suffix-counter{
+                bottom: -20px;
+                background-color: transparent;
+            }
+        }
+    }
+}

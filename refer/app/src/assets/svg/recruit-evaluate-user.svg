@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <defs>
+        <circle id="path-1" cx="6" cy="6" r="6"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="84.9152203%" id="linearGradient-3">
+            <stop stop-color="#82CFF9" offset="0%"></stop>
+            <stop stop-color="#82CFF9" offset="0%"></stop>
+            <stop stop-color="#00BEBD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="84.9152203%" id="linearGradient-4">
+            <stop stop-color="#82CFF9" offset="0%"></stop>
+            <stop stop-color="#37C5D6" offset="0%"></stop>
+            <stop stop-color="#00BEBD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="备注信息" transform="translate(-323.000000, -588.000000)">
+            <g id="编组-13" transform="translate(252.000000, 523.000000)">
+                <g id="编组-12备份" transform="translate(68.000000, 62.000000)">
+                    <g id="编组-11" transform="translate(3.000000, 3.000000)">
+                        <circle id="蒙版" stroke="#FFFFFF" fill="#F5F8F1" cx="7" cy="7" r="6.5"></circle>
+                        <g id="路径" transform="translate(1.000000, 1.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="蒙版"></g>
+                            <path d="M7.10664487,7.94523607 C7.5132855,7.50756624 7.82103006,6.8230766 8.1376019,6.01222826 C8.32106403,5.54229365 8.28962721,5.14169073 8.28962721,4.57131878 C8.28962721,4.15004246 8.36851223,3.47388332 8.2645338,3.10228431 C7.91382473,1.84646739 7.02769616,1.5 5.98944039,1.5 C4.95033118,1.5 4.0631199,1.84809783 3.7130732,3.10606743 C3.60993546,3.47652004 3.68902429,4.15112517 3.68902429,4.57138247 C3.68902429,5.14298998 3.6581734,5.54495584 3.84211957,6.01562925 C4.16112432,6.83064283 4.46441067,7.51415166 4.86948454,7.94998726 C3.29221722,8.24155486 2.22642128,9.06864094 1.50734969,9.39111328 C0.0193996264,10.0583942 0.0121008832,10.7889181 0.0121008832,10.7889181 L0.0121008832,12.0298319 L5.98944039,14.4993122 L11.9948285,12.0284052 L11.9948285,10.7889181 C11.9948285,10.7889181 11.9878609,10.0558849 10.4942043,9.38840014 C9.77052055,9.06489895 8.6966627,8.23158118 7.10664487,7.94523607 Z" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                            <ellipse id="椭圆形" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-2)" cx="6" cy="11.5" rx="7" ry="3.5"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ICON、年假</title>
+    <defs>
+        <linearGradient x1="0%" y1="2.22044605e-14%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FDC557" offset="0%"></stop>
+            <stop stop-color="#FEB028" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="补卡申请" transform="translate(-465.000000, -180.000000)">
+            <g id="mk_控件备份" transform="translate(445.000000, 162.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-12" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <path d="M14.75,10.5 C17.0972102,10.5 19,12.4027898 19,14.75 L19,19 L19,19 L14.75,19 C12.4027898,19 10.5,17.0972102 10.5,14.75 C10.5,12.4027898 12.4027898,10.5 14.75,10.5 Z" id="Rectangle-4" fill="url(#linearGradient-2)"></path>
+                    <path d="M14.75,20.8 L19,20.8 L19,20.8 L19,25.05 C19,27.3972102 17.0972102,29.3 14.75,29.3 C12.4027898,29.3 10.5,27.3972102 10.5,25.05 C10.5,22.7027898 12.4027898,20.8 14.75,20.8 Z" id="Rectangle-4-Copy-2" fill="url(#linearGradient-2)"></path>
+                    <path d="M25.05,20.8 L29.3,20.8 L29.3,20.8 L29.3,25.05 C29.3,27.3972102 27.3972102,29.3 25.05,29.3 C22.7027898,29.3 20.8,27.3972102 20.8,25.05 C20.8,22.7027898 22.7027898,20.8 25.05,20.8 Z" id="Rectangle-4-Copy-2备份" fill="url(#linearGradient-2)" opacity="0.600000024" transform="translate(25.050000, 25.050000) scale(-1, 1) translate(-25.050000, -25.050000) "></path>
+                    <path d="M25.05,10.5 C27.3972102,10.5 29.3,12.4027898 29.3,14.75 C29.3,17.0972102 27.3972102,19 25.05,19 L20.8,19 L20.8,19 L20.8,14.75 C20.8,12.4027898 22.7027898,10.5 25.05,10.5 Z" id="Rectangle-4-Copy" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

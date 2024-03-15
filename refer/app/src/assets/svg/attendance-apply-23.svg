@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9CACFF" offset="0%"></stop>
+            <stop stop-color="#6374FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.86111111,10.1366319 L4.86111111,12.8029514 C3.40763889,13.6439236 2.43055556,15.2152778 2.43055556,17.0138889 C2.43055556,19.6996528 4.60590278,21.875 7.29166667,21.875 C9.09027778,21.875 10.6616319,20.8979167 11.5026042,19.4444444 L14.1677083,19.4444444 C13.1675347,22.2760417 10.4659722,24.3055556 7.29166667,24.3055556 C3.26423611,24.3055556 -6.52256027e-13,21.0413194 -6.52256027e-13,17.0138889 C-6.52256027e-13,13.8383681 2.02951389,11.1380208 4.86111111,10.1366319 Z" id="path-3"></path>
+        <filter x="-63.5%" y="-28.2%" width="191.8%" height="156.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.462745098   0 0 0 0 0.529411765   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要休假" transform="translate(-1035.000000, -372.000000)">
+            <g id="mk_控件备份-12" transform="translate(1015.000000, 354.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g transform="translate(6.000000, 6.000000)">
+                        <polygon id="路径" points="0 0 28 0 28 28 0 28"></polygon>
+                        <g id="编组-2" transform="translate(4.666667, 2.333333)">
+                            <g id="路径" opacity="0.800000012">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <path d="M9.72222222,18.2291667 C7.70850694,18.2291667 6.07638889,16.5970486 6.07638889,14.5833333 L6.07638889,9.72222222 C6.07638889,7.70850694 7.70850694,6.07638889 9.72222222,6.07638889 C11.7359375,6.07638889 13.3680556,7.70850694 13.3680556,9.72222222 L13.3680556,15.7986111 L15.1107639,15.7986111 C15.8982639,15.7986111 16.6335069,16.1802083 17.0868056,16.8145833 L17.1949653,16.9786458 L19.9715814,21.6080483 C20.2556599,22.0816703 20.1019948,22.6959056 19.6283683,22.9799766 C19.6283658,22.9799781 19.6283633,22.9799796 19.6283563,22.9799736 L19.2605326,23.200582 C18.786826,23.4841913 18.1727875,23.3307107 17.8882322,22.8575717 L15.1095486,18.2291667 L15.1095486,18.2291667 L9.72222222,18.2291667 Z" id="路径" fill="#FFFFFF"></path>
+                            <path d="M9.72222222,1.38777878e-15 C11.3993056,1.38777878e-15 12.7604167,1.36111111 12.7604167,3.03819444 C12.7604167,4.71527778 11.3993056,6.07638889 9.72222222,6.07638889 C8.04513889,6.07638889 6.68402778,4.71527778 6.68402778,3.03819444 C6.68402778,1.36111111 8.04513889,1.38777878e-15 9.72222222,1.38777878e-15 Z" id="路径" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

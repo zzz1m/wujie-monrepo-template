@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 18</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D59DFF" offset="0%"></stop>
+            <stop stop-color="#B243FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="日历变大" transform="translate(-160.000000, -2294.000000)">
+            <g id="编组-20" transform="translate(129.000000, 2270.000000)">
+                <g id="编组-18" transform="translate(31.000000, 24.000000)">
+                    <rect id="矩形" x="0" y="0" width="28" height="28"></rect>
+                    <path d="M8.5,5 L19.5,5 C21.1568542,5 22.5,6.34314575 22.5,8 L22.5,23.8229207 C22.5,24.9274902 21.6045695,25.8229207 20.5,25.8229207 C20.1143546,25.8229207 19.736933,25.7114257 19.4131945,25.5018649 L14.5465498,22.3516136 C14.2160057,22.1376475 13.7906685,22.1375707 13.4600472,22.3514176 L8.58619971,25.5038368 C7.65872792,26.1037283 6.42055531,25.838172 5.82066377,24.9107002 C5.61135316,24.5870923 5.5,24.2099004 5.5,23.8245005 L5.5,8 C5.5,6.34314575 6.84314575,5 8.5,5 Z" id="矩形" fill="url(#linearGradient-1)"></path>
+                    <rect id="矩形备份" fill="#FFFFFF" transform="translate(14.000000, 12.500000) rotate(-360.000000) translate(-14.000000, -12.500000) " x="9.5" y="11" width="9" height="3" rx="1"></rect>
+                    <rect id="矩形备份-27" fill="#FFFFFF" transform="translate(14.000000, 17.500000) rotate(-360.000000) translate(-14.000000, -17.500000) " x="9.5" y="16" width="9" height="3" rx="1"></rect>
+                    <path d="M4.5,2 L23.5,2 C24.8807119,2 26,3.11928813 26,4.5 L26,6.5 C26,7.88071187 24.8807119,9 23.5,9 L4.5,9 C3.11928813,9 2,7.88071187 2,6.5 L2,4.5 C2,3.11928813 3.11928813,2 4.5,2 Z" id="矩形" fill="#E198FF"></path>
+                    <path d="M19.5,5 C21.1568542,5 22.5,6.34314575 22.5,8 L22.5,9 L5.5,9 L5.5,8 C5.5,6.34314575 6.84314575,5 8.5,5 L19.5,5 Z" id="形状结合" fill="#A52DF8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

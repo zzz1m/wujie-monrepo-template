@@ -1,0 +1,105 @@
+.rec-list {
+    ::v-deep table {
+        th,
+        td {
+            border-bottom: 1px solid #e0e6e8 !important;
+            font-size: 14px;
+        }
+        td {
+            line-height: 82px;
+            height: 82px;
+            color: #151b26;
+        }
+    }
+    .rec-list-email {
+        width: 208px;
+        font-size: 13px;
+        color: #646f79;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    // ::v-deep .ui-table-body-wrapper {
+    //     height: calc(~'100vh - 203px') !important;
+    // }
+}
+.rec-tag {
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 9px;
+    width: 80px;
+    font-size: 10px;
+    // padding: 0px 4px;
+    text-align: center;
+    cursor: pointer;
+    &.rec-tag-normal {
+        cursor: default;
+    }
+}
+.rec-tag-blue {
+    color: #4d94f2;
+    background: #cfe3fe;
+}
+.rec-tag-yellow {
+    color: #fa980e;
+    background: #feefd0;
+}
+.rec-tag-gray {
+    color: #696f82;
+    background: #e3e5e9;
+}
+.rec-tag-red {
+    color: #fa594a;
+    background: #ffeded;
+}
+.rec-tag-green {
+    color: #00c2b3;
+    background: #dbf6ee;
+}
+.rec-tag-lightblue {
+    color: #4B8CFB;
+    background: rgba(75,140,251,0.2);
+}
+.rec-export-group {
+    float: right !important;
+    .btn {
+        width: auto;
+        min-width: 70px;
+    }
+}
+.rec-data-list {
+    margin-top: 0;
+}
+.dialog-process {
+    .dialog-body {
+        padding-top: 15px;
+        overflow: visible;
+    }
+}
+.input-wrap-textarea {
+    min-width: 300px;
+}
+.ui-table-pro td a.repeat {
+    font-size: 12px;
+    color: #00CFC5;
+    padding: 1px 8px;
+    background: rgba(0,207,197, 0.1);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    &:hover, &:active {
+        background: rgba(0,207,197, 0.2);
+    }
+}
+.rec-report-dialog {
+    .ui-form {
+        margin: 20px 0 0;
+    }
+    .report-desc {
+        color: #c0c4cc;
+        margin-top: 20px;
+    }
+    .dialog-footer {
+        margin-top: 8px;
+    }
+}

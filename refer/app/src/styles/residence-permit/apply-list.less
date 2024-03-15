@@ -1,0 +1,440 @@
+.residence-permit-apply-page {
+    width: 1180px;
+    background: #fff;
+    border-radius: 14px;
+    margin: 20px auto 0;
+    padding: 40px 30px 20px 30px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 586px;
+        height: 58px;
+        top: 2px;
+        left: 1px;
+        z-index: -1;
+        border-radius: 13px 0px 0px 0px;
+        background-image: url(https://img.bosszhipin.com/static/file/2023/m1a7xqnrpi1693812223795.jpg.webp);
+        background-size: cover;
+    }
+   
+    .residence-apply-header {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #1D2129;
+        }
+
+        .business-wrapper {
+          
+            vertical-align: bottom;
+            &>span {
+                display: inline-block;
+                margin-right: 6px;
+            }
+            .btn {
+                padding: 8px 11px;
+            }
+        }
+        .bosshi-wrapper {
+            margin-right: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: bottom;
+
+            &>span {
+                display: inline-block;
+                margin-right: 6px;
+            }
+            .btn {
+                padding: 8px 11px;
+            }
+
+
+        }
+        .people {
+            height: 32px;
+            width: 82px;
+            background: #E3F0FF;
+            border: 1px solid #E3F0FF;
+            border-radius: 21px;
+            padding: 3px 8px 3px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s;
+            position: relative;
+
+            &:hover {
+                background: #E3F0FF;
+                border: 1px solid #9AB4EF;
+            }
+
+            .fixdiv {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+            }
+            svg {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+            }
+            span {
+                line-height: 18px;
+                font-size: 13px;
+                font-weight: 400;
+                color: #3082FF;
+                padding-left: 3px;
+            }
+        }
+    }
+
+    .residence-apply-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        font-size: 13px;
+        line-height: 26px;
+
+        .bottom-line-after {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background-color: #E5E6EB;
+            }
+        }
+
+        &>div {
+            // height: 666px;
+            border: 1px solid #E5E6EB;
+            border-radius: 10px;
+            padding: 24px 30px;
+
+            h3 {  
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 600;
+                color: #1D2129;
+                padding-bottom: 18px;
+            }
+        }
+
+        .residence-problem {
+            width: 776px;
+        }
+        .problem-content {
+            padding-bottom: 23px;
+        }
+
+        .business-processing {
+            width: 324px;
+            .svg-icon {
+                width: 17px;
+                height: 18px;
+                top: 16px;
+                right: 32px;
+                position: absolute;
+            }
+            &>div {
+                width: 274px;
+                height: 120px;
+                border-radius: 12px;
+                border: 1px solid transparent;
+                margin-bottom: 20px;
+                position: relative;
+                cursor: pointer;
+                
+                &:hover {
+                    border: 1px solid transparent;
+                }
+
+                .business-title {
+                    color: #1E1F31;
+                    font-family: PingFang SC;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    position: absolute;
+                    top: 50px;
+                    left: 26px;
+                    background: url(https://img.bosszhipin.com/static/file/2023/2y03ctc6aq1693966202597.png) no-repeat;
+                    background-size: 107px 51px;
+                    width: 110px;
+                    height:17px;
+                    &.business-01{
+                        background-position: 0 0;
+                    }
+                    &.business-02{
+                        background-position: 0 -17px;
+                    }
+                    &.business-03{
+                        background-position: 0 -34px;
+                    }
+                }
+                
+
+                &:after {
+                    content: '';
+                    background-size: cover;
+                    position: absolute;
+                    bottom: 0;
+                    right: 35px;
+                }
+                &:nth-of-type(1) {
+                    &:after {
+                        width: 92px;
+                        height: 80px;
+                        bottom: -1px;
+                        background-image: url(https://img.bosszhipin.com/static/file/2023/rceiil0wh11693968519569.png);
+                    }
+                    border: 1px solid #DDDAFB;
+
+                    background: linear-gradient(180deg, #B4B0FD 0%, #F2F1FC 79.27%);
+                    &:hover {
+                        border: 1px solid #728AFE;
+                        box-shadow: 0 0 8px 1px rgba(229, 230, 235, 0.22);
+
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    &:after {
+                        width: 92px;
+                        height: 83px;
+                        background-image: url(https://img.bosszhipin.com/static/file/2023/cot48h4ltf1693968455013.png);
+                    }
+                    border: 1px solid #CCE8F9;
+                    background: linear-gradient(180deg, #88CFEA 0%, #EBF8FB 76.25%);
+                    &:hover {
+                        border: 1px solid #4AC0E9;
+                        box-shadow: 0 0 8px 1px rgba(229, 230, 235, 0.22);
+
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    &:after {
+                        width: 92px;
+                        height: 83px;
+                        background-image: url(https://img.bosszhipin.com/static/file/2023/8mfk1dlcxg1693968472035.png);
+                    }
+                    border: 1px solid #D2E3F6;
+                    background: linear-gradient(180deg, #93CBFF 0%, #F5FCFF 78.67%);
+                    &:hover {
+                        border: 1px solid #52A8F6;
+                        box-shadow: 0 0 8px 1px rgba(229, 230, 235, 0.22);
+                    }
+                }
+            }
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
+            margin: 24px 0 18px;
+        }
+
+        table {
+            border-radius: 6px;
+            /* 消除掉外边框 */
+            border-style:hidden; 
+            /* hack一下加个阴影 */
+            box-shadow: 0 0 0 1px #E5E6EB;
+            overflow: hidden;
+
+            th, td {
+                text-align: left;
+                border: 1px solid #E5E6EB;
+            }
+            th {
+                height: 34px;
+                padding: 0 20px;
+                color: #2B2F37;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 18px; /* 100% */
+                &.th-work {
+                    background: #E6F3FA;
+                    width: 50%;
+                }
+                &.th-residence {
+                    background: #EBF1FE;
+                    width: 50%;
+                }
+                
+            }
+
+            td {
+                text-align: left;
+                padding: 20px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.residence-edit-dialog {
+    .dialog-header h3.title {
+        margin-left: 44px;
+        font-weight: normal;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .dialog-header .icon-dialog {
+        float: left;
+   }
+
+   .residence-warning-content {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #6F7886;
+
+        h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #171D26;
+            margin: 16px 0 10px 0;
+        }
+
+        .warning {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #FA594A;
+            margin-top: 30px;
+        }
+   }
+   .residence-permit-change {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #171D26;
+        
+        .sub-title {
+            color: #6F7886;
+            margin-bottom: 21px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+   }
+   .residence-permit-change-info {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #171D26;
+        
+        .sub-title {
+            color: #6F7886;
+            margin-bottom: 21px;
+        }
+        .info-type-item {
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+            background: #F6F7F9;
+            border: 1px solid #F6F7F9;
+            border-radius: 6px;
+            text-align: center;
+            margin: 9px;
+            display: inline-block;
+            cursor: pointer;
+            &.active {
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 6px;
+                border: 1px solid #5BD5D4;
+                background: linear-gradient(270deg, rgba(0, 190, 189, 0.71) 0.02%, #03CBCA 103.35%);
+                color: #fff;
+            }
+
+            &:not(.active):hover {
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 6px;
+                border: 1px solid #5BD5D4;
+                background: rgba(0, 190, 189, 0.07);
+                color: #00BEBD;
+            }
+        }
+
+        .info-type-wrapper {
+            margin:0 -9px;
+        }
+
+        .warning {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #FA594A;
+            margin-top: 10px;
+        }
+    }
+}
+
+.residence-permit-list {
+    .status-wrapper {
+        height: 22px;
+        line-height: 22px;
+        padding: 0 8px;
+        background: #F4F5FA;
+        color: #A8ABB0;
+        border-radius: 13px;
+        text-align: center;
+        display: inline-block;
+        &.status_1 {
+            color: #00BEBD;
+            background: #E5FAF9;
+        }
+    
+        &.status_2 {
+            color: #F29D13;
+            background: rgba(225,144,11,0.09);
+        }
+    }
+}
+
+
+.bossui-new .common-content-bg .page-main .flex-list-ui-page.my-apply-list-page {
+    margin-top: 0;
+
+    .status-wrapper {
+        height: 22px;
+        line-height: 22px;
+        padding: 0 8px;
+        background: #F4F5FA;
+        color: #A8ABB0;
+        border-radius: 13px;
+        text-align: center;
+        display: inline-block;
+        &.status_1 {
+            color: #00BEBD;
+            background: #E5FAF9;
+        }
+    
+        &.status_0 {
+            color: #F29D13;
+            background: rgba(225,144,11,0.09);
+        }
+    }
+}

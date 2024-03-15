@@ -1,0 +1,52 @@
+/* Selected Tags */
+.vs__selected {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #e3e7ed;
+  border-radius: 20px;
+  color: #333;
+  line-height: 1.4;
+  margin: 4px 2px 0px 2px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.vs__deselect {
+  display: inline-flex;
+  appearance: none;
+  margin-left: 4px;
+  margin-right: -5px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: none;
+  fill: rgba(60, 60, 60, 0.5);
+  text-shadow: 0 1px 0 #fff;
+}
+
+.vs__deselect .ui-icon-circle-close {
+  color: #bbb;
+}
+
+.vs__deselect:hover .ui-icon-circle-close {
+  color: #666;
+}
+.vs--disabled .vs__deselect:hover .ui-icon-circle-close{
+  color: #bbb;
+  cursor: not-allowed;
+}
+/* States */
+.vs--single .vs__selected {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.vs--single.vs--open .vs__selected {
+  position: absolute;
+  opacity: .4;
+}
+
+.vs--single.vs--searching .vs__selected {
+  display: none;
+}

@@ -1,0 +1,188 @@
+.attendance-bg.team-attendance-calendar-page, .attendance-bg.personnel-attendance-calendar-page {
+    padding-top: 40px;
+    .text-center {
+        text-align: center;
+    }
+    .attendance-inner-content {
+        .ui-select-selection {
+            min-height: 26px;
+        }
+    }
+    .team-attendance-dada-container {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: 16px;
+        display: flex;
+    }
+    
+    .team-attendance-dada-wrapper {
+        width: 100px;
+        height: 84px;
+        flex: 1;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 8px;
+        .attendance-number {
+            font-size: 28px;
+            font-family: kanzhun-Regular, kanzhun;
+            color: #1D2129;
+            line-height: 28px;
+            margin-bottom: 6px;
+
+            &.attendance-warning {
+                color: #F54E4E;
+            }
+            .attendance-number-light {
+                font-size: 24px;
+                color: #42A8FC;
+                vertical-align: bottom;
+            }
+            .small-num {
+                vertical-align: bottom;
+                font-size: 18px;
+                color: #4E5969;
+                line-height: 22px;
+            }
+        }
+
+        .attendance-title {
+            font-size: 14px;
+            color: #4E5969;
+            line-height: 20px;
+        }
+    }
+    .attendance-calendar-item-content {
+        .full-calendar-body {
+            margin-top: 15px;
+        }
+        .flex-between {
+            display: flex;
+            justify-content: space-between;
+        }
+        .calendar-info-wrapper {
+            margin-top: 30px;
+        }
+
+        canvas {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        .attendance-line-chart {
+            padding-top: 20px;
+        }
+    }
+    .attendance-calendar-item-content .leave-balance {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .leave-balance {
+        margin: 10px -10px 0;
+    }
+    .leave-balance-personal {
+        .leave-balance-container {
+            cursor: pointer;
+            &:hover {
+                background: #ffffff;
+                border: 1px solid var(--border-color);
+                .leave-balance-icon {
+                    background: linear-gradient(135deg, var(--g1) 0%, var(--g2) 100%);
+                    .icon-hover {
+                        display: block;
+                    }
+                    .icon-normal {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .leave-balance-container {
+        display: inline-block;
+        width: 265px;
+        height: 126px;
+        background: var(--bg-color);
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin: 10px 10px;
+        position: relative;
+        cursor: default;
+        transition: all ease-in-out 0.2s;
+        border: 1px solid transparent;
+    }
+
+
+    .leave-balance-title{
+        font-size: 14px;
+        color: #4E5969;
+        line-height: 20px;
+        margin-bottom: 6px;
+        font-weight: 400;
+    }
+
+    .leave-balance-num{
+        font-size: 15px;;
+        font-weight: 500;
+        color: #1D2129;
+        line-height: 21px;
+
+        span {
+            font-size: 28px;
+            font-family: kanzhun-Regular, kanzhun;
+            font-weight: 400;
+            color: #1D2129;
+            line-height: 28px;
+            display: inline-block;
+            margin-right: 2px;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .leave-balance-icon {
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px 0px rgba(120,124,128,0.1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        svg {
+            width: 40px;
+            height: 40px;
+            cursor: unset;
+        }
+        .icon-hover {
+            display: none;
+        }
+    }
+}
+
+.attendance-bg.personnel-attendance-calendar-page {
+    .attendance-personal-header {
+        min-height: 200px;
+    }
+
+    .user-essential-information .information-main p:last-of-type {
+        margin-bottom: 0;
+    }
+    
+}
+.attendance-bg.personnel-attendance-calendar-page {
+    padding-top: 0;
+    .attendance-content {
+        margin-top: 20px;
+    }
+    .anchor[target] {
+        position: relative;
+        top: -90px;
+    }
+}

@@ -1,0 +1,78 @@
+// 字段权限
+.page-system__role-field {
+    padding-bottom: 101px;
+    .sec-list {
+        padding: 17px 0 101px;
+    }
+    .sec {
+        margin-bottom: 30px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 6px;
+        }
+    }
+    tr:last-of-type td {
+        border-bottom-color: #EEF0F5;
+    }
+    td {
+        height: 52px;
+        padding: 0 30px!important;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    .level-1-tr td {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .level-2-tr {
+        background-color: #F4F5F8;
+        td {
+            font-weight: bold;
+        }
+    }
+    .radio-group {
+        display: flex;
+        justify-content: space-between;
+        .radio-item {
+            min-width: 69px;
+        }
+        .radio-inner {
+            margin-right: 10px;
+        }
+    }
+    .btn-fold {
+        padding: 5px 0;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        .icon {
+            color: #979797;
+            margin-left: 8px;
+        }
+        &:hover {
+            color: @primary-color;
+            .icon {
+                color: @primary-color;
+            }
+        }
+    }
+    .table-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 20px;
+        background-color: #fff;
+        border-top: 1px solid #E0E6E8;
+        text-align: center;
+        .btn {
+            width: 90px;
+            margin-right: 20px;
+        }
+    }
+}

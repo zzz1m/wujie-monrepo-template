@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*徽章和标签*/
+.badge, .tag { display: inline-block; padding: 0 6px; line-height: 18px; font-size: 11px; min-width: 10px; vertical-align: middle; margin-top: -4px; margin-right: 3px; border-radius: 10px; white-space: nowrap; background: #4285f4; font-style: normal; color: #fff }
+.tag { border-radius: 4px; font-size: 12px; line-height: 18px }
+a.badge:hover, a.tag:hover { color: #fff; opacity: .8 }
+.badge-warning, .tag-warning { background: #f8ac59 }
+.badge-danger, .tag-danger { background: #ed5565 }
+.badge-success, .tag-success { background: #1ab394 }
+.badge-muted, .tag-muted { background: #ddd; color: #5E5E5D }
+a.badge-muted:hover, a.tag-muted:hover { color: #5E5E5D }

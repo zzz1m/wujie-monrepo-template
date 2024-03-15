@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>结果公布</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#83B5FF" offset="0%"></stop>
+            <stop stop-color="#1A5FD4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#CBDDFF" offset="0%"></stop>
+            <stop stop-color="#2665C2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#D9E7FC" offset="0%"></stop>
+            <stop stop-color="#7EB5F8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="46.3456336%" x2="0%" y2="46.3456336%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C1DBFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-43.6%" y="-44.7%" width="187.2%" height="189.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="结果公布" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-24">
+            <rect id="矩形" x="0" y="0" width="38" height="38"></rect>
+            <g id="编组-21" transform="translate(2.000000, 2.000000)">
+                <g id="编组-9">
+                    <rect id="矩形备份-2" stroke="url(#linearGradient-2)" stroke-width="0.6" fill="url(#linearGradient-1)" x="5.23421055" y="4.31778826" width="27.3605264" height="22.3105572" rx="5"></rect>
+                    <rect id="矩形" stroke="url(#linearGradient-4)" stroke-width="0.6" fill="url(#linearGradient-3)" x="0.3" y="0.3" width="28.7255132" height="28.7255132" rx="7"></rect>
+                    <path d="M11.92705,14.8460644 C14.1797808,3.98540607 19.2591506,1.52337128 27.1651595,7.45996008 C35.0711683,13.3965489 34.3006157,19.0514355 24.8535017,24.4246199 C21.1747096,22.9794975 18.6079959,21.7560531 17.1533603,20.7542866 C15.6987248,19.7525202 13.9566213,17.7831128 11.92705,14.8460644 Z" id="路径-14" fill="#1F68E7" opacity="0.481919062" filter="url(#filter-5)"></path>
+                </g>
+                <g id="编组-20" transform="translate(8.405041, 7.262944)">
+                    <polygon id="路径-28" fill="url(#linearGradient-6)" transform="translate(7.594959, 10.845174) rotate(90.000000) translate(-7.594959, -10.845174) " points="2.5949595 9.25021417 12.5949595 9.25021417 12.5949595 12.4401332 2.5949595 12.4401332"></polygon>
+                    <polygon id="路径-28备份-2" fill="url(#linearGradient-7)" transform="translate(13.594959, 7.922587) rotate(90.000000) translate(-13.594959, -7.922587) " points="5.67237266 6.32762734 21.5175463 6.32762734 21.5175463 9.51754633 5.67237266 9.51754633"></polygon>
+                    <polygon id="路径-28备份" fill="url(#linearGradient-8)" transform="translate(1.594959, 12.291115) rotate(90.000000) translate(-1.594959, -12.291115) " points="-1.95909919 10.6961555 5.14901818 10.6961555 5.14901818 13.8860745 -1.95909919 13.8860745"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

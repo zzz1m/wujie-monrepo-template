@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 0 20 0 20 20 0 20"></polygon>
+        <path d="M7.5,0.833333333 L12.5,0.833333333 C12.9602373,0.833333333 13.3333333,1.20642938 13.3333333,1.66666667 C13.3333333,2.12690396 12.9602373,2.5 12.5,2.5 L7.5,2.5 C7.03976271,2.5 6.66666667,2.12690396 6.66666667,1.66666667 C6.66666667,1.20642938 7.03976271,0.833333333 7.5,0.833333333 Z" id="path-3"></path>
+        <filter x="-135.0%" y="-240.0%" width="295.0%" height="1080.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.83678784   0 0 0 0 0.469135022   0 0 0 0 0.120050528  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M3.66666667,5.83333333 L8.33333333,5.83333333 C8.88561808,5.83333333 9.33333333,6.28104858 9.33333333,6.83333333 C9.33333333,7.38561808 8.88561808,7.83333333 8.33333333,7.83333333 L3.66666667,7.83333333 C3.11438192,7.83333333 2.66666667,7.38561808 2.66666667,6.83333333 C2.66666667,6.28104858 3.11438192,5.83333333 3.66666667,5.83333333 Z" id="path-5"></path>
+        <filter x="-135.0%" y="-200.0%" width="295.0%" height="900.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0145673863   0 0 0 0 0.482328792   0 0 0 0 0.676545516  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M11.6666667,5.83333333 L16.3333333,5.83333333 C16.8856181,5.83333333 17.3333333,6.28104858 17.3333333,6.83333333 C17.3333333,7.38561808 16.8856181,7.83333333 16.3333333,7.83333333 L11.6666667,7.83333333 C11.1143819,7.83333333 10.6666667,7.38561808 10.6666667,6.83333333 C10.6666667,6.28104858 11.1143819,5.83333333 11.6666667,5.83333333 Z" id="path-7"></path>
+        <filter x="-135.0%" y="-200.0%" width="295.0%" height="900.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0145673863   0 0 0 0 0.482328792   0 0 0 0 0.676545516  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人考勤页面Hover样式" transform="translate(-684.000000, -240.000000)">
+            <g id="头部" transform="translate(130.000000, 68.000000)">
+                <g id="编组-16备份-4" transform="translate(532.000000, 150.000000)">
+                    <g id="编组-12" transform="translate(16.000000, 16.000000)">
+                        <g id="编组-21" transform="translate(6.000000, 6.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="路径"></g>
+                            <path d="M10,3.33333333 C14.1421356,3.33333333 17.5,6.69119771 17.5,10.8333333 C17.5,14.975469 14.1421356,18.3333333 10,18.3333333 C5.85786438,18.3333333 2.5,14.975469 2.5,10.8333333 C2.5,6.69119771 5.85786438,3.33333333 10,3.33333333 Z M10.8333333,6.24583333 L6.66666667,11.6666667 L9.16666667,11.6666667 L9.16666667,15.4166667 L13.3333333,10 L10.8333333,10 L10.8333333,6.24583333 Z" id="形状结合" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            <g id="路径" mask="url(#mask-2)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="路径" opacity="0.600000024" mask="url(#mask-2)" transform="translate(6.000000, 6.833333) rotate(-315.000000) translate(-6.000000, -6.833333) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="路径" opacity="0.600000024" mask="url(#mask-2)" transform="translate(14.000000, 6.833333) scale(-1, 1) rotate(-315.000000) translate(-14.000000, -6.833333) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

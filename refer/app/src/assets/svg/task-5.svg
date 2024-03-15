@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下级绩效</title>
+    <defs>
+        <linearGradient x1="50%" y1="21.5105843%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B4C2FF" offset="0%"></stop>
+            <stop stop-color="#426BFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#88C6FF" stop-opacity="0.209310465" offset="0%"></stop>
+            <stop stop-color="#2060CF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="26.259929%" y1="100%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#DFECFA" offset="0%"></stop>
+            <stop stop-color="#90B3F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#C0DAFF" offset="0%"></stop>
+            <stop stop-color="#F0F8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="26.259929%" y1="100%" x2="100%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#DFECFA" offset="0%"></stop>
+            <stop stop-color="#90B3F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#C0DAFF" offset="0%"></stop>
+            <stop stop-color="#F0F8FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-39.1%" y="-40.1%" width="178.1%" height="180.2%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="下级绩效" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-22">
+            <rect id="矩形" x="0" y="0" width="38" height="38"></rect>
+            <g id="编组-2" transform="translate(1.000000, 3.000000)">
+                <path d="M4.15458426,9.31108918 L4.15458426,26.6828489 C4.15458426,29.9965574 6.84087576,32.6828489 10.1545843,32.6828489 L27.526344,32.6828489 C30.8400525,32.6828489 33.526344,29.9965574 33.526344,26.6828489 L33.526344,9.31108918 C33.526344,5.99738068 30.8400525,3.31108918 27.526344,3.31108918 L10.1545843,3.31108918 C6.84087576,3.31108918 4.15458426,5.99738068 4.15458426,9.31108918 Z" id="路径-27" stroke="url(#linearGradient-2)" stroke-width="0.6" fill="url(#linearGradient-1)"></path>
+                <g id="编组-19" opacity="0.956567673" stroke-width="0.6">
+                    <circle id="椭圆形" stroke="url(#linearGradient-4)" fill="url(#linearGradient-3)" cx="6.8489606" cy="5.85584589" r="5.55584589"></circle>
+                    <path d="M3,11.7116918 L11.156415,11.7116918 C12.8132692,11.7116918 14.156415,13.0548375 14.156415,14.7116918 L14.156415,18.3672108 C14.156415,21.1942717 13.0153052,23.9016502 10.9916868,25.8757935 L10.9916868,25.8757935 L10.9916868,25.8757935 L10.9916868,29.1212987 C10.9916868,31.2873214 9.23577845,33.0432297 7.06975575,33.0432297 C4.90373305,33.0432297 3.14782472,31.2873214 3.14782472,29.1212987 L3.14782472,25.8757935 L3.14782472,25.8757935 C1.13442495,23.9010716 -1.43098679e-15,21.199455 0,18.3792946 L0,14.7116918 C-2.02906125e-16,13.0548375 1.34314575,11.7116918 3,11.7116918 Z" id="路径-26" stroke="url(#linearGradient-6)" fill="url(#linearGradient-5)"></path>
+                </g>
+                <path d="M4.94631745,16.4651153 C7.4606508,4.34324273 13.1298719,1.59529957 21.9539808,8.22128581 C30.7780897,14.847272 29.9180552,21.1588429 19.3738774,27.1559984 C15.2678788,25.5430585 12.4031006,24.1775393 10.7795428,23.0594408 C9.155985,21.9413424 7.21157655,19.7432339 4.94631745,16.4651153 Z" id="路径-14" fill="#1F68E7" opacity="0.481919062" filter="url(#filter-7)"></path>
+                <polygon id="路径-28" fill="url(#linearGradient-8)" points="19.0482926 14.3026305 28.2269675 14.3026305 28.2269675 17.2305535 19.0482926 17.2305535"></polygon>
+                <polygon id="路径-28备份" fill="url(#linearGradient-8)" points="19.0482926 20.1584764 28.2269675 20.1584764 28.2269675 23.0863994 19.0482926 23.0863994"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

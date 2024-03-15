@@ -1,0 +1,14 @@
+.vs__open-indicator {
+  fill: rgba(60, 60, 60, 0.5);
+  transform: scale(0.6);
+  transition: transform 150ms cubic-bezier(1, -0.115, 0.975, 0.855);
+  transition-timing-function: cubic-bezier(1, -0.115, 0.975, 0.855);
+}
+
+.vs--open .vs__open-indicator {
+  transform: rotate(180deg) scale(0.6);
+}
+
+.vs--loading .vs__open-indicator {
+  opacity: 0;
+}

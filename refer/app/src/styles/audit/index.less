@@ -1,0 +1,84 @@
+@import "./audit-center.less";
+@import "./approval-process.less";
+@import "./approval-component";
+@import "./audit-detail.less";
+
+.audit-progress-wrap-preview {
+    .progress-preview-list {
+        .node-list-item {
+            display: flex;
+            position: relative;
+            padding-bottom: 45px;
+            .node-name { 
+                font-size: 14px;
+                font-weight: 500;
+                color: #1D2129;
+                line-height: 20px;
+                word-break: break-all;
+                padding-left: 14px;
+            }
+            .process-icon {
+                width: 18px;
+                height: 18px;
+                position: relative;
+                z-index: 2;
+                flex-shrink: 0;
+                color: #fff;
+            }
+            &:last-of-type {
+                padding-bottom: 45px;
+                &::after {
+                    display: none;
+                }
+            }
+            &::after  {
+                content: '';
+                position: absolute;
+                left: 9px;
+                top: 10px;
+                width: 1px;
+                height: 100%;
+                background: #E3E6E8;
+                z-index: 0;
+            }
+
+        }
+    }
+    &.attendace {
+        .title {
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            color: #1D2129;
+            line-height: 20px;
+            margin-bottom: 30px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 14px;
+                background: linear-gradient(180deg, #11CD9E 0%, #5DE1BF 100%);
+                border-radius: 0px 2px 2px 0px;
+                top: 3px;
+                left: -24px;
+            }
+        }
+        .tip {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(148,157,167,0.75);
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    &.dialog {
+        margin-top: 20px;
+        .node-list-item {
+            color: #fff;
+            &:last-of-type {
+                padding-bottom: 9px;
+            }
+        }
+    }
+   
+}

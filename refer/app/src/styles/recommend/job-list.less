@@ -1,0 +1,234 @@
+.tag-publish {
+    background: #DBF6EE;
+    color: #00C2B3;
+}
+.tag-unpublish {
+    background: #CFE3FE;
+    color: #3083F0;
+}
+.tag-scrap {
+    background: #E3E5E9;
+    color: #7C8291;
+}
+.job-list-search {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    .filter-box {
+        display: flex;
+        flex-wrap: wrap;
+        .input-wrap {
+            width: 200px;
+            min-width: 200px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .ui-select {
+            width: 140px;
+            margin-right: 10px;
+            margin-top: 10px;
+            &.select-large {
+                width: 213px;
+            }
+        }
+        .ui-date-editor-daterange {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .ui-range-editor {
+            height: auto;
+        }
+        
+    }
+    // .btn {
+    //     height: 26px;
+    // }
+    .btns {
+        margin-top: 10px;
+        .btn {
+            width: 70px;
+            margin-right: 10px;
+        }
+    }
+    .add {
+        margin-top: 10px;
+        width:110px;
+    }
+    .action-btns {
+        margin-top: 10px;
+        .export {
+            width: 80px;
+        }
+        .share-export {
+            width: 100px;
+        }
+    }
+    
+    .filter-box ::v-deep .ui-select-inner, .form-group ::v-deep .ui-select-inner {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+}
+.data-list {
+    &.data-statistics {
+        .ui-table td {
+            height: 76px;
+        }
+    }
+    &.td-52 {
+        .ui-table td {
+            height: 52px;
+        }
+    }
+    .job-name {
+        display: flex;
+        cursor: pointer;
+        &:hover {
+            color:#5DD5C8;
+        }
+    }
+    .position-label{
+        img {
+            width: 44px;
+            height: 18px;
+            display: block;
+            margin: 2px 0px;
+        }
+    }
+    .intro-th {
+        display: flex;
+        align-items: center;
+        .ui-tooltip {
+            margin-left: 4px;
+        }
+    }
+}
+.dialog-equipment-third {
+    h3.title {
+        font-size: 15px;
+        padding: 10px 0px;
+        position: relative;
+        padding-left: 10px;
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 15px;
+            border-radius: 1px;
+            background: #5DD5C8;
+        }
+    }
+    .through-item {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .save-tip {
+        position: absolute;
+        bottom: 24px;
+        left: 30px;
+    }
+    
+}
+.dialog-equipment-third ::v-deep .dialog-body {
+    overflow: auto;
+    max-height: calc(~"100vh - 150px");
+}
+.dialog-equipment-third ::v-deep .ui-select-disabled .ui-select-selection {
+    background-color: #fff;
+    opacity: 0.7;
+}
+.dialog-equipment-third ::v-deep .input[disabled] {
+    background-color: #fff;
+    opacity: 0.7;
+}
+.dialog-equipment-third ::v-deep .checkbox-disabled {
+    opacity: 0.7;
+}
+
+.dialog-equipment-third ::v-deep .input-wrap-textarea .suffix-counter {
+    bottom: -26px;
+}
+
+.dialog-job-list ::v-deep .ui-select-disabled .ui-select-selection {
+    background-color: #fff;
+    opacity: 1;
+    .ui-select-inner {
+        opacity: 0.7 !important;
+        .ui-select-input[disabled] {
+            color: #151B26;
+        }
+    }
+}
+///////
+.external-text-dialog {
+    .upload-styl {
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .tip {
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    ::v-deep textarea.input {
+        height: auto !important;
+    }
+}
+
+.data-statistics-detail {
+    display: flex;
+    margin: 20px 10px 10px;
+    align-items: center;
+    p {
+        padding-right: 100px;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+
+//////
+.update-bp-dialog {
+    ::v-deep 
+    .dialog-body {
+        width: 370px;
+        overflow: visible;
+    }
+    .select-box {
+        display: flex;
+        align-items: center;
+        .label {
+            width: 64px;
+        }
+    }
+    
+}
+.form-group-wrap .form-item {
+    width: 25%;
+}
+.dialog-equipment-third .form-item.p-r20 {
+    padding-right: 20px;
+}
+.rec-list-email {
+    width: 208px;
+    font-size: 13px;
+    color: #646f79;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

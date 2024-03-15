@@ -1,0 +1,816 @@
+@node-border-color: #D5D5DF;
+@editor-bg-color: #F8F9FB;
+
+.approval-flow-container {
+    display: block;
+    height: 100%;
+    overflow: auto;
+    font-size: 14px;
+    background-color: #FFF;
+    
+    .editor-container {
+        position: relative; 
+        z-index: 2;
+        margin-top: 200px;
+    }
+    // 流程编辑器
+    .flow-editor {
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;;
+        // margin-top: 40px;
+        // overflow: auto;
+        .root-node-container {
+            display: flex;
+            // padding: 30px 0;
+        }
+    }
+    .flow-header{
+        position: fixed;
+    }
+    
+}
+.organization-view-page {
+    .page-loading-container {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+// 节点信息
+.flow-editor-node {
+    position: relative;
+    // 分支节点
+    &.branch {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        min-height: 100%;
+        &.root-branch {
+            margin: 0 auto;
+        }
+        &>.top-line-mask, &>.top-v-line,&>.bottom-v-line, &>.bottom-line-mask {
+            display: none;
+        }
+        &>.nodes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // 连接箭头
+            &>.flow-editor-node:not(:last-child){
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border: 5px solid transparent;
+                    border-top:10px solid #D5D5DF;
+                    position: absolute;
+                    left: calc(~"50% - 4px");
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+    &.route-node {
+        display: flex;
+        flex-direction: column;
+        &>.top-h-line {
+            height: 2px;
+            background-color: @node-border-color;
+            // margin-top: 18px;
+            margin-bottom: 30px;
+        }
+        &>.add-branch {
+            height: 38px;
+            width: 100px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 19px;
+            box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+            margin-bottom: 14px;
+            align-self: center;
+            color: #00C2B3;
+            background-color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            z-index: 1;
+        }
+        &>.bottom-h-line {
+            height: 2px;
+            background-color: @node-border-color;
+        }
+        &>.bottom-v-line {
+            height: 100px;
+            width: 2px;
+            background-color: @node-border-color;
+            align-self: center;
+            margin-left: 1px;
+        }
+        &>.branches {
+            display: flex;
+            justify-content: center;
+        }
+        .flow-editor-node.branch {
+            &:first-child>.bottom-line-mask,&:first-child>.top-line-mask,
+            &:last-child>.bottom-line-mask,&:last-child>.top-line-mask{
+                display: block;
+                position: absolute;
+                width: 50%;
+                height: 6px;
+                background-color: #FFF;
+            }
+            &:first-child{
+                &>.top-line-mask {
+                    left: 0;
+                    top: -34px;
+                }
+                &>.bottom-line-mask {
+                    bottom: -2px;
+                    left: 0;
+                }
+            }
+            &:last-child{
+                &>.top-line-mask {
+                    right: 0;
+                    top: -34px;
+                }
+                &>.bottom-line-mask {
+                    bottom: -2px;
+                    right: -2px;
+                }
+            }
+            .top-v-line {
+                display: block;
+                position: absolute;
+                top: -32px;
+                left: 50% ;
+                width: 2px;
+                height: 32px;
+                background-color: @node-border-color;
+            }
+            .bottom-v-line {
+                display: block;
+                width: 2px;
+                background-color: @node-border-color;
+                flex-grow: 1;
+            }
+        }
+    }
+    .node-tip {
+        display: flex;
+        align-items: center;
+        .leader-name{
+            font-size: 14px;
+        }
+        .user-photo{
+            width: 16px;
+            height: 16px;
+            background-color: #CCC;
+            border-radius: 8px;
+            margin-left: 8px;
+        }
+    }
+    
+    .toggle{
+        width: 30px;
+        height: 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        border: 1px solid #E5E6EB;
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        margin-left: -15px;
+        z-index: 2;
+        cursor: pointer;
+        transition: all .2s;
+        cursor: pointer;
+        i{
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        &:hover{
+            border: 1px solid #00BEBD;;
+        }
+    }
+
+
+
+    .flow-editor-node-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+        border-radius: 8px;
+        overflow: hidden;
+        &:hover{
+            box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.05);
+        }
+        // box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);
+        // -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);
+    }
+    
+    .add-node-btn {
+        width: 28px;
+        height: 28px;
+        margin-left: 1px;
+        color: #6873E7;
+    }
+    .add-node-area{
+        align-self: center;
+        margin-top: -60px;
+        margin-bottom: 28px;
+        &:hover {
+            .add-node { display: block; }
+        }
+    }
+
+    // 开始，审批，审批组，条件，结束
+    &.approval-node, &.start-node, &.end-node, &.condition-node, &.approval-group-node {
+        height: 220px;
+        width: 288px;
+        .flow-editor-node-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 288px;
+            z-index: 2;
+            background: #CCF2F2;
+            // cursor: pointer;
+            .node-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                padding: 0 20px;
+                height: 36px;
+                color: #1D2129;
+                font-weight: 600;
+                .node-title {
+                    .ellipsis;
+                    font-size: 14px;
+                    max-width: 150px;
+                    line-height: 42px;
+                }
+                .icon {
+                    font-size: 20px;
+                    line-height: 42px;
+                }
+            }
+            .node-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // overflow: auto;
+                justify-content: space-between;
+                flex-grow: 1;
+                height: 100px;
+                background: #fff;
+                color: #474747;
+                // cursor: pointer;
+                margin: 0 4px 4px 4px;
+                border-radius: 6px;
+                &.placeholder {
+                    color: #808080;
+                }
+                .label{
+                    font-size: 13px;
+                    color: #4E5969;
+                    display: flex;
+                }
+                .value{
+                    font-size: 16px;
+                    font-family: kanzhun;
+                    color: #1D2129;
+                }
+                .tips{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 8px;
+                    margin-left: 2px;
+                    margin-top: 1px;
+                    cursor: pointer;
+                    background: url('~@/assets/images/kanban/icon-tips.png');
+                    background-size: 100% 100%;
+                }
+                .node-footer{
+                    display: flex;
+                    align-items: center;
+                    font-size: 13px;
+                    width: 100%;
+                    line-height: 27px;
+                    color: #4E5969;
+                    padding-left: 20px;
+                    align-self: flex-start;
+                }
+            }
+            .node-detail {
+                // overflow: auto;
+                max-height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                padding: 14px 20px;
+                border-bottom: 1px solid #F2F3F5;
+            }
+            .node-detail-item{
+                text-align: center;
+            }
+            .icon-admin {
+                font-size: 16px;
+            }
+        }
+        .bottom-v-line {
+            position: absolute;
+            bottom: 0;
+            left: 144px;
+            height: 220px;
+            width: 2px;
+            background-color: @node-border-color;
+        }
+        .add-node-btn {
+            position: absolute;
+            bottom: 42px;
+            left: 116px;
+            color: #6873E7;
+        }
+    }
+
+    // 审批组合
+    .approval-list {
+        margin-right: -20px;
+        height: 100%;
+        padding-top: 10px;
+        &>ul {
+            &:after{
+                content: '';
+                display: block;
+                width: 0;
+                clear: both;
+            }
+        }
+        .approval-item {
+            position: relative;
+            margin-bottom: 10px;
+            width: 105px;
+            height: 34px;
+            border: 1px solid @node-border-color;
+            color: #474747;
+            font-size: 14px;
+            line-height: 32px;
+            padding-left: 10px;
+            padding-right: 20px;
+            border-radius: 4px;
+            margin-left: 10px;
+            float:left;
+            &:nth-child(odd) {
+                margin-left: 0;
+            }
+            .approval-name {
+                .ellipsis;
+            }
+            .icon-remove {
+                position: absolute;
+                right: 5px;
+                top: 10px;
+                color: @node-border-color;
+                font-size: 12px;
+            }
+            .add-approval {
+                color: #FFD168;
+                text-align: center;
+                line-height: 32px;
+                font-size: 14px;
+                font-weight: 600;
+                display: none;
+            }
+            &.blank {
+                padding: 0;
+                text-align: center;
+                .approval-name, .icon-remove { display: none }
+                .add-approval { display: inline-block; }
+            }
+        }
+    }
+    
+} 
+
+// 添加节点
+.add-node {
+    position: absolute;
+    bottom: -45px;
+    left: calc(~"50% + 30px");
+    z-index: 10;
+    width: 310px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);
+    // cursor: pointer;
+    display: none;
+    &:before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 20px;
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-right-color: #fff;
+    }
+    &>ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        li {
+            align-self: center;
+            text-align: center;
+            margin-left: 37px;
+            &:first-child { margin-left: 0; }
+        }
+    }
+    .svg-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 10px;
+    }
+    .node-label {
+        font-size: 14px;
+        color: #474747;
+    }
+}
+
+
+// 节点配置
+.config-head {
+    padding-right: 30px;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nodename-selector {
+        flex: 1;
+        width: 0;
+        padding-left: 30px;
+    }
+    .select-priority {
+        margin-left: 10px;
+    }
+    .ui-select {
+        height: 34px;
+        width: 106px;
+    }
+    .ui-icon-edit {
+        color: #ADADB7;
+        font-size: 16px;
+        line-height: 70px;
+        margin-left: 8px;
+        // cursor: pointer;
+    }
+    .input-wrap {
+        min-width: auto;
+        width: 100%;
+    }
+}
+.config-body {
+    padding: 0 30px;
+    // 选项卡
+    .ui-tab {
+       width: 100%; 
+       margin-bottom: 20px;
+        .ui-tab-nav-wrap {
+           width: 100%;
+            .ui-tab-nav {
+               width: 100%;
+               .ui-tab-nav-item  {
+                    padding: 0;
+                    width: 50%;
+                    height: 32px;
+                    color: #474747;
+                    &.is-active {
+                        color: #fff;
+                        border-color: #5D68E8;
+                        background-color: #5D68E8;
+                    }
+               }
+            }
+        }
+    }
+    // 条件配置
+    .condition-body {
+        &.show-options .option-item {
+            .input-wrap {
+                min-width: auto;
+                width: 100%;
+            }
+            .option-set .input-wrap {
+                width: 60px;
+            }
+        }
+    }
+    // 节点配置
+    &.node-body {
+        padding: 30px;
+        background-color: #fff;
+        min-height: 100%;
+        .panel-title {
+            margin-bottom: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #474747;
+        }
+        .add-more {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5D68E8;
+            font-weight: 500;
+            // cursor: pointer;
+            .icon {
+                font-size: 16px;
+                margin-right: 3px;
+            }
+        }
+        .form-permissions {
+            margin-bottom: 30px;
+            margin-top: -12px;
+        }
+        // 表单权限
+        .ui-table-pro {
+            thead {
+                color: #474747;
+                font-size: 14px;
+            }
+            tbody {
+                color: #ADADB7;
+            }
+            th .cell, td .cell {
+                padding: 0;
+            }
+        }
+    }
+    .approval-container {
+        .radio {
+            width: 100%;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    // 重置显示条件
+    .show-options .option-item .choice-list {
+        .checkbox,.radio {
+            width: 100%;
+            line-height: 20px;
+            margin-bottom: 14px;
+        }
+    }
+    // 选项列表
+    .options-list {
+        &>li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .icon-delete {
+                width: 14px;
+                height: 14px;
+                color: #5D68E8;
+                margin-left: 10px;
+                &.hidden {
+                    visibility: hidden;
+                }
+            }
+            .ui-select:first-child {
+                width: 0;
+                flex: 1;
+            }
+            .input-wrap {
+                min-width: auto;
+                width: 100%;
+            }
+            .option-data {
+                width: 150px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.config-foot {
+    &:after {
+        content: '';
+        clear: both;
+        width: 0;
+        display: block;
+    }
+    .btns {
+        float: right;
+        .btn {
+            padding: 0;
+            width: 90px;
+            height: 36px;
+            color: #fff;
+            font-size: 14px;
+            background-color: #5D68E8;
+            border-color: #5D68E8;
+            line-height: 36px;
+            &.btn-cancel {
+                margin-right: 10px;
+                border-color: #D5D5DF;
+                color: #474747;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+
+
+
+// 操作区域  进度条
+.operation-area{
+    position: fixed;
+    bottom: 20px;
+    right: 24px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    .toggle{
+        width: 84px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px 0px rgba(168,175,188,0.2);
+        border-radius: 6px;
+        border: 1px solid #F2F3F5;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+    .icon-con{
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        flex-shrink: 0;
+        cursor: pointer;
+        &:hover{
+            background: #F2F3F5;
+        }
+    }
+    .mr12{
+        margin-right: 12px;
+    }
+    .icon{
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+        margin-left: 4px;
+        background-image: url('~@/assets/images/kanban/operation_sprites.png');
+        background-size: 64px 16px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        &.open {
+            background-position: 0 0;
+        }
+        &.fold {
+            background-position: -16px 0;
+        }
+        &.add {
+            background-position: -48px 0;
+        }
+        &.reduce {
+            background-position: -32px 0;
+        }
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        width: 148px;
+        height: 40px;
+        margin-left: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px 0px rgba(168,175,188,0.2);
+        border-radius: 6px;
+        border: 1px solid #F2F3F5;
+        padding: 8px 12px;
+        .dropmenu-container{
+            width: 40px;
+            margin: 0 16px;
+            position: relative;
+            .progress-info{
+                &:hover{
+                    // color: #00BEBD;
+                    .menu-content{
+                        display: block;
+                    }
+                }
+            }
+            .menu-content{
+                width: 80px;
+                height: 120px;
+                overflow: auto;
+                position: absolute;
+                left: -20px;
+                bottom: 35px;
+                background: #FFF;
+                &::-webkit-scrollbar{
+                    width: 4px;
+                    height: 4px;
+                }
+                &>li{
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 13px;
+                    color: #646F79;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #F3F3F3;
+                        color: #151B26;
+                    }
+                        
+                }
+            }
+        }
+    }
+    .progress-container{
+        position: relative;
+        width: 100px;
+        height: 24px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #DCDFE6;
+            left: 0;
+            top: 11px;
+            z-index: 1;
+        }
+        .progress-btn{
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            border: 2px solid #00BEBD;
+            background: #FFF;
+            border-radius: 50%;
+            left: 42px;
+            top: 4px;
+            z-index: 2;
+            // cursor: pointer;
+        }
+    }
+}
+
+// 搜索区
+
+.approval-flow-container .search-content{
+    width: 200px;
+    height: 32px;
+    position: fixed;
+    top: 108px;
+    right: 24px;
+    z-index: 3;
+    .ui-select{
+        width: 200px;
+        .ui-icon-arrow-down{
+            display: none;
+        }
+    }
+    .ui-select-selection{
+        background-color: #F6F7FB;
+    }
+
+}
+
+
+#container {
+    .organization  .page-history-title{
+        display: none;
+    }
+}
+
+.organization-info{
+    padding: 5px 10px;
+    color: #1D2129;
+    font-size: 16px;
+    font-weight: 600;
+    &>span{
+        color: #00A6A7;
+    }
+    position: fixed;
+    left: 25px;
+    top: 108px;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(168,175,188,.2);
+    background: #FFF;
+    border-radius: 10px;
+}

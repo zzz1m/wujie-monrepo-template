@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*toast*/
+.dealSlideRight { overflow:hidden; white-space:nowrap; font-size:0; }
+.dealSlideRight a { display:inline-block!important; font-size:16px; width:259px; vertical-align:top; }
+.dealSlideRight .deal-layer { -webkit-animation: dealSlideRight .25s ease-out; animation: dealSlideRight .25s ease-out;  -webkit-animation-fill-mode:both; animation-fill-mode:both; }
+.dealFadeIn { -webkit-animation: dealFadeIn .4s ease-out; animation: dealFadeIn .4s ease-out; -webkit-animation-fill-mode:both; animation-fill-mode:both; }
+
+@-webkit-keyframes dealSlideRight {
+	0% {
+		width:0px;
+	}
+	100% {
+		width:100%;
+	}
+}
+@keyframes dealSlideRight {
+	0% {
+		width:0px;
+	}
+	100% {
+		width:100%;
+	}
+}
+@-webkit-keyframes dealFadeIn {
+	0% {
+		background-color:rgba(255,255,255,.2);
+	}
+	100% {
+		background-color:rgba(255,255,255,1);
+	}
+}
+
+@keyframes dealFadeIn {
+	0% {
+		background-color:rgba(255,255,255,.2);
+	}
+	100% {
+		background-color:rgba(255,255,255,1);
+	}
+}

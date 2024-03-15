@@ -1,0 +1,73 @@
+@import './icon.css';
+@import './layout.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --z-index-header: 200;
+  --z-index-page-tip: 199;
+}
+
+html {
+  font-family:
+    'PingFang SC',
+    'Lantinghei SC',
+    'Microsoft YaHei',
+    Helvetica Neue,
+    Open Sans,
+    Arial,
+    'Hiragino Sans GB',
+    'HanHei SC',
+    'STHeiti',
+    sans-serif;
+  height: 100%;
+}
+body {
+  @apply h-full min-w-[1200px];
+  font-size: 14px;
+  min-width: 1200px;
+  color: #151b26;
+  overflow-y: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#noah-root {
+  @apply flex h-screen min-w-[960px] flex-col;
+}
+#app-main {
+  @apply flex-1 overflow-auto bg-[#EFF0F4];
+}
+#micro-container {
+  @apply overflow-x-auto;
+}
+#micro-container wujie-app {
+  width: 100%;
+}
+
+@layer components {
+  .page-tip {
+    @apply absolute inset-0 flex items-center justify-center bg-white text-sm text-[#9fa3b0] z-[var(--z-index-page-tip)];
+    .ui-icon-loading {
+      @apply -mt-[2px] mr-[5px] align-middle text-base;
+    }
+    .tip-nodata {
+      @apply mx-auto mb-[5px] h-[232px] w-[204px] bg-no-data bg-center bg-no-repeat;
+    }
+  }
+
+  .btn {
+    @apply inline-block m-0 py-[9px] px-[11px] text-sm leading-[1] bg-white border border-[#e3e7ed] font-normal text-[#151b26] cursor-pointer align-middle text-center rounded-sm transition-[background-color,box-shadow] outline-none select-none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  .show-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,130 @@
+.carousel {
+    position: relative;
+    min-width: 100px;
+}
+
+.carousel:hover .carousel__arrow-hover {
+    opacity: 1;
+}
+
+.carousel .carousel__arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ddd;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    display: none;
+    z-index: 20;
+}
+
+.carousel .carousel__arrow-left {
+    left: 16px;
+}
+
+.carousel .carousel__arrow-right {
+    right: 16px;
+}
+
+.carousel .carousel__arrow-hover {
+    display: inherit;
+    opacity: 0;
+}
+
+.carousel .carousel__arrow-always {
+    display: inherit;
+}
+
+.carousel .carousel__lists {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.carousel .carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.carousel .carousel__item-is-normal {
+    display: none;
+}
+
+.carousel .carousel__item-is-fade {
+    opacity: 0;
+}
+
+.carousel .indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: none;
+}
+
+.carousel .indicator__inside {
+    display: block;
+}
+
+.carousel .indicator__outside {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.carousel .indicators li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: transparent;
+    padding: 12px 4px;
+    cursor: pointer;
+}
+
+.carousel .indicators .indicator__item {
+    border: 0;
+    cursor: pointer;
+    background: #ddd;
+    opacity: 0.3;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.5s;
+}
+
+.carousel .indicators .indicator__active .indicator__item {
+    opacity: 1;
+    width: 24px;
+}
+
+.carousel .indicators .indicator__circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
+
+.carousel .indicators .indicator__active .indicator__circle {
+    opacity: 1;
+    height: 14px;
+    width: 14px;
+    border-radius: 14px;
+}
+
+.carousel .is-animated {
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel .is-actived {
+    z-index: 2;
+    display: block;
+    opacity: 1;
+}

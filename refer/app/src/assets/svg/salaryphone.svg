@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="36px" viewBox="0 0 211 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工资条设置" transform="translate(-1117.000000, -126.000000)">
+            <g id="编组-11" transform="translate(1117.000000, 126.000000)">
+                <path d="M198.965291,15.379655 L197.29973,21.3739523 L197.29973,21.3739523 C194.898175,30.0170703 187.014461,36 178.026969,36 L32.973031,36 C23.9855392,36 16.1018253,30.0170703 13.7002695,21.3739523 L12.0347087,15.379655 C10.8321845,11.0518114 6.89153095,8.05680741 2.39972785,8.05680741 L0,8.05680741 L0,8.05680741 L0,0.3350046 L211,0 L211,8.05680741 L208.600272,8.05680741 C204.108469,8.05680741 200.167815,11.0518114 198.965291,15.379655 Z" id="路径" fill="#4A505F"></path>
+                <rect id="矩形" fill="#FFFFFF" x="84" y="15" width="43" height="8" rx="4"></rect>
+                <rect id="矩形备份-11" fill="#FFFFFF" x="133" y="15" width="8" height="8" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

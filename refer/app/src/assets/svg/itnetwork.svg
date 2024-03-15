@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <defs>
+        <linearGradient x1="13.6573804%" y1="0.841955236%" x2="90.9244792%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFCD3B" offset="0%"></stop>
+            <stop stop-color="#FFA750" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFECC3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IT工单-新" transform="translate(-850.000000, -83.000000)">
+            <g id="编组-6" transform="translate(830.000000, 68.000000)">
+                <g id="编组-5" transform="translate(20.000000, 15.000000)">
+                    <g id="编组-2" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="36" height="36" rx="10"></rect>
+                    </g>
+                    <g id="WIFI" transform="translate(8.000000, 11.000000)" fill="url(#linearGradient-2)">
+                        <path d="M0,4.39125 L1.81875,6.32 C6.33625,1.52625 13.66375,1.52625 18.18125,6.32 L20,4.39125 C14.48125,-1.46375 5.5275,-1.46375 0,4.39125 Z M7.2725,12.10625 L10,15 L12.7275,12.10625 C11.2275,10.50625 8.78125,10.50625 7.2725,12.10625 L7.2725,12.10625 Z M3.6375,8.25 L5.45625,10.17875 C7.965,7.51625 12.0375,7.51625 14.54625,10.17875 L16.36375,8.25 C12.855,4.5275 7.155,4.5275 3.63625,8.25 L3.6375,8.25 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

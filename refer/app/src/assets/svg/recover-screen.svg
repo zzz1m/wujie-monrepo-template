@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #3E3E3E;">
+    <title></title>
+    <g id="ICON/14px/退出全屏" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="" x="0" y="0" width="14" height="14"></rect>
+        <rect id="矩形" stroke="#FFFFFF" x="0.5" y="0.5" width="13" height="13" rx="2"></rect>
+        <g id="编组" transform="translate(4.535534, 9.535534) rotate(-315.000000) translate(-4.535534, -9.535534) translate(2.035534, 7.035534)" stroke="#FFFFFF" stroke-linecap="round">
+            <polyline id="路径" stroke-linejoin="round" transform="translate(2.500000, 2.621320) rotate(-45.000000) translate(-2.500000, -2.621320) " points="1 1.12132034 4 1.12132034 4 4.12132034"></polyline>
+            <line x1="2.5" y1="1" x2="2.5" y2="5" id="直线"></line>
+        </g>
+        <g id="编组备份" transform="translate(9.535534, 4.535534) rotate(-135.000000) translate(-9.535534, -4.535534) translate(7.035534, 2.035534)" stroke="#FFFFFF" stroke-linecap="round">
+            <polyline id="路径" stroke-linejoin="round" transform="translate(2.500000, 2.621320) rotate(-45.000000) translate(-2.500000, -2.621320) " points="1 1.12132034 4 1.12132034 4 4.12132034"></polyline>
+            <line x1="2.5" y1="1" x2="2.5" y2="5" id="直线"></line>
+        </g>
+    </g>
+</svg>

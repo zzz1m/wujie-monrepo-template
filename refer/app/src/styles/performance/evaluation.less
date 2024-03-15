@@ -1,0 +1,224 @@
+// 绩效评价 - 公共业务组件相关
+.page-evaluation-fill {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.block-evaluation-header {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid @border-color-base;
+    padding-top: 15px;
+    &_title {
+        line-height: 36px;
+    }
+    &_user {
+        margin: 15px 0;
+    }
+    .dept-name {
+        margin-left: 20px;
+    }
+}
+.block-evaluation-content {
+    flex:1;
+    display: flex;
+    overflow: auto;
+    padding-bottom: 60px;
+    &-desc {
+        min-width: 300px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    &-viewer {
+        flex: 1;
+    }
+}
+.block-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin: 15px 0;
+    &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        width: 2px;
+        height: 16px;
+        margin-top: -8px;
+        background-color: #1FCBC7;
+    }
+    .result {
+        color: #1FCBC7;
+    }
+}
+.block-evaluation-desc {
+    padding-top: 15px;
+    &-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    &-content {
+        padding-bottom: 24px;
+        padding-left: 20px;
+        max-width: 800px;
+    }
+    .item-label {
+        font-weight: 500;
+    }
+    .item-content {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        white-space: pre-wrap;
+    }
+}
+.block-evaluation-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px 0;
+    z-index: 10;
+}
+.block-evaluation-list {
+    position: relative;
+    padding: 20px;
+    border: 1px solid @border-color-base;
+    margin-top: 30px;
+    &-label {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        padding: 10px;
+        background-color: #fff;
+        font-size: 18px;
+        z-index: 5;
+        transform: translateY(-50%);
+    }
+    &-content {
+        padding-top: 10px;
+    }
+}
+.performance-table-warp {
+    .ui-table {
+        margin: 20px;
+        width: 800px;
+        td {
+            padding: 6px 12px;
+            height: auto;
+            text-align: center;
+        }
+    }
+}
+
+.block-evaluation-item {
+    &-label {
+        color: @primary-color;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .ui-select-dropdown {
+        max-height: 220px;
+    }
+    &-sublabel {
+        font-weight: 600;
+        margin-top: 20px;
+        line-height: 25px;
+        padding-left: 20px;
+        border-bottom: 1px solid @border-color-base;
+    }
+    &-case {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    &-actiontip {
+        color: @gray-color;
+    }
+    .ui-table-pro{
+        width: 800px;
+        margin: 20px;
+
+        td {
+            height: auto;
+            padding: 8px 0;
+            font-size: 13px;
+        }
+    }
+    .ui-table {
+        margin: 20px;
+        width: 800px;
+        td {
+            padding: 6px 12px;
+            height: auto;
+        }
+        td:first-of-type {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    .input-wrap-textarea {
+        min-width: 700px;
+    }
+    .form-item {
+        position: relative;
+    }
+    .error-txt {
+        position: absolute;
+        bottom: -30px;
+        font-size: 12px;
+    }
+}
+
+
+// 绩效评价填写页面
+.page-evaluation-fill {
+    .kpi-result {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .evaluation-list-result {
+        position: relative;
+        border-top: 1px solid @border-color-base;
+        margin: 0 -20px;
+        padding: 20px;
+        padding-bottom: 0;
+        font-weight: bold;
+        &:before{
+            position: absolute;
+            content: '';
+            left: 20px;
+            top: 22px;
+            width: 2px;
+            height: 16px;
+            background-color: #1FCBC7;
+        }
+        span {
+            color: #1FCBC7;
+        }    
+    }
+    .evaluation-tabs {
+        position: sticky;
+        top: 66px;
+        z-index: 10;
+        padding-top: 20px;
+        background-color: #fff;
+        .ui-tab-header {
+            display: inline-block;
+            border-bottom: 1px solid #e7eaec;
+            border-right: 1px solid #e7eaec;
+        }
+        .ui-tab-content { display: none; }
+    }
+}
+
+// 绩效评价详情页面
+.page-evaluation-detail {
+    width: 1180px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+

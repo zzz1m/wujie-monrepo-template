@@ -1,0 +1,130 @@
+// 绩效管理 评价关系管理
+
+.performance-setting {
+    padding-bottom: 0;
+    .btn-defailt {
+        vertical-align: middle;
+        padding: 0 15px;
+        line-height: 34px;
+        height: 34px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .search-panel {
+        margin-top: 20px;
+        font-size: 13px;
+
+        .search-item {
+            display: inline-block;
+            vertical-align: middle;
+
+            &+.search-item {
+                margin-left: 10px;
+            }
+        }
+
+        .btn:last-of-type {
+            margin-right: 0;
+        }
+
+        .btn {
+            vertical-align: middle;
+            padding: 0 15px;
+            line-height: 28px;
+            height: 34px;
+            font-size: 13px;
+            margin-right: 10px;
+        }
+        
+        .input {
+            min-width: auto;
+            // width: 130px;
+            padding: 2px 7px;
+            height: 34px;
+            background-color: #fff;
+            vertical-align: middle;
+            font-size: 13px;
+        }
+
+        .search-item-select {
+            width: 350px; 
+        }
+
+
+    }
+
+    .operation-warp {
+        overflow: hidden;
+
+        .right {
+            float: right;
+        }
+    }
+
+    .data-list {
+        .operation {
+            margin: 3px 5px;
+            color: #fff;
+        }
+
+        .evaluation-table {
+            overflow: visible;
+
+            .ui-table-body-wrapper {
+                overflow: inherit;
+                .cell {
+                    overflow: inherit;
+                    .ui-dropmenu-label {
+                        padding: 6px;
+                        .ui-icon-arrow-down {
+                            display: none;
+                        }
+                    }
+
+                    .ui-dropmenu-list {
+                        right: 50%;
+                        transform: translateX(50%);
+
+                        &:before {
+                            left: auto;
+                            right: 60px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-nodata .data-tips{
+            height: calc(~'100vh - 268px');
+        }
+    }
+
+    .column-operate-btn {
+        cursor: pointer;
+        color: #00CFC5;
+        font-weight: 700;
+
+        &:hover {
+           color: @link-primary-hover-color;
+        }
+    }
+}
+
+
+.dialog-create-performance-warp {
+    .dialog-container {
+        top: -100px;
+    }
+    .ui-date-editor-datetime {
+        min-width: 240px;
+    }
+}
+.cooperation-email-page {
+    .data-search {
+        padding-top: 0;
+    }
+    .search-item {
+        margin-top: 10px;
+    }
+}

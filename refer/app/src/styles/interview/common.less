@@ -1,0 +1,1633 @@
+
+// 访谈模板弹框样式
+.dialog-interview-set {
+    .dialog-body {
+        // .ui-date-editor {
+        //     .input[readonly], .input[readonly]:hover, .input[readonly]:focus, .input[disabled], .input[disabled]:hover, .input[disabled]:focus {
+        //         background-color: #f6f7fb;
+        //         border-color: #f6f7fb;
+        //         cursor: auto;
+        //         box-shadow: none;
+        //     }
+        // }
+
+        .v-select.select-email .vs__dropdown-toggle {
+            padding: 2px 0 3px 0;
+            margin-top: 1px;
+        }
+    }
+}
+.interview-template-dialog {
+    z-index: 200;
+    .dialog-container {
+        width: 1000px;
+        padding: 0;
+    }
+    &.interview-small-padding-dialog {
+        .dialog-header {
+            padding: 30px 30px 10px 30px;
+        }
+    }
+    .dialog-header {
+        padding: 50px 30px 30px;
+        h3.title {
+            font-size:28px;
+            
+            font-weight:500;
+            color:rgba(21,27,38,1);
+            line-height:40px;
+        }
+        .close {
+            top: 30px;
+            right: -34px;
+            background: rgba(193,193,193,1);
+            border-radius: 50%;
+        }
+        .icon-close:before,.icon-close:after {
+            background:rgba(0, 0, 0, 0.6);
+        }
+    }
+    .dialog-body {
+        padding-bottom: 74px;
+        position: relative;
+        overflow: hidden;
+        min-height: 200px;
+        .dialog-content {
+            padding: 0 30px 30px;
+            min-height: 200px;
+            // overflow: visible;
+            overflow: auto;
+            overflow-x: hidden;
+            max-height: calc(~"100vh - 250px");
+            .test {
+                height: 2000px;
+            }
+        }
+        .footer-btns {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 74px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(227,231,237,1);
+            background: #fff;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            .btn {
+                min-width: 90px;
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+            .btn-outline[disabled] {
+                &:hover {
+                    background: inherit;
+                }
+            }
+        }
+
+        .no-template {
+            padding: 0px 30px 30px;
+            font-size: 14px;
+        }
+    }
+    .mr-l-20 {
+        margin-left: 20px;
+    }
+
+    .add-btn-small {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        i.icon {
+            
+            width: 14px;
+            height: 14px;
+            background: url('@/assets/images/interview/del-icon.png') no-repeat center;
+            background-size: 14px;
+            margin-right: 8px;
+        }
+
+        i.ui-icon-circle-plus-outline {
+
+            font-size: 15px;
+            position: relative;
+            top: 1px;
+            color:#5DD5C8;
+        }
+        span {
+            font-size:13px;
+            
+            font-weight:400;
+            color:#37C2BC;
+            line-height:18px;
+            margin-left: 2px;
+        }
+    }
+
+    .add-btn-big {
+        min-width: 108px;
+        height:34px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background:rgba(93,213,200,1);
+        border-radius:2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            font-size: 15px;
+            color: #fff;
+        }
+        span {
+            font-size:14px;
+            
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:20px;
+            margin-left: 3px;
+        }
+        &.outline {
+            border: 1px solid #37C2BC;
+            background:#fff;
+            i {
+                color: #5DD5C8;
+            }
+            span {
+                color: #37C2BC;
+            }
+        }
+    }
+
+    .del-icon {
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        // font-size: 15px;
+        // color:rgba(55,194,188,1);
+        cursor: pointer;
+        background: url('@/assets/images/interview/del-icon.png') no-repeat center;
+        background-size: 14px;
+
+    }
+
+    .section-two {
+        margin-bottom: 20px;
+        .add-role-box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto 30px;
+        }
+    }
+
+    .leave-section {
+        margin-bottom: 20px;
+    }
+
+    //// 模板提示样式
+    
+    .interview-temp-warning {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color:rgba(251,75,83,1);
+        &.select-warning {
+            bottom: -24px;
+        }
+        i {
+            font-size: 12px;
+        }
+        span {
+            margin-left: 4px;
+            font-size:12px;
+            
+            font-weight:400;
+            line-height:17px;
+        }
+    }
+}
+
+// 访谈模板控件样式
+.interview-template-form {
+    
+    
+    .row-12 {
+        width: 100%;
+    }
+    // .input:-ms-input-placeholder{ 
+    //     color: #d1d4db; 
+    // }
+
+    .input[disabled] {
+        // border-color: #E2E7ED;
+        // background: #F8F9FB;
+        // color: #24272E;
+    }
+    &.base-controls {
+        min-width: 934px;
+        ///// 表格样式
+        table,tr,td {
+            border:1px solid rgba(238,238,238,1);
+        }
+        .border-top-none {
+            margin-top: -1px;
+        }
+        .temp-table {
+            // margin-bottom: 20px;
+            .title {
+                width: 66px;
+                min-width: 66px;
+                font-size:14px;
+                
+                font-weight:400;
+                color:rgba(22,27,38,1);
+                line-height:20px;
+                padding:10px 18px;
+            }
+            .cont {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .desc {
+                font-size:14px;
+                
+                font-weight:400;
+                color:rgba(100,111,121,1);
+                line-height:20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                .desc-detail {
+                    display: flex;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    span:first-child {
+                        white-space: nowrap;
+                    }
+                }
+                .value {
+                    color:rgba(22,27,38,1);
+                    margin-right: 20px;
+                }
+            }
+            .bg-gray {
+                background:rgba(250,250,251,1);
+            }
+            .align-top {
+                vertical-align: top;
+            }
+            
+        }
+        // 
+        .inner-item-width {
+            // margin-left: 66px;
+            // width:calc(~"100% - 66px");
+            width:100%;
+            .cont {
+                max-width: 801px;
+            }
+        }
+        .inner-item-label {
+            font-size:15px;
+            
+            font-weight:500;
+            color:rgba(22,27,38,1);
+            line-height:22px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .opts-box {
+            padding: 15px;
+        }
+        .opt-table {
+            width: 100%;
+            td {
+                width: 50%;
+                font-size:14px;
+                
+                font-weight:400;
+                line-height:20px;
+                padding: 10px 28px;
+            }
+            .opt-label {
+                color:rgba(22,27,38,1);
+            }
+            .opt-desc {
+                color:rgba(100,111,121,1);
+            }
+            .mr-t-8 {
+                margin-top: 8px;
+            }
+        }
+       
+
+
+
+        ///// 离职部分
+        // 基本情况
+        .base-info {
+            padding-left: 40px;
+            color:rgba(33,33,33,1);
+            h2 {
+                font-size:20px;
+                font-weight:500;
+                color:rgba(33,33,33,1);
+                line-height:28px;
+                margin-bottom: 30px;
+            }
+            .opts-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 12px;
+                li {
+                    width: 170px;
+                    margin-bottom: 23px;
+                    &.disbled {
+                        .checkbox-checked {
+                            .checkbox-inner {
+                                border-color: rgba(216,216,216,1);
+                            }
+                            .checkbox-edging {
+                                background-color:rgba(216,216,216,1);
+                            }
+                            
+                        }
+                    }
+                   
+                    span.txt {
+                        font-size:14px;
+                        font-weight:400;
+                        line-height:20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        // 列表问题
+        .list-input {
+            width: 100%;
+            .label {
+                font-size:16px;
+                
+                font-weight:500;
+                color:rgba(22,27,38,1);
+                line-height:22px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+        }
+
+        // 问答
+        .answer-input {
+        }
+
+        // 单选
+        .radio-select {
+        }
+
+
+        // 多选
+        .checkbox-select {
+
+        }
+
+        // 段落标题
+        .section-input {
+            width: 100%;
+            .label {
+                font-size:15px;
+                
+                font-weight:500;
+                color:rgba(22,27,38,1);
+                line-height:21px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        // 矩阵问答
+        .matrix-input {
+            .matrix-opts-table {
+                // border-color: transparent;
+                width: calc(~'100% + 2px');
+                margin: -1px;
+                
+                .border-bottom {
+                    border-bottom-color: rgba(238,238,238,1); 
+                }
+            }
+        }
+
+        // 评分
+        .grade-select {
+            .intro-table {
+                td {
+                    padding: 20px 22px;
+                    font-size:14px;
+                    
+                    font-weight:400;
+                    color:rgba(141,146,161,1);
+                    line-height:20px;
+                    .font-bold {
+                        font-weight: bold;
+                    }
+                    .mr-t-8 {
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .opts-table {
+                .title {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .item-desc {
+                    padding-top: 20px;
+                }
+                .item-info {
+                    padding: 20px;
+                    font-size:14px;
+                    
+                    font-weight:400;
+                    color:rgba(22,27,38,1);
+                    line-height:20px;
+                    
+                }
+                .mr-t-20 {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+
+        ////// 首次访谈...部分
+        // 群组标题
+        .section-part {
+            display: flex;
+            align-items: center;
+            margin-bottom: 13px;
+            .num {
+                font-size:36px;
+                font-family:DINAlternate-Bold,DINAlternate;
+                font-weight:bold;
+                color:rgba(55,194,188,1);
+                line-height:42px;
+            }
+            h2 {
+                margin-left: 22px;
+                font-size:20px;
+                
+                font-weight:500;
+                color:rgba(33,33,33,1);
+                line-height:28px;
+            }
+        }
+        // 系统字段
+        .system-field {
+            padding-left: 40px;
+            color:rgba(33,33,33,1);
+            h2 {
+                font-size:16px;
+                
+                font-weight:500;
+                line-height:22px;
+                margin-bottom: 22px;
+            }
+            .field-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 12px;
+                li {
+                    width: 178px;
+                    margin-bottom: 23px;
+                    &.disbled {
+                        .checkbox-checked {
+                            .checkbox-inner {
+                                border-color: rgba(216,216,216,1);
+                            }
+                            .checkbox-edging {
+                                background-color:rgba(216,216,216,1);
+                            }
+                            
+                        }
+                    }
+                    span.txt {
+                        font-size:14px;
+                        font-weight:400;
+                        line-height:20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        // 自定义字段
+        .self-field {
+            margin-bottom: 20px;
+            .field-input-list {
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin: 22px 0px;
+                    .name {
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+                    .temp-ui-input {
+                        width: 764px;
+                        position: relative;
+                        .input-wrap {
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        // 角色
+        .role-part {
+            margin-left: 40px;
+            width: 900px;
+            padding: 30px 40px 30px 30px;
+            border-radius:2px;
+            border:1px solid rgba(227,231,237,1);
+            margin-bottom: 10px;
+            .role-txt {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .label {
+                    font-size:16px;
+                    
+                    font-weight:500;
+                    color:rgba(22,27,38,1);
+                    line-height:22px;
+                    margin-right: 12px;
+                }
+            }
+            .radio-box {
+                // display: flex;
+                // align-items: center;
+                // margin-bottom: 30px;
+                // .label {
+                //     width: 70px;
+                //     font-size:14px;
+                    
+                //     font-weight:500;
+                //     color:rgba(33,33,33,1);
+                //     line-height:20px;
+                // }
+                // .radio-disabled {
+                //     .radio-input {
+                //         cursor: default;
+                //     }
+                //     &:hover {
+                //         .radio-inner {
+                //             border-color: #e3e7ed;
+                //         }
+                       
+                //     }
+                //     .radio-inner {
+                //         &:hover {
+                //             border-color: #e3e7ed;
+                //         }
+                //     }
+                // }
+                // .radio-inner {
+                //     margin-right: 12px;
+                // }
+            }
+
+            .quest-box {
+                padding-left: 70px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .temp-ui-input {
+                        position: relative;
+                        flex: 1;
+                        .input-wrap {
+                            width: 100%;
+                            font-size: 0;
+                            color: #fff;
+                            overflow: hidden; // 解决firefox会出现黑边问题
+                        }
+                        label {
+                            overflow: hidden;
+                            font-size: 0;
+                            color: #fff;
+                        }
+                    }
+                    
+                    .label {
+                        width: 32px;
+                        font-size:16px;
+                        
+                        font-weight:500;
+                        color:rgba(33,33,33,1);
+                        line-height:22px;
+                        &.small {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .children-list {
+                    margin-left: 16px;
+                }
+                .add-btn-small {
+                    margin-bottom: 30px;
+                }
+
+                .quest-btn {
+                    display: flex;
+                    align-items: center;
+                    .add-btn-big {
+                        margin-right: 20px;
+                    }
+                }
+
+                
+                
+            }
+        }
+    }
+
+
+    ////// 报告模板
+    &.order-controls {
+
+
+       
+
+        //// 首次访谈...部分
+        // 系统字段
+        .system-field {
+            display: flex;
+            flex-wrap: wrap;
+            width: 940px;
+            margin-bottom: 4px;
+            li {
+                margin-bottom: 20px;
+                &.mr-r-30 {
+                    margin-right: 30px;
+                }
+                .label {
+                    font-size:13px;
+                    
+                    font-weight:400;
+                    color:rgba(100,111,121,1);
+                    line-height:18px;
+                    margin-bottom: 10px;
+                }
+                .input-wrap {
+                    width: 290px;
+                    min-width: 290px;
+                }
+
+                .item {
+                    cursor: not-allowed;
+                    padding: 0px 8px;
+                    width:290px;
+                    height:32px;
+                    line-height: 32px;
+                    background:#F8F9FB;
+                    border-radius:2px;
+                    // border:1px solid #E3E4ED;
+                    font-size:14px;
+                    
+                    font-weight:400;
+                    color:#24272E;
+                }
+            }
+            .row-12 {
+                // .label {
+                //     font-size: 16px;
+                //     font-weight: 500;
+                //     color: #212121;
+                // }
+               
+                .item {
+                    min-height: 102px;
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+        // 自定义字段
+        .self-field {
+            padding-bottom: 16px;
+            li {
+                margin-bottom: 24px;
+                .label {
+                    font-size:16px;
+                    
+                    font-weight:500;
+                    color:rgba(33,33,33,1);
+                    line-height:20px;
+                    margin-bottom: 14px;
+                }
+                .temp-ui-input {
+                    width: 940px;
+                    position: relative;
+                    
+                    .input-wrap {
+                        width: 100%;
+                    }
+                }
+            }
+
+            textarea.input {
+                min-height: 100px !important;
+            }
+        }
+
+        // 角色模块
+        .role-part {
+            width: 940px;
+            padding: 24px 30px 0px 30px;
+            border-radius:2px;
+            border:1px solid rgba(227,231,237,1);
+            margin-bottom: 10px;
+            position: relative;
+
+            textarea.input {
+                min-height: 100px !important;
+            }
+
+
+            // 访谈意见
+            &.section-three {
+                padding: 0px;
+                border: none;
+                .temp-ui-input {
+                    width: 100% !important;
+                }
+            }
+            .role-box {
+                display: flex;
+                margin-bottom: 30px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 40px;
+                    .label {
+                        font-size:14px;
+                        
+                        font-weight:500;
+                        color:rgba(33,33,33,1);
+                        line-height:20px;
+                        margin-right: 8px;
+                    }
+                    .input-wrap {
+                        width: 290px;
+                        min-width: 290px;
+                    }
+
+                    
+                    .v-select {
+                        width: 290px;
+                        input::-webkit-input-placeholder{
+                            color: #ccc;
+                        }
+
+                        &.is-ie {
+                            .vs__open-indicator {
+                                width: 24px;
+                            }
+                        }
+
+                        &.warning-border {
+                            .vs__dropdown-toggle {
+                                border-color: #ed3f14;
+                            }
+                        }
+                    }
+
+                }
+                .del-btn {
+                    position: absolute;
+                    right: 20px;
+                    top: 30px;
+                    i {
+                        width: 14px;
+                        height: 14px;
+                        background: url('@/assets/images/interview/del-icon.png') no-repeat center;
+                        background-size: 14px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .temp-picker-ui {
+                position: relative;
+
+                .vs__dropdown-option {
+                    white-space: initial;
+                }
+            }
+
+            .quest-box {
+                
+                .item {
+                    display: flex;
+                    h2 {
+                        font-size:16px;
+                        font-weight:500;
+                        color:rgba(22,27,38,1);
+                        line-height:22px;
+                        &.small {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    .label {
+                        width: 40px;
+                        height:22px;
+                        font-size:16px;
+                        font-weight:500;
+                        color:rgba(33,33,33,1);
+                        line-height:22px;
+                        &.small {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .children-list {
+                    margin: 14px 0px 30px 40px;
+                }
+                .temp-ui-input {
+                    width: 840px;
+                    position: relative;
+                    margin-top: 14px;
+                    margin-bottom: 24px;
+                    .input-wrap {
+                        width: 100%;
+                    }
+                    
+                }
+
+
+                
+            }
+        }
+
+        // 评估建议
+        .judge-box {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+            .label {
+                font-size:14px;
+                
+                font-weight:500;
+                color:rgba(33,33,33,1);
+                line-height:20px;
+                white-space: nowrap;
+            }
+            .judge-radio {
+                position: relative;
+            }
+            .judge-date {
+                position: relative;
+            }
+            .radio {
+                // font-size:14px;
+                
+                // font-weight:400;
+                // color:rgba(33,33,33,1);
+                // line-height:20px;
+            }
+
+            // .radio-disabled {
+            //     .radio-input {
+            //         cursor: default;
+            //     }
+            //     &:hover {
+            //         .radio-inner {
+            //             border-color: #e3e7ed;
+            //         }
+                   
+            //     }
+            //     .radio-inner {
+            //         &:hover {
+            //             border-color: #e3e7ed;
+            //         }
+            //     }
+            // }
+
+
+            &.judge-upload {
+                align-items: flex-start;
+            }
+
+            &.judge-suggestDesc {
+                align-items: flex-start;
+                .input-wrap {
+                    width:100%;
+                }
+            }
+
+
+            .upload-item {
+                position: relative;
+                flex: 1;
+                .upload-styl {
+                    ul.show {
+                        display: flex;
+                        flex-wrap: wrap;
+                        li {
+                            width: 48%;
+                            margin-right:2%;
+                            display: flex;
+                            margin-bottom: 10px;
+                            a {
+                                max-width: 170px;
+                                width: auto;
+                            }
+                        }
+                    }
+                    .tip {
+                        font-size: 13px;
+                    }
+                    .total-size {
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+        }
+
+
+
+        //// 离职模板...
+        // 公共样式
+        .common-styl {
+            .title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 14px;
+                .num {
+                    font-size:26px;
+                    font-family:DINAlternate-Bold,DINAlternate;
+                    font-weight:bold;
+                    color:rgba(93,213,200,1);
+                    line-height:30px;
+                }
+                h2 {
+                    margin-left: 12px;
+                    font-size:16px;
+                    
+                    font-weight:500;
+                    color:rgba(33,33,33,1);
+                    line-height:20px;
+                }
+            }
+            .interview-temp-warning-box {
+                position: relative;
+                margin-bottom: 30px;
+                .input-wrap {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                }
+            }
+
+            // 必填
+            .required {
+                .input-wrap {
+                    &::before {
+                        position: absolute ;
+                        top: 0px;
+                        left: -12px;
+                        content: "*";
+                        display: inline-block;
+                        margin-right: 4px;
+                        font-size: 12px;
+                        color: #ed3f14;
+                    }
+                }
+            }
+            
+        }
+        // 列表问题
+        .list-input {
+            width:1000px;
+            margin-left: -30px;
+            margin-bottom: 26px;
+            height:74px;
+            background:linear-gradient(0deg,rgba(255,255,255,1) 0%,#F7F8FA 100%);
+            padding-left: 30px;
+            padding-top: 30px;
+            h2 {
+                font-size:24px;
+                
+                font-weight:400;
+                color:rgba(33,33,33,1);
+                line-height:33px;
+            }
+        }
+
+        // 问答
+        .answer-input {
+            width: 100%;
+            padding-left: 10px;
+            .content {
+                padding-left: 30px;
+            }
+        }
+
+        // 单选
+        .radio-select {
+            margin-bottom: 30px;
+            padding-left: 10px;
+            .content-box {
+                padding-top: 6px;
+                padding-left: 30px;
+                .radio {
+                    font-size:14px;
+                    
+                    font-weight:400;
+                    color:rgba(33,33,33,1);
+                    line-height:20px;
+                }
+                .radio-inner {
+                    margin-right: 10px;
+                }
+                .options-item {
+                    margin-bottom: 24px;
+                    .interview-temp-warning-box {
+                        margin-top: 14px;
+                        margin-bottom: 0px;
+                    }
+                }
+                
+            }
+        }
+
+        // 多选
+        .checkbox-select {
+            margin-bottom: 30px;
+            padding-left: 10px;
+            .content-box {
+                padding-top: 6px;
+                padding-left: 30px;
+                .checkbox {
+                    font-size:14px;
+                    
+                    font-weight:400;
+                    color:rgba(33,33,33,1);
+                    line-height:20px;
+                }
+                .checkbox-inner {
+                    margin-right: 10px;
+                }
+                .options-item {
+                    margin-bottom: 24px;
+                    .interview-temp-warning-box {
+                        margin-top: 14px;
+                        margin-bottom: 0px;
+                    }
+                }
+                
+            }
+        }
+
+        // 段落标题
+        .section-input {
+            padding-left: 10px;
+            padding-top: 20px;
+            margin-bottom: 26px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            h2 {
+                font-size:20px;
+                
+                font-weight:500;
+                color:rgba(33,33,33,1);
+                line-height:28px;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            b {
+                height:6px;
+                background:rgba(227,231,237,0.3);
+                &.before {
+                    width: 18px;
+                }
+                &.after {
+                    flex:1;
+                }
+            }
+        }
+
+        // 矩阵问答
+        .matrix-input {
+            padding-left: 10px;
+            .title {
+                margin-bottom: 24px;
+            }
+            .children {
+                padding-left: 30px;
+            }
+            .sub-title {
+                font-size:14px;
+                
+                font-weight:500;
+                color:rgba(33,33,33,1);
+                line-height:20px;
+                margin-bottom: 14px;
+            }
+            .interview-temp-warning-box {
+                margin-bottom: 24px;
+            }
+        }
+
+        // 评分
+        .grade-select {
+            padding-left: 10px;
+            margin-bottom: 30px;
+            .grade-intro {
+                font-size:14px;
+                
+                font-weight:400;
+                color:rgba(159,163,176,1);
+                line-height:20px;
+                margin-bottom: 25px;
+                .desc {
+                    font-weight:500;
+                    color:rgba(33,33,33,1);
+                }
+                p {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .grade-children {
+                .options {
+                    padding-left: 30px;
+                    .item {
+                        font-size:14px;
+                        
+                        font-weight:400;
+                        color:rgba(33,33,33,1);
+                        line-height:20px;
+                        margin-bottom: 24px;
+                    }
+                    .click-btns {
+                        display: flex;
+                        align-items: center;
+                        span {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 40px;
+                            margin-right: 16px;
+                            font-size:20px;
+                            font-family:DINAlternate-Bold,DINAlternate;
+                            font-weight:bold;
+                            color:rgba(128,128,128,1);
+                            background: #fff;
+                            border:1px solid rgba(216,216,216,1);
+                            cursor: pointer;
+                            &.no-disabled {
+                                &:hover {
+                                    border:1px solid rgba(93,213,200,1);
+                                    color: rgba(93,213,200,1);
+                                }
+                            }
+                            &.active {
+                                color: #fff;
+                                background: rgba(93,213,200,1);
+                                border:1px solid rgba(93,213,200,1);
+                            }
+                        }
+                    }
+                    .interview-temp-warning-box {
+                        margin-bottom: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 添加角色弹窗
+.choose-role-dialog {
+    .dialog-header {
+        h3 {
+            font-size:18px;
+            font-family:PingFangSC-Semibold,PingFang SC;
+            font-weight:600;
+            color:rgba(22,27,38,1);
+            line-height:25px;
+        }
+    }
+    .dialog-body {
+        padding-top: 30px;
+        width: 380px;
+        height: 260px;
+        ::v-deep .ui-select-dropdown {
+            border-right: 1px solid rgba(0,0,0,0.08);
+        }
+    }
+    .select-box {
+        display: flex;
+        align-items: center;
+        .label {
+            font-size:13px;
+            
+            font-weight:400;
+            color:rgba(100,111,121,1);
+            line-height:18px;
+            width: 80px;
+        }
+    }
+
+    // 驳回
+    &.email-reject-dialog {
+
+
+        // .input:-ms-input-placeholder{ 
+        //     color: #d1d4db; 
+        // }
+    
+        .dialog-body {
+            padding-top: 20px;
+            height: 120px;
+        }
+        .reject-box {
+            padding-left: 12px;
+            .label {
+                position: relative;
+                font-size: 12px;
+                &::before {
+                    position: absolute ;
+                    top: 1px;
+                    left: -8px;
+                    content: "*";
+                    display: inline-block;
+                    margin-right: 4px;
+                    font-size: 12px;
+                    color: #ed3f14;
+                }
+            }
+            .input-wrap-textarea {
+                width: 100%;
+                min-width: 100%;
+            }
+            .input-wrap {
+                margin-top: 10px;
+                width: 100%;
+                min-width: 100%;
+            }
+        }
+    }
+    
+}
+
+
+/// 访谈报告预览
+.interview-temp-preview {
+    width: 940px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(238,240,245,1);
+    padding: 10px;
+}
+
+.data-list.my-order table td {
+    padding: 0;
+}
+.adjust-table-cell{
+    .ui-table-pro{
+        .cell{
+            overflow: unset;
+        }
+    }
+}
+
+
+// 新模板弹窗
+.interview-temp-dialog {
+    .dialog-container {
+        padding: 0 24px 72px;
+    }
+
+    .dialog-body {
+        padding-right: 24px;
+        margin-right: -24px;
+    }
+    .dialog-header {
+        margin-bottom: 12px;
+    }
+    .dialog-header h3.title {
+        line-height: 56px;
+        font-size: 18px;
+    }
+
+    .dialog-footer {
+        margin-top: 20px;
+    }
+
+    .footer-btns {
+        text-align: right;
+        .btn+.btn {
+            margin-left: 10px;
+        }
+    }
+
+    .tmp-form .tmp-group-interview .interview-item-content .ui-select, .tmp-form .tmp-group-interview .interview-item-content .ui-date-editor {
+        width: 300px;
+    }
+}
+
+
+// 访谈评估表    
+.interview-temp-preview-dialog .dialog-body{
+    padding-right: 24px;
+    margin-right: -24px;
+    max-height: calc(~'100vh - 148px');
+}
+.interview-temp-preview-dialog .dialog-container {
+    padding: 40px 25px;
+}
+.interview-temp-preview-dialog .dialog-footer {
+    text-align: right;
+}
+.interview-temp-preview-dialog .preview-title {
+    font-family: PingFangSC-Semibold, PingFang SC;
+    height: 72px;
+    line-height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #e5e6eb;
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #13141A;
+    text-align: center;
+    width: 944px;
+}
+
+.template-preview {
+    font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", Helvetica Neue, Open Sans, Arial, "Hiragino Sans GB", "HanHei SC", "STHeiti", sans-serif;
+    border: 1px solid #e5e6eb;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    width: 944px;
+}
+.template-preview  .div, .template-preview li, .template-preview input, .template-preview label {
+    cursor: default !important;
+}
+.template-preview  .tmp-form .tmp-group-interview .tmp-group-interview-content {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+.template-preview .tmp-columns .tmp-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.template-preview .tmp-columns .tmp-form-item {
+    position: relative;
+    border-top: none;
+}
+
+.template-preview .tmp-columns .tmp-form-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 950px;
+    content: '';
+    display: block;
+    background: #e5e6eb;
+    height: 1px;
+    z-index:1;
+}
+.template-preview .tmp-columns .tmp-form-item::after {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    content: '';
+    display: block;
+    background: #e5e6eb;
+    height: 100%;
+}
+.template-preview .tmp-form .tmp-form-item {
+    margin-bottom: 0;
+}
+.template-preview .tmp-form .tmp-form-item.tmp-form-type-columns {
+    // padding: 0;
+}
+
+.template-preview .tmp-fill .tmp-form-item-content {
+    white-space: pre-line;
+}
+
+.template-preview .tmp-form-item-content {
+    padding-right: 12px;
+}
+
+.template-preview .tmp-form-item {
+    position: relative;
+    padding: 24px 0;
+}
+.template-preview .tmp-form-item.tmp-form-type-group-interview {
+    padding: 0;
+}
+.template-preview .tmp-form-type-group-interview .interview-item-title, .template-preview .tmp-form-type-group-interview .interview-item-content{
+    padding: 10px 0;
+}
+.template-preview .tmp-group-interview-content {
+    
+}
+.b-t {
+    position: relative;
+}
+.template-preview .tmp-form-item:before, .b-t:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 950px;
+    content: '';
+    display: block;
+    background: #e5e6eb;
+    height: 1px;
+    z-index:1;
+}
+
+.template-preview .temp-relation-interview-single, .template-preview .tmp-relation-multiple {
+    
+}
+.template-preview .tmp-form-item.tmp-form-type-columns {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.template-preview .tmp-form-item.tmp-form-type-columns:before {
+    display: none;
+}
+.template-preview .interview-item {
+    width: 50%;
+    position: relative;;
+}
+.template-preview .b-r:after {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    content: '';
+    display: block;
+    background: #e5e6eb;
+    height: 100%;
+    z-index:1;
+}
+.template-preview .tmp-form .tmp-group-interview .interview-item + .interview-item {
+    margin-left: 0;
+}
+.template-preview .ui-table td, .template-preview .ui-table th{
+    padding: 3px 12px;
+}
+
+.template-preview .ui-table td, .template-preview .ui-table th {
+    height: 40px;
+}
+.template-preview  .ui-table thead tr :hover {
+    background-color: #F2f3f5;
+}
+
+.template-preview .tmp-form-type-remark {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1D2129;
+    line-height: 26px;
+    background: #F7F8FA;
+    padding: 0;
+}
+.template-preview .tmp-form-type-remark .tmp-form-item-sort {
+    display: none;
+}
+.template-preview  .tmp-form .tmp-form-type-remark {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.template-preview .tmp-form-type-remark .tmp-form-item-title {
+    margin-bottom: 0;
+}
+.template-preview .tmp-form-type-remark .tmp-form-item-wrapper {
+    margin-bottom: 0;
+}
+.template-preview .tmp-form .tmp-group-interview-evaluation {
+    margin-top: 0;
+}
+
+.template-preview .tmp-form .score-list>li:hover {
+    border-color: #E5E6EB;
+    color: #151B26;
+}
+.template-preview .tmp-form .score-list>li.acitve:hover { 
+    color: #00BEBD;
+    border-color: #00BEBD;
+}
+
+// 新增套件样式
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-title {
+    display: flex;
+    background-color: #F6F7FB;
+    border-top: 1px solid #e5e6eb;
+}
+.template-preview .tmp-form .tmp-group-interview  .target-info-no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: #8B8E99;
+}
+.template-preview .tmp-group-interview-target-wrapper {
+    display: inline;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-title > div {
+    display: inline-flex;
+    padding: 10px 0px 10px 10px;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content {
+    display: flex;
+    border-top: 1px solid #E5E6EB;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result-item .target-result-content + div {
+    border-left: 1px solid #E5E6EB;
+}
+
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content div.target-result {
+    padding: 0;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-main-title, .template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result {
+    padding: 10px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-title {
+    font-size: 14px;
+    color: #00A6A7;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-content {
+    color: #1D2129;
+    line-height: 20px;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result-item {
+    display: flex;
+    padding: 0;
+    flex:1;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result-item .target-result-content {
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-main-title + div, .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result + div {
+    border-left: 1px solid #E5E6EB;
+}
+.template-preview .tmp-form .tmp-group-interview .tmp-group-interview-target-content .target-result > div + div {
+    border-top: 1px solid #E5E6EB;
+}
+
+
+.template-preview .radio, .template-preview .checkbox {
+    pointer-events: none;
+}
+.dialog-interview-my-created {
+    .interview-reporter.vs--disabled {
+        .vs__dropdown-toggle {
+            min-height: 31px;
+            font-size: 14px;
+        }
+        .vs__search {
+            display: none;
+        }
+        .vs__selected {
+            font-size: 14px;
+        }
+        button.vs__deselect {
+            display: none;
+        }
+    }
+    
+    margin-top: 3px;
+}

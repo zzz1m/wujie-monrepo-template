@@ -1,0 +1,23 @@
+.progress-box {
+    height: 10px;
+    background: #ededed;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.upload-file-info {
+    display: flex;
+}
+.upload-file-info .change-file {
+    width: 60px;
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    color: #0d98ff;
+}
+.upload-file-info .file-name {
+    flex: 1;
+}
+.upload-input {
+    display: none;
+}

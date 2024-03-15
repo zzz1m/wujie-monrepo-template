@@ -1,0 +1,59 @@
+.top-tip {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    i.ui-icon-warning {
+       font-size: 20px;
+       color:rgba(253,209,58,1);
+    }
+}
+
+.total-data {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+    li {
+        padding: 24px 30px;
+        color: #fff;
+        width: 256px;
+        height: 121px;
+        margin-right: 40px;
+        &.click {
+            background: url(@/assets/images/recommend/click-bg.png) center no-repeat;
+            background-size: 100%;
+        }
+        &.forward {
+            background: url(@/assets/images/recommend/forward-bg.png) center no-repeat;
+            background-size: 100%;
+        }
+        &.total {
+            background: url(@/assets/images/recommend/total-bg.png) center no-repeat;
+            background-size: 100%;
+        }
+        &.deliver {
+            background: url(@/assets/images/recommend/deliver-bg.png) center no-repeat;
+            background-size: 100%;
+        }
+        span {
+            font-size:13px;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:18px;
+            margin-bottom: 4px;
+        }
+        p {
+            font-weight: bold;
+            font-size:34px;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height:48px;
+        }
+    }
+}
+
+.data-list {
+    .ui-table td {
+        height: 52px;
+    }
+}

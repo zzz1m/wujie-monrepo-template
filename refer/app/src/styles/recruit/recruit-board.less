@@ -1,0 +1,537 @@
+.page-content.recruit-board-page {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    width: 100%;
+    min-width: 1200px;
+    overflow-x: auto;
+
+    .kanban-tooltip-icon {
+        color: #86909C;
+        width: 15px;
+        height: 15px;
+        margin-left: 6px;
+        &:hover {
+            color: #00BEBD;
+        }
+    }
+
+    .funnel-item {
+        .kanban-tooltip-icon {
+            color: #FFD7CA;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+    .recruit-kanban-tooltip {
+        position: relative;
+        top: 3px;
+        left: -3px;
+    }
+    .recruit-fushi-tooltip {
+        position: absolute;
+        left: 90px;
+        top: 28px;
+    }
+
+    .m-g-r-0 {
+        margin-right: 0;
+    }
+    .ui-select-selection {
+        border-radius: 4px;
+    }
+    .btn {
+        vertical-align: top;
+        padding: 0 15px;
+        line-height: 28px;
+        height: 32px;
+        font-size: 14px;
+        min-width: 58px;
+        border-radius: 4px;
+    }
+    .ui-range-editor {
+        border-radius: 4px;
+    }
+    .ui-form {
+        margin-top: 1px;
+    }
+    .search-item {
+        .bth {
+            vertical-align: top;
+            padding: 0 15px;
+            line-height: 28px;
+            height: 32px;
+            font-size: 14px;
+            min-width: 58px;
+        }
+        .ui-date-editor {
+            position: relative;
+            top: 1px;
+        }
+        .ui-select {
+            width: 200px;
+        }
+        &.w-120 {
+            &.ui-select {
+                width: 120px;
+            }
+        }
+        &.w-130 {
+            &.ui-select {
+                width: 130px;
+            }
+        }
+        &.w-140 {
+            .ui-select {
+                width: 140px;
+            }
+        }
+        &.w-240 {
+            .ui-select {
+                width: 240px;
+            }
+        }
+    }
+    
+    .recruit-board-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 1180px;
+        margin: auto;
+
+    }
+    .float-right {
+        float: right;
+    }
+    
+    .recruit-board-tab {
+        width: 100%;
+        margin: 20px 0 16px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        
+        .recruit-board-overview, .recruit-board-action {
+            padding: 21px 30px;
+            width: 582px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            position: relative;
+            border: 1px solid transparent;
+            cursor: pointer;
+
+            h3 {
+                font-weight: 600;
+                color: #1D2129;
+                line-height: 24px;
+                margin-bottom: 4px;
+                font-size: 18px;
+            }
+            h3 + p {
+                color: #4E5969;
+                line-height: 20px;
+            }
+
+            .svg-icon {
+                width: 105px;
+                height: 88px;
+                position: absolute;
+                right: -1px;
+                bottom: -1px;
+            }
+        }  
+        .inner-border {
+            z-index: 5;
+            content: '';
+            position: absolute;
+            width: 580px;
+            height: 90px;
+            top: 0px;
+            left: 0px;
+            border-radius: 11px;
+        }
+        .outer-border {
+            z-index: 5;
+            content: '';
+            position: absolute;
+            width: 582px;
+            height: 92px;
+            top: -1px;
+            left: -1px;
+            border-radius: 12px;
+        }
+        .recruit-board-overview {
+            &.active {
+                border: 1px solid rgba(48,203,202,0.3);
+                h3 {
+                    color: #00a6a7;
+                }
+                h3 + p {
+                    color: #00A6A7;
+                }
+                &:before {
+                    .inner-border;
+                    border: 1px solid #2fcaca;
+                }
+                &:after {
+                    .outer-border;
+                    border: 1px solid #96DDDF;
+                }
+            }
+            &:hover {
+                &:before {
+                    .inner-border;
+                    border: 1px solid rgba(48, 203, 202, 1);
+                }
+                &:after {
+                    .outer-border;
+                    border: 1px solid #96DDDF;
+                }
+                border: 1px solid #96DDDF;
+            }
+        } 
+
+        .recruit-board-action {
+            &.active {
+                border: 1px solid rgba(151,164,254,0.3);
+                h3 {
+                    color: #4D4EBF;
+                }
+                h3 + p {
+                    color: #4D4EBF;
+                }
+                &:before {
+                    .inner-border;
+                    border: 1px solid rgba(151,164,254, 1);
+                }
+                &:after {
+                    .outer-border;
+                    border: 1px solid #D5DBFF;
+                }
+            }
+            &:hover {
+                border: 1px solid #D5DBFF;
+                &:before {
+                    .inner-border;
+                    border: 1px solid rgba(151,164,254, 1);
+                }
+                &:after {
+                    .outer-border;
+                    border: 1px solid #D5DBFF;
+                }
+            }
+        }      
+    }
+    .recruit-board-content {
+        background: #fff;
+        padding: 24px 30px;
+        border-radius: 12px;
+        flex: 1;
+    }
+    
+    .conversion-rate {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+        .conversion-rate-num {
+            font-size: 36px;
+            font-family: kanzhun-Regular;
+            color: #1D2129;
+            line-height: 36px;
+            margin-bottom: 7px;
+            min-height: 36px;
+        }
+        .conversion-rate-title {
+            font-size: 14px;
+            color: #4E5969;
+            line-height: 20px;
+        }
+
+        &>div {
+            flex: 1;
+            text-align: center;
+            padding: 11px 0;
+        }
+    } 
+    .funnel-wrapper {
+        padding-left: 14px;
+    }
+    .funnel-data-title {
+        color: #4E5969;
+        position: relative;
+        line-height: 20px;
+        margin-bottom: 2px;
+        display: inline-block;
+        padding-right: 0px;
+        z-index: 3;
+    }
+    .funnel-direction {
+        position: absolute;
+        z-index: 4;
+        display: flex;
+        cursor: pointer;
+        top: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.1);
+        border-radius: 50%;
+        border: 1px solid #E5E6EB;
+        &:hover {
+           border-color: #00BEBD;
+        }
+    }
+    .funnel-direction-left {
+        left: 136px;
+    }
+    .funnel-direction-right {
+        right: 15px;
+    }
+    .reexamine-item .funnel-data-title {
+        background-color: #F6F7FB;
+    }
+    .funnel-data-num {
+        color: #1D2129;
+        line-height: 24px;
+        font-size: 20px;
+        font-family: kanzhun-Regular;
+    }
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    .reexamine-item {
+        display: inline-block;
+        flex-shrink: 0;
+        position: relative;
+        
+        .funnel-data {
+            position: relative;
+            .svg-icon {
+                position: absolute;
+                top: 30px;
+                left: -26px;
+            }
+        }
+    }
+    .funnel-item {
+        height: 70px;
+        padding: 12px;
+        background: #F6F7FB;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 10px;
+        &>div {
+            display: inline-block;
+        }
+        .funnel-data {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        &:before {
+            content: '';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 70px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height:70px;
+            transform: translateX(-14px);
+            background: url(https://img.bosszhipin.com/static/file/2023/zvuyjg91yx1680156260068.png) no-repeat;
+        }
+
+        &:nth-child(1) {
+            padding-left: 244px;
+            &:hover {
+                background-color: fade(#9067F2, 10%);
+            }
+            &:before {
+                content: '获取简历';
+                background-position:  -0px -280px;
+                width: 258px;
+            }
+        }
+        &:nth-child(2) {
+            padding-left: 216px;
+            margin-left: 14px;
+            &:hover {
+                background-color: fade(#6785F2, 10%);
+            }
+            &:before {
+                content: '简历筛选';
+                background-position:  -0px -210px;
+                width: 230px;
+            }
+        }
+        &:nth-child(3) {
+            padding-left: 188px;
+            margin-left: 28px;
+            &:hover {
+                background-color: fade(#00BAF2, 10%);
+            }
+            &:before {
+                content: '初试';
+                background-position:  -0px -140px;
+                width: 202px;
+                height:70px;
+            }
+        }
+        &:nth-child(4) {
+            padding-left: 160px;
+            margin-left: 42px;
+            &:hover {
+                background-color: fade(#FF8962, 10%);
+                .reexamine-item .funnel-data-title {
+                    background-color: #fdf4f0;
+                }
+                .reexamine-container {
+                    &:after {
+                        background-image: linear-gradient(to left, #fdf4f0 30%, rgba(255,255,255,0));
+                    }
+                    &:before {
+                        background-image: linear-gradient(to right, #fdf4f0 20%, rgba(255,255,255,0)); 
+                    }
+                }
+            }
+            &:before {
+                content: '复试';
+                background-position:  -0px -70px;
+                width: 174px;
+                height:70px;
+            }
+        }
+        &:nth-child(5) {
+            padding-left: 132px;
+            margin-left: 56px;
+            &:hover {
+                background-color: fade(#FFB229, 10%);
+            }
+            &:before {
+                content: 'OFFER';
+                background-position:  -118px 0;
+                width: 146px;
+                height:70px;
+            }
+        }
+        &:nth-child(6) {
+            padding-left: 104px;
+            margin-left: 70px;
+            &:hover {
+                background-color: fade(#32CCC3, 10%);
+            }
+            &:before {
+                content: '入职';
+                background-position:  0px -0;
+                width: 118px;
+                height:70px;
+            }
+        }
+    }
+    .funnel-item .reexamine-container {
+        width: 864px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        .reexamine-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 26px;
+            height: 70px;
+            right: 30px;
+            left: 160px;
+            top: 0;
+            z-index: 3;
+            background-image: linear-gradient(to right, #F6F7FB 20%, rgba(255,255,255,0)); 
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 28px;
+            height: 70px;
+            right: 30px;
+            top: 0;
+            z-index: 3;
+            background-image: linear-gradient(to left, #F6F7FB 30%, rgba(255,255,255,0)); 
+        }
+    }
+
+    .recruit-board-rate {
+        display: flex;
+        min-height: 450px;
+        justify-content: space-between;
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #1D2129;
+            line-height: 26px;
+            margin-bottom: 32px;
+
+            .svg-icon {
+                width: 42px;
+                height: 10px;
+                display: inline-block;
+                margin: 0 10px;
+                position: relative;
+                top: -2px;
+            }
+        }
+        &>div {
+            text-align: center;
+            position: relative;
+            width: 360px;
+            height: 389px;
+            padding-top: 30px;
+            border-radius: 12px 12px 10px 10px;
+            &:nth-child(1) {
+                background: linear-gradient(360deg, #FFFFFF 0%, #EDF2FF 100%);
+            }
+            &:nth-child(2) {
+                background: linear-gradient(360deg, #FFFFFF 0%, #E3EFFF 100%);
+            }
+            &:nth-child(3) {
+                background: linear-gradient(360deg, #FFFFFF 0%, #FFF2D9 100%);
+            }
+            // &+div {
+            //     &:before {
+            //         content: '';
+            //         position: absolute;
+            //         height: 100%;
+            //         left: 0;
+            //         width: 1px;
+            //         background-color: #F2F3F5;
+            //     }
+            // }
+        }
+        .board-rate-item {
+            padding: 11px 0;
+            margin-bottom: 8px;
+        }
+        .board-rate-num {
+            font-size: 36px;
+            font-family: kanzhun-Regular;
+            color: #1D2129;
+            line-height: 36px;
+            margin-bottom: 7px;
+        }
+        .board-rate-title {
+            color: #4E5969;
+            line-height: 20px;
+        }
+    }
+     
+}

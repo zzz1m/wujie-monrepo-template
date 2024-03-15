@@ -1,0 +1,182 @@
+.bossui-new .dynamic-form-item .dynamic-upload-viewer {
+    color: #151B26;
+    background-color: #F2F3F5;
+}
+.dynamic-form-item{
+    .input[disabled], .input[readonly] {
+        background-color: @background-gray-color;
+    }
+    .ui-select{
+        width: 100%;
+        min-width: auto;
+    }
+    .dynamic-box-viewer{
+        width: 100%;
+        display: inline-block;
+        &.disabled{
+            .ui-tree-viewer{
+                background-color: @background-gray-color;
+            }
+        }
+        .radio-disabled{
+            cursor: not-allowed;
+            color: @font-disable-color;
+            .radio-inner{
+                cursor: not-allowed;
+                border-color: @border-color-base;
+            }
+        }
+    }
+    .dynamic-phone-viewer {
+        width: 100%;
+        // height: 34px;
+        // border: 1px solid @gray-3-color;
+        // display: flex;
+        // .flex-align-center;
+        // &:hover {
+        //     // border-color: @primary-background-color;
+        // }
+        // .ui-select {
+        //     width: 80px;
+        //     .ui-icon-arrow-down {
+        //         right: 6px;
+        //     }
+        //     .ui-select-inner{
+        //         padding-right: 20px;
+        //     }
+        // }
+        // .input-wrap {
+        //     flex: 1;
+        //     &.input-focusing .input{
+        //         border:none;
+        //         box-shadow: unset;
+        //     }
+        // }
+        // .ui-select-selection {
+        //     height: 32px;
+        //     border:none;
+        //     &:hover,&-focused {
+        //         box-shadow: unset;
+        //     }
+        // }
+        // .input {
+        //     // padding-left: 6px;
+        //     border: none;
+        //     height: 32px;
+        // }
+    }
+    .dynamic-address-viewer {
+        .ui-cascader { margin-right: 10px; }
+        .ui-cascader, .ui-cascader .input-wrap {
+            width: 100%;
+        }
+        .input[readonly] { background-color: #fff; }
+        .input-wrap { width: 100%; }
+        .ui-cascader-disabled .input[readonly] { background-color: #F8F9FB; }
+    }
+    .dynamic-date-viewer {
+        cursor: pointer;
+        width: 100%;
+        .dynamic-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            .input {
+                background-color: #fff;
+            }
+        };
+        .input-wrap {
+            width: 100%;
+        }
+        .ui-date-editor-datetimerange.ui-input-inner {
+            width: 294px;
+            .ui-range-input {
+                font-size: 13px;
+                width: 42%;
+            }
+        }
+        &.isDateVar {
+            .ui-date-editor { opacity: 0; }
+        }
+        .ui-date-editor .ui-range-input {
+            color: @default-color;
+        }
+    }
+    .ui-cascader-new {
+        .input[readonly] {
+            cursor: pointer;
+            background-color: @background-gray-color;
+            padding-right: 20px;
+            .ellipsis;
+        }
+        .ctrl-input{
+            .input.input-disabled {
+                background-color: @background-gray-color;
+            }
+        }
+    }
+
+    .dynamic-cascader-viewer {
+        position: relative;
+        min-height: 34px;
+        width: 100%;
+        .flex-align-center;
+        border: 1px solid transparent;
+        .ui-cascader-new{
+            width: 100%;
+        }
+    }
+
+    .dynamic-member{
+        .ui-select{
+            width: 100%;
+            min-width: 0;
+        }
+    }
+
+    .ui-tree-viewer{
+        background-color: #fff;
+        .ui-select{
+            width: 100%;
+            min-width: 0;
+        }
+        .ui-tree-empty-block{
+            padding: 0 10px;
+        }
+    }
+    .dynamic-upload-viewer{
+        height: 34px;
+        line-height: 34px;
+        padding: 0 14px;
+        overflow: hidden;
+        color: #646f79;
+        border: 1px solid #e3e7ed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+        background-color: #ffffff;
+        border-radius: 2px;
+        &.disabled{
+            background-color: @background-gray-color;
+        }
+        .file-name{
+            flex: 1;
+            padding-right: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+        .btn-mini{
+            font-size: 14px;
+            color: #00CFC5;
+        }
+    }
+
+    .ui-select-disabled .ui-select-selection{
+        background-color: @background-gray-color;
+    }
+}

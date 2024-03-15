@@ -1,0 +1,86 @@
+.care-list {
+    .depart-tree {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 120px;
+        // ::v-deep .input {
+        //     height: 26px;
+        // }
+        ::v-deep .dropdown-menu {
+            width: 200px;
+        }
+    }
+    .manager-search .filter-box {
+        ::v-deep .input-wrap {
+            width: 160px;
+            min-width: 160px;
+        }
+        .date-line {
+            display: inline-block;
+            margin-top: 16px;
+            margin-right: 10px;
+            line-height: 26px;
+        }
+    }
+    .card-type-box {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        li {
+            font-size: 14px;
+            margin-right: 10px;
+            min-width: 88px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: 400;
+            background:rgba(244,245,248,1);
+            
+            border-radius:16px;
+            color:rgba(21,27,38,1);
+            text-align: center;
+            cursor: pointer;
+            &.active {
+                color: #fff;
+                background: #5DD5C8;
+            }
+        }
+    }
+
+    .care-tag {
+        display: inline-block;
+        min-width: 66px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 11px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        
+        font-weight:400;
+        &.fail {
+            background:rgba(246,110,110,0.1);
+            color:rgba(228,81,81,1);
+        }
+        &.await {
+            background:rgba(247,186,47,0.1);
+            color:rgba(189,135,12,1);
+        }
+        &.already {
+            background:rgba(54,215,206,0.1);
+            color:rgba(7,157,149,1);
+
+        }
+    }
+    .depart-care {
+        margin: 10px 10px 0 0;
+        ::v-deep .ui-tree-viewer .ctrl-input {
+            width: 160px;
+            min-width: 160px;
+        }
+        ::v-deep .ui-tree-viewer .ctrl-select {
+            width: 160px;
+            min-width: 160px;
+        }
+    }
+}

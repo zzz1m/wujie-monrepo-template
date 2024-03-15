@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="ICON/14px/下载简历_disable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+        <path d="M2.09090909,5 L2.09090909,11.4 L11.9090909,11.4 L11.9090909,5 L13,5 L13,11.5 C13,12.0670123 12.6099903,12.5338239 12.108961,12.5935453 L12,12.6 L2,12.6 C1.48453423,12.6 1.06016012,12.1709893 1.00586786,11.6198571 L1,11.5 L1,5 L2.09090909,5 Z" id="路径" fill="#D8DBE3" fill-rule="nonzero"></path>
+        <polygon id="矩形" fill="#D8DBE3" fill-rule="nonzero" points="6.39526123 0.8 7.59526123 0.8 7.59526123 7.8 6.39526123 7.8"></polygon>
+        <path d="M9.40416306,4.57573593 L10.2526912,5.42426407 L7.42426407,8.25269119 C7.21598445,8.46097082 6.89267517,8.484113 6.6588334,8.32211773 L6.57573593,8.25269119 L3.74730881,5.42426407 L4.59583694,4.57573593 L7,6.98 L9.40416306,4.57573593 Z" id="路径" fill="#D8DBE3" fill-rule="nonzero"></path>
+    </g>
+</svg>

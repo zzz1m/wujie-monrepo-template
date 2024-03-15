@@ -1,0 +1,42 @@
+.btns-tab {
+    margin-top: 18px;
+    .btn + .btn {
+        margin-left: 10px;
+    }
+}
+
+.manager-select {
+    width: 100%;
+    z-index: auto;
+    ::v-deep .content{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }
+}
+
+.city-select{
+    width: 100%;
+}
+
+// ::v-deep .dialog-container {
+//     height: 736px;
+//     .dialog-body {
+//         overflow: visible;
+//     }
+// }
+
+.dialog-equipment-small .dialog-body h3.title {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.dialog-equipment-small .dialog-body h3.title img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin: -3px 10px 0 0;
+}

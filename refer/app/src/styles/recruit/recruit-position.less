@@ -1,0 +1,413 @@
+.recruit-position-page.flex-list-ui-page {
+    background: #F7F8F9;
+    padding: 0 30px 60px;
+    .search-panel {
+        background: #ffffff;
+        margin: -2px -30px 2px;
+        padding: 12px 25px;
+        .search-item.form-item {
+            margin-top: 0px;
+            .ui-dropmenu-list{
+                top: 48px;
+                ul li {
+                    padding: 10px;
+                }
+            } 
+        }
+    }
+    .page-tip-container {
+        margin-top: 10px;
+    }
+    .position-list {
+        overflow: overlay;
+        margin-right: -30px;
+        padding-right: 30px;
+        .position-item {
+            margin: 10px 0;
+            display: flex;
+            background: #ffffff;
+            align-items: center;
+            padding: 23px 50px 23px 24px;
+            border-radius: 2px;
+            &:hover {
+                box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
+            }
+            .base-info {
+                width: 50%;
+                &.progress-offLine {
+                    opacity: 0.3;
+                }
+                .info-top {
+                    margin-bottom: 12px;
+                    .info-title {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #13141A;
+                        cursor: pointer;
+                        &:hover {
+                            color: #00CFC5;
+                        }
+                    }
+                    .info-icon {
+                        padding: 1px 5px;
+                        font-size: 12px;
+                        margin-left: 12px;
+                        border-radius: 4px;
+                        white-space: nowrap;
+                        &.info-icon-green {
+                            color: #00BEBD;
+                            background:rgba(0,190,189,0.15);
+                        }
+                        &.info-icon-blue {
+                            color: #4B8CFB;
+                            background:rgba(75,140,251,0.15);
+                        }
+                        &.info-icon-orange {
+                            color: #FFA958;
+                            background:rgba(255,169,88,0.15);
+                        }
+                        &.info-icon-6 {
+                            color: #FB5B4F;
+                            background:#FFE7E5  ;
+                        }
+                        &.info-icon-7 {
+                            color: #7F4DFB;
+                            background:#EDE6FF;
+                        }
+                    }
+                }
+                .info-btm {
+                    .person-info {
+                        font-size: 14px;
+                        
+                        font-weight: 400;
+                        color: #6C7281;
+                    }
+                    .line {
+                        width: 1px;
+                        height: 12px;
+                        background: #E8EAEF;
+                        margin: 0 10px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .other-info {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .progress-wrap {
+                display: flex;
+                &.progress-offLine {
+                    opacity: 0.3;
+                }
+                .progress-item {
+                    text-align: center;
+                    &:nth-of-type(2) {
+                        margin: 0 60px;
+                    }
+                    .number {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #13141A;
+                        margin-bottom: 7px;
+                    }
+                    .progress-text {
+                        font-size: 14px;
+                        color: #8A8E9A;
+                    }
+                    a:hover{
+                        .number,  .progress-text  {
+                            color: #00CFC5;
+                        }
+                    }
+                }
+            }
+            .release-time {
+                font-size: 14px;
+                color: #8A8E9A;
+                &.progress-offLine {
+                    opacity: 0.3;
+                }
+                .icon-time {
+                    color: #C5C8D0;
+                    margin-right: 8px;
+                }
+            }
+            .operate-wrap {
+                font-size: 14px;
+                width: 80px;
+                text-align: right;
+                .delete {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}
+.dialog-equipment-third.inner-position {
+    .dialog-header {
+        .title {
+            .info-icon {
+                padding: 1px 5px;
+                font-size: 12px;
+                margin-left: 12px;
+                border-radius: 4px;
+                &.info-icon-green {
+                    color: #00BEBD;
+                    background:rgba(0,190,189,0.15);
+                }
+                &.info-icon-blue {
+                    color: #4B8CFB;
+                    background:rgba(75,140,251,0.15);
+                }
+                &.info-icon-orange {
+                    color: #FFA958;
+                    background:rgba(255,169,88,0.15);
+                }
+                &.info-icon-6 {
+                    color: #FB5B4F;
+                    background:#FFE7E5  ;
+                }
+                &.info-icon-7 {
+                    color: #7F4DFB;
+                    background:#EDE6FF;
+                }
+            }
+        }
+    }
+    .dialog-body {
+        overflow: initial;
+    }
+    .through-item {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .input-wrap-textarea .suffix-counter {
+        bottom: -26px;
+    }
+    .ui-form {
+        margin-top: 0;
+    }
+}
+.dialog-school {
+    .input-wrap, .ui-select, .input-wrap-textarea {
+        min-width: 100%;
+        width: 100%;
+    }
+    .ui-select .ui-select-inner {
+        .ui-select-input {
+            width: 100% !important;
+        }
+    }
+    .dialog-footer {
+        margin-top: 8px;
+    }
+    .input-wrap-textarea {
+        textarea {
+            height: 117px;
+        }
+    }
+}
+.school-detail-page {
+    background: #ffffff;
+    padding: 0 30px 77px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    .ui-tab .ui-tab-content {
+        display: none;
+    }
+    .ui-tab .ui-tab-nav-wrap {
+        .ui-tab-nav {
+            .ui-tab-active-bar {
+                color: #00BEBD;
+            }
+            .ui-tab-nav-item {
+                line-height: 40px;
+                padding: 0 16px;
+                &:hover {
+                    color: #00A6A7;
+                }
+                &.is-active {
+                    color: #00A6A7;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    .detail-basic {
+        margin-top: 20px;
+        color: #1D2129;
+        .title {
+            color: #86909C;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+        p {
+            white-space: pre-wrap;
+        }
+    }
+    .basic-info {
+        margin-top: 20px;
+        color: #1D2129;
+        display: flex;
+        flex-wrap: wrap;
+        ul {
+            width: 25%;
+            margin: 0 0 20px;
+            li:first-child {
+                margin-bottom: 5px;
+                color: #86909C;
+            }
+        }
+    }
+    .response-info {
+        margin-top: 20px;
+        color: #1D2129;
+        ul {
+            margin: 0 0 20px;
+            li:first-child {
+                margin-bottom: 5px;
+                color: #86909C;
+            }
+        }
+    }
+    .job-desc {
+        white-space: pre-wrap;
+        .title {
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+    .recruit-relative-page {
+        padding: 0;
+        .lock-label-wrapper {
+            background-color: #E8F7FF;
+            color: #168CFF;
+            margin-left: 8px;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 8px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .school-recruit-pager {
+            position: fixed;
+            bottom: 0;
+            left: 200px;
+            right: 0;
+            border-top: 1px solid #E0E6E8;
+            background: #fff;
+            font-size: 13px;
+            z-index: 9;
+
+            .fasion-pager {
+                position: relative;
+                border-top: none;
+                left: 0;
+            }
+            .pager-btn-warper {
+                float: right;
+                margin-right: 12px;
+                margin-top: 12px;
+                z-index: 10;
+                position: relative;
+        
+                .btn {
+                    &+.btn {
+                        margin-left: 6px;
+                    }
+                }
+            }
+            .total-wrap{
+                position: relative;
+                z-index: 999;
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                em{
+                    font-style: normal;
+                    font-weight: normal;
+                    color: @primary-color;
+                }
+            }
+        }
+        .checkbox-disabled {
+            cursor: not-allowed;
+            .checkbox-inner {
+                background-color: #edf2fc;
+                border-color: #dcdfe6;
+                cursor: not-allowed;
+                .checkbox-input {
+                    cursor: not-allowed;
+                }
+            }
+        }
+        .ui-table-pro {
+            color: #1D2129;
+            .phone-email {
+                padding: 12px 0;
+                line-height: 1.5;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .job-status {
+                background: #E3E5E9;
+                border-radius: 10px;
+                padding: 1px 10px;
+                line-height: 18px;
+                color: #6C7281;
+                font-size: 12px;
+                &.job-online {
+                    background: #E5FAF9;
+                    color: #00BEBD;
+                }
+            }
+        }
+        .search-panel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .export-detail {
+                margin-top: 10px;
+            }
+            .input, .ui-select {
+                width: 260px;
+            }
+        }
+    }
+}
+.flex-list-ui-page.recruitment-page {
+    padding: 0;
+    .status-wrap {
+        margin-top: 16px;
+        display: flex;
+        li {
+            font-size: 12px;
+            background: #F2F3F5;
+            border-radius: 2px;
+            color: #1D2129;
+            line-height: 20px;
+            padding: 2px 8px;
+            border: 1px solid transparent;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover {
+                color: #00A6A7;
+                background: rgba(0, 190, 189, 0.05);
+            }
+            &.active {
+                background: rgba(0, 190, 189, 0.05);
+                border: 1px solid #00BEBD;
+                color: #00A6A7;
+            }
+        }
+    }
+}

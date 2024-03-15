@@ -1,0 +1,28 @@
+@import "./salary-group.less";
+@import "./social-insurance.less";
+
+.account-date-picker {
+    input {
+        width: 120px!important;
+        padding-right: 10px!important;
+    }
+}
+
+.dept-select-item {
+    .ui-select-inner {
+        flex-wrap: nowrap!important;
+        .ui-tag {
+            overflow: hidden!important;
+            white-space: nowrap!important;
+            text-overflow: ellipsis!important;
+            min-width: 40px;
+        }
+    }
+    .ui-select-item.active {
+        color: #00B8BF!important;
+        &::before {
+            content: '✓';
+            margin-right: 4px;
+        }
+    }
+}

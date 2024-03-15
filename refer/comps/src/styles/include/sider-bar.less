@@ -1,0 +1,187 @@
+// 新的左侧菜单
+.sidebar-new {
+    user-select: none;
+    float:left;
+    height: 100%;
+    transition: width ease-in-out .3s;
+    position: relative;
+    background-color: #fff;
+    z-index: 99;
+    white-space: nowrap;
+    border-right: 1px solid #E8EAEF;
+    &.collapsed::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        background: #F7F8FA;
+        box-shadow: -1px 0px 0px 0px #E8EAEF;
+    }
+    .btn-toggle {
+        // position: absolute;
+        // right:-10px;
+        // top: 180px;
+        // z-index: 100;
+        // transform: translateY(-50%);
+        // width: 24px;
+        // height: 24px;
+        // border-radius: 50%;
+        // background-color: #fff;
+        // // box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+        // border: 1px solid #ECEEF0;
+        // &:after{
+        //     content: '';
+        //     left: 50%;
+        //     top: 50%;
+        //     transform: translateY(-50%) rotateZ(-45deg);
+        //     position: absolute;
+        //     margin-left: -5px;
+        //     width:7px;
+        //     height: 7px;
+        //     border: 1px solid #8A8E9A;
+        //     border-left: none;
+        //     border-top: none;
+        // }
+        // &:hover {
+        //     cursor: pointer;
+        //     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+        // }
+        // &.expanded:after{
+        //     transform: translateY(-50%) rotateZ(135deg);
+        //     margin-left: -1px;
+        // }
+
+        position: absolute;
+        top: 252px;
+        right: 0;
+        z-index: 100;
+        transform: translateX(50%);
+        width: 16px;
+        height: 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        border: 1px solid #E5E6EB;
+        font-size: 12px;
+        color: #4E5969;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #00BEBD;
+        }
+
+        &.expanded .ui-icon-arrow-left {
+            transform: rotate(180deg);
+        }
+    }
+    // 以下为菜单样式
+    .ui-scrollbar-view>.menu-list{
+        padding: 10px 20px;
+    }
+    .menu-item {
+        .menu-name {
+            position: relative;
+            display: block;
+            padding: 10px 24px 10px 24px;
+            font-size: 14px;
+            color: #3A4256;
+            line-height: 20px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+            &:hover{
+                background: #EBF8F8;;
+                cursor: pointer;
+            }
+        }
+        .menu-item-icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            position: absolute;
+            top: 13px;
+            left: 4px;
+        }
+        .menu-group {
+            display: flex;
+            font-size: 14px;
+            cursor: pointer;
+            align-items: center;
+            height: 20px;
+            margin-top: 10px;
+            padding-left: 24px;
+            position: relative;
+            .menu-group-icon {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                margin-right: 10px;
+                top: 3px;
+                left: 4px;
+            }
+            .menu-group-name {
+                flex: 1;
+                color: #3A4256;
+            }
+            .menu-icon-tools {
+                width: 16px;
+                height: 16px;
+                margin-right: -2px;
+                transition: transform linear .3s ;
+                transform: rotateZ(270deg);
+                &.toggle {
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+        .submenu-list {
+            margin-top: 14px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height linear .3s;
+            padding-left: 12px;
+            .menu-name {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+
+        &.active{
+            &>.menu-name { 
+                background: #EBF8F8;
+                color: #00BEBD; 
+                font-weight: 600;
+            }
+            .menu-group-name { 
+                color: #00BEBD; 
+            }
+            &>.submenu-list {
+                max-height: 1000px;
+            }
+        }
+
+
+
+
+
+        
+        
+        // &:hover{
+        //     background: #F7F8FA;
+        // }
+        // &.active {
+        //     background: #F6F7FA;
+        //     &>.menu-name { color: #00BEBD; }
+        // }
+        
+        // &.active .submenu-list {
+        //     height: auto;
+        // }
+    }
+   
+}

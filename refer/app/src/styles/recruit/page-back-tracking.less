@@ -1,0 +1,203 @@
+.page-back-tracking {
+    padding: 0 30px;
+    background-color: #fff;
+    flex: 1;
+    .tracking-footer {
+        margin: 60px 0;
+    }
+    .ui-tab-content {
+        display: none;
+    }
+    .level-content {
+        margin-bottom: 20px;
+        .form-item {
+            width: 100%;
+        }
+    }
+    .level-tag-container {
+        margin: 0 -6px;
+    }
+    .level-tag {
+        display: inline-block;
+        border-radius: 2px;
+        border: 1px solid #E5E6EA;
+        padding: 6px 35px;
+        margin: 0 6px;
+        font-size: 14px;
+        color: #21252D;
+        line-height: 18px;
+    }
+    .level-title {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2129;
+        line-height: 22px;
+    }
+    .level-tips {
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 24px;
+        padding: 20px 0;
+        border-bottom: 1px dotted #E5E6EB;;
+    }
+    .level-content .job-item {
+        margin-top: 20px;
+        .work-name {
+            min-width: 120px;
+            text-align: right;
+            padding: 6px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #21252D;
+            line-height: 20px;
+            display: inline-block;
+            position: relative;
+            border-radius: 2px;
+            border: 1px solid #E5E6EA;
+            margin-right: 12px;
+            &:before {
+                content: '*';
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                color: #F53F3F;
+                line-height: 20px;
+                margin-right: 6px;
+            }
+        }
+        .input-wrap {
+            display: inline-block;
+            width: 535px;
+        }
+        .level-operation {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            border: 1px solid #E5E6EA;
+            margin-left: 12px;
+            text-align: center;
+            line-height: 26px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #505968;
+
+            &:hover {
+                background-color: #f6f7fb;
+            }
+        }
+    }
+    .form-item {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: calc(~'50% - 25px');
+        .item-content {
+            // padding-right: 50px;
+        }
+        .item-label {
+            display: block;
+        }
+        .ui-select, .input-wrap {
+            width: 100%;
+        }
+    }
+    .form-item-content .form-item:nth-child(2n + 1) {
+        margin-right: 50px;
+    }
+    .back-tracking-content {
+        padding: 0 30px 80px;
+    }
+    .page-content-title {
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+    .back-tracking-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2129;
+        line-height: 22px;
+        position: relative;
+        margin-bottom: 6px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -30px;
+            top: 4px;
+            width: 5px;
+            height: 14px;
+            background: linear-gradient(180deg, #5DE1BF 0%, #11CD9E 100%);
+        }
+    }
+
+    .back-tracking-subtitle {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #86909C;
+        line-height: 18px;
+    }
+
+    .phone-input-warp {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+
+        .input-wrap {
+            width: 100%;
+
+            &.mobile {
+                margin-left: 4px;
+                input {
+                    padding-right: 3px;
+                }
+            }
+        }
+
+        .country {
+            border: none;
+            z-index: 9;
+            width: 74px!important;
+            min-width: 0!important;
+            flex-shrink: 0;
+            .ui-select-selection {
+                .ui-select-inner {
+                    padding: 4px 12px;
+                    height: 30px;
+                    position: relative;
+                }
+            }
+        }
+
+        .code-btn {
+            position: absolute;
+            right: 0;
+            padding: 7px 12px;
+            font-size: 14px;
+            
+            font-weight: 400;
+            color: #00CFC5;
+            line-height: 20px;
+            width: 94px;
+            cursor: pointer;
+            text-align: center;
+            &:before {
+                content: '';
+                display: block;
+                width: 1px;
+                height: 16px;
+                background: #D8DBE3;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    
+}
+

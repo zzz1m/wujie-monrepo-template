@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ICON、年假</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FE8B97" offset="0%"></stop>
+            <stop stop-color="#FC525E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M7.00058333,2.64191667 C8.37083333,1.41166667 10.4883333,1.4525 11.8084167,2.77491667 C13.1279167,4.09791667 13.1734167,6.20491667 11.9460833,7.57925 L6.99941667,12.5329167 L2.05391667,7.57925 C0.826583333,6.20491667 0.872666667,4.09441667 2.19158333,2.77491667 C3.51283333,1.45425 5.62625,1.40991667 7.00058333,2.64191667 Z" id="path-3"></path>
+        <filter x="-60.0%" y="-37.1%" width="220.0%" height="240.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.992156863   0 0 0 0 0.384313725   0 0 0 0 0.431372549  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要休假" transform="translate(-750.000000, -276.000000)">
+            <g id="mk_控件备份-6" transform="translate(730.000000, 258.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4备份" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g transform="translate(8.000000, 9.000000)" id="路径">
+                        <polygon points="0 0 22 0 22 22 0 22"></polygon>
+                        <path d="M11.0009167,4.15158333 C13.1541667,2.21833333 16.4816667,2.2825 18.5560833,4.36058333 C20.6295833,6.43958333 20.7010833,9.75058333 18.7724167,11.91025 L10.9990833,19.6945833 L3.22758333,11.91025 C1.29891667,9.75058333 1.37133333,6.43408333 3.44391667,4.36058333 C5.52016667,2.28525 8.84125,2.21558333 11.0009167,4.15158333 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                    <g id="编组备份" transform="translate(18.000000, 16.000000)">
+                        <polygon id="路径" points="0 0 14 0 14 14 0 14"></polygon>
+                        <g id="路径" opacity="0.800000012">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

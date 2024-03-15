@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="点击单选状态" transform="translate(-426.000000, -225.000000)">
+            <g id="编组-6备份-2" transform="translate(260.000000, 80.000000)">
+                <g id="编组-13" transform="translate(166.000000, 142.000000)">
+                    <g id="编组" transform="translate(0.000000, 3.000000)">
+                        <polygon id="路径" points="0 0 14 0 14 14 0 14"></polygon>
+                        <path d="M1.5,10.1666667 L6.33333333,10.1666667 L6.33333333,11.3333333 L1.5,11.3333333 L1.5,10.1666667 Z M1.5,6.08333333 L12.1666667,6.08333333 L12.1666667,7.25 L1.5,7.25 L1.5,6.08333333 Z M1.5,2 L12.1666667,2 L12.1666667,3.16666667 L1.5,3.16666667 L1.5,2 Z M9.83333333,10.1666667 L9.83333333,8.41666667 L11,8.41666667 L11,10.1666667 L12.75,10.1666667 L12.75,11.3333333 L11,11.3333333 L11,13.0833333 L9.83333333,13.0833333 L9.83333333,11.3333333 L8.08333333,11.3333333 L8.08333333,10.1666667 L9.83333333,10.1666667 Z" id="形状" fill="currentColor" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+.data-tab { font-size: 14px }
+.data-tab h3 { font-size: 16px; font-weight: 400; margin-bottom: -3px; padding-left: 10px; border-left: 4px solid #e7eaec }
+.data-tab a { display: inline-block; line-height: 30px; text-align: center; padding: 0 20px; border: 1px solid #e7eaec; margin-right: -1px }
+.data-tab a:hover { -webkit-transition: none; -moz-transition: none; transition: none;}
+.data-tab a.selected { border-color: #53CAC3; background-color: #53CAC3; color: #fff; position: relative; z-index: 1 }
+.data-tab a:first-of-type { border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 0; border-bottom-right-radius: 0 }
+.data-tab a:last-of-type { border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 0; border-top-left-radius: 0 }
+.data-tab .btns { float: right }
+.data-tab .btns .btn:last-of-type { margin-right: 0 }
+.mod-tab .tab-con {}

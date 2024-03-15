@@ -1,0 +1,39 @@
+.pointer {
+	cursor: pointer;
+}
+//强制不换行，超出显示省略号
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.mr-l-10 {
+    margin-left: 10px;
+}
+.mr-r-10 {
+    margin-right: 10px;
+}
+
+// 
+.ellipse-3{
+    display: -webkit-box;
+    // 单独写-webkit-box-orient这个属性wepack打包会被过滤掉
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.ellipse-2{
+    display: -webkit-box;
+    // 单独写-webkit-box-orient这个属性wepack打包会被过滤掉
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-wrap: break-word;
+}

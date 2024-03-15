@@ -1,0 +1,213 @@
+/* offer模块搜索区域 */
+.fasion-search {
+    position: relative;
+    margin-top: 20px;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+    .search-group {
+        float: left;
+        border: 1px #F3F3F3 solid;
+        border-radius: 20px;
+        position: relative;
+
+        &.active {
+            border: 1px @primary-color solid;
+        }
+        .ui-dropmenu {
+            width: 130px;
+        }
+        
+        .ui-dropmenu-label {
+            line-height: 38px;
+            border-radius: 20px 0 0 20px;
+            padding: 0 30px 0 20px;
+            background-color: #EFF1FA;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 14px;
+                background: #C8CBD4;
+                top: 12px;
+                right: 2px;
+            }
+        }
+        .ui-select-selection {
+            height: 38px;
+            line-height: 30px;
+            box-sizing: border-box;
+            background-color: #EFF1FA;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            box-shadow: none;
+            .ui-select-inner {
+                padding: 4px 8px 5px;
+            }
+            .ui-icon-arrow-down {
+                right: 15px;
+                transform: scale(.8);
+            }
+            .ui-icon-circle-close {
+                right: 8px;
+            }
+        }
+        .ui-select-selection,
+        .ui-dropmenu-label {
+            background-color: #F3F3F3;
+            
+        }
+        .ui-select-visible .ui-select-selection .ui-icon-arrow-down {
+            transform: scale(.8) rotate(180deg);
+            color: @primary-color;
+        }
+        .ui-dropmenu-list {
+            top: 40px;
+            left: -1px;
+            border-radius: 3px;
+
+            &:before {
+                display: none;
+            }
+
+            li:first-of-type {
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+            li:last-of-type {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+        .input,
+        .el-input__inner {
+            height: 38px;
+            border-color: #F3F3F3;
+            background-color: #F3F3F3;
+            box-shadow: none;
+            border-radius: 0 20px 20px 0;
+
+            &:hover,
+            &:active {
+                box-shadow: none;
+            }
+            &+.suffix {
+                right: 10px;
+            }
+        }
+        .el-input__inner + .ui-icon-search {
+            position: relative;
+            margin: 13px 0 0 -32px;
+        }
+        .input-wrap-text .suffix, .ui-icon-search {
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+        .el-range-input {
+            background: none;
+        }
+        .datepicker-wrap {
+            .ui-icon-date {
+                top: 12px;
+            }
+            .datepicker-pannel {
+                margin-top: 1px;
+            }
+            .picker-content {
+                .today {
+                    top: 0;
+                    left: 0;
+                    color: @default-color;
+                }
+                .selected {
+                    color: #fff;
+                    &:after {
+                        border-top-color: @primary-color;
+                    }
+                }
+            }
+        }
+        .ui-icon-search {
+            font-size: 16px;
+        }
+        .date-search-icon {
+            position: absolute;
+            top: 4px;
+            right: -20px;
+            width: 30px;
+            height: 30px;
+            transform: translateX(-40px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c0c4cc;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: @primary-color;
+            }
+        }
+    }
+    ///////
+    .search-single {
+        &.search-single-large{
+            .input-wrap{
+                width: 480px;
+            }
+        }
+        &.search-single-large-l {
+            .input-wrap{
+                width: 508px;
+            }
+        }
+        .input-wrap {
+            width: 410px;
+            .prefix .ui-icon-search {
+                padding-left: 20px;
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+        .input-wrap-prefix .input {
+            padding-left: 42px;
+        }
+        .input,
+        .el-input__inner {
+            border-radius: 20px;
+        }
+    }
+    ////////////
+    .op,
+    .btns {
+        float: right;
+        .btn-circle {
+            border-radius: 50% !important;
+            min-width: auto;
+            width: 40px;
+            height: 40px;
+            padding: 9px 15px;
+            background: linear-gradient(124deg, rgba(255, 134, 112, 1) 0%, rgba(255, 85, 102, 1) 100%);
+            box-shadow: 0px 4px 9px 0px rgba(255, 92, 109, 0.3);
+            border: 0;
+            .ti-plus {
+                position: relative;
+                right: 2px;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+    }
+}

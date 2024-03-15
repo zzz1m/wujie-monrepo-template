@@ -1,0 +1,708 @@
+.absolute-inset-0 {
+    position: relative;
+    // left: 0; right: 0; top: 44px; bottom: 0;
+}
+
+.content-overflow {
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-y: overlay;
+}
+
+.resume-detail-page {
+    overflow: auto;
+    overflow: overlay;
+    padding: 12px 0;
+    min-width: 1200px;
+    background-color: #F7F8F9; color: #3A4256;
+    .content-wrap {
+        width: 1200px;
+        background-color: #fff;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        // overflow-y: auto;
+        &.content-left {
+            width: 860px;
+            min-width: 860px;
+        }
+        > main {
+            // padding: 12px;
+            flex: 1;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            ::v-deep section {
+                .data-tips {
+                    text-align: center;
+                    font-size: 12px;
+                    color: #86909c;
+                    line-height: 16px;
+                    padding-top: 30px;
+                    height: auto;
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    ::v-deep .resume-evaluate-container {
+
+        // border-top: 1px dashed #E8EAEF;
+        // margin-top: 16px;
+        // margin-bottom: 20px;
+        // padding-top: 30px;
+        padding: 26px 26px 21px;
+
+        &.addition-info-container {
+            .data-tips {
+                min-height: 140px;
+            }
+        }
+        .resume-evaluate-header {
+            display: flex;
+            justify-content: space-between;
+            line-height: 20px; 
+            margin-bottom: 22px;
+            .btn {
+                padding: 8px 16px;
+            }
+            .title-main p {
+                margin-top: 3px;
+                font-size: 12px;
+                color: #86909C;
+            }
+            .upload-Wrap {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #1D2129;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 3px;
+                    left: -26px;
+                    display: block;
+                    width: 5px;
+                    height: 14px;
+                    background: linear-gradient(180deg, #5DE1BF 0%, #11CD9E 100%);
+                }
+
+            }
+            .flex-r {
+                font-size: 12px;
+                font-weight: 400;
+                color: #6C7281;
+                cursor: pointer;
+                vertical-align: middle;
+                .resume-evaluate-icon {
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                }
+
+                .recruit-edit {
+                    color: #C5C8D0;
+                }
+
+                &:hover {
+                    color: #00CFC5;
+
+                    .recruit-edit {
+                        color:#00CFC5;
+                    }
+                }
+                &.upload-btn {
+                    .btn {
+                        height: 32px;
+                        padding: 0 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        svg {
+                            margin-right: 8px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+            &.addition-info {
+                align-items: center;
+            }
+        }
+        .attachment-list {
+            max-width: auto;
+            margin-top: -16px;
+            .attachment-list-content {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 16px;
+                width: 392px;
+                background: #F7F8F9;
+                border-radius: 2px;
+                margin-top: 10px;
+                line-height: 52px;
+                height: 52px;
+                position: relative;
+            }
+      
+            .attachment-name {
+                position: relative;
+                display: flex;
+                align-items: center;
+    
+                .svg-icon {
+                    width: 16px;
+                    height: 16px;
+                    cursor: unset;
+                }
+        
+                .attachment-title {
+                    font-size: 14px;
+                    color: #1D2129;
+                    display: inline-block;
+                    max-width: 260px;
+                    margin-left: 12px;
+                    &.error-color {
+                        color: #F53F3F;
+                    }
+                    .tooltip {
+                        vertical-align: bottom;
+                    }
+                }
+                .upload-progress {
+                    width: 392px;
+                    height: 2px;
+                    border-radius: 1px 0 1px 1px;
+                    background: #E5E6EB;
+                    position: absolute;
+                    bottom: 0;
+                    left: -15px;
+                    .p-indicator {
+                        height: 100%; border-radius: 0 1px 1px 1px;
+                        position: relative; overflow: visible;
+                        transition: all ease-in-out 0.2s;
+                        background: #00BEBD;
+                    }
+                }
+            }
+            .p-info {
+                font-size: 12px;
+                color: #4E5969;
+                margin-right: 16px;
+            }
+            .attachment-operation {
+                position: relative;
+                padding: 0 13px 0 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .ui-icon-view  {
+                    cursor: pointer;
+                    font-size: 14px;
+                    vertical-align: middle;
+                }
+                .recruit-delete {
+                    cursor: pointer;
+                    font-size: 14px;
+                    vertical-align: middle;
+                }
+                .it-delete {
+                    position: absolute;
+                    right: -30px;
+                }
+                .check-resume {
+                    display: flex;
+                    align-items: center;
+                }
+                .icon-wrapper {
+                    margin-left: 12px;
+                    padding: 0 2px;
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                    }
+                    &.attach-delete {
+                        position: absolute;
+                        right: -30px;
+                        svg {
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+                .re-upload {
+                    color: #00A6A7;
+                    &:hover {
+                        color: #00BEBD;
+                    }
+                }
+            }
+        }
+        .input-wrap-textarea {
+            min-width: auto;
+            width: 100%;
+        }
+
+        .resume-evaluate-form {
+            .btn-evaluate-wrapper {
+                margin-top: -10px;
+                overflow: hidden;
+                min-height: 59px;
+                margin-bottom: -2px;
+
+                .form-item {
+                    display: inline-block;
+                    &+.form-item {
+                        margin-left: 12px;
+                        .ui-select {
+                            width: 480px;
+                        }
+                    }
+                }
+            }
+            
+            .f-t-l {
+                float: left;
+            }
+            
+            .f-t-r {
+                float: right;
+            }
+
+            .btn {
+                min-width: 60px;
+                padding: 8px 6px;
+                &+.btn {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .resume-evaluate-content {
+
+            .resume-evaluate-no-data {
+                
+                text-align: center;
+                font-size: 12px;
+                color: #86909c;
+                line-height: 16px;
+                padding-top: 30px;
+
+                img {
+                    width: 100px;
+                }
+            }
+            .resume-evaluate-item {
+                padding: 8px;
+                border-radius: 2px;
+                margin-left: -8px;
+                margin-right: -8px;
+
+                &:hover {
+                    background-color: #F5F6F9;
+                    .resume-evaluate-info .btn-delete {
+                        display: block;
+                    }
+                }
+            }
+            .resume-evaluate-text {
+                white-space: pre-line;
+                font-size: 14px;
+                color: #1D2129;
+                line-height: 22px;
+                margin-bottom: 6px;
+            }
+
+            .resume-evaluate-user {
+                display: flex;
+            }
+            .user-title {
+                font-size: 12px;
+                line-height: 21px;
+            }
+            .user-content {
+                flex: 1;
+                &>div {
+                    background: rgba(57,138,255,0.1);
+                    border-radius: 10px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    padding: 0 6px 0 4px;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                    height: 21px;
+                    font-size: 12px;
+                    line-height: 21px;
+                    .svg-icon {
+                        width: 14px;
+                        margin-right: 3px;
+                        position: relative;
+                        top: 3px;
+                        cursor: auto;
+                    }
+                }
+            }
+
+            .resume-evaluate-info {
+                font-size: 12px;
+                color: #86909c;
+                line-height: 18px;
+                margin-top: 2px;
+                position: relative;
+
+                span {
+                    display: inline-block;
+                }
+                span+span {
+                    margin-left: 8px;
+                }
+
+                .btn-delete {
+                    display: none;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 0 3px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    border-radius: 2px;
+
+                    .recruit-delete {
+                        color: #B2B5BF;
+                        position: relative;
+                        top: 3px;
+                    }
+                    &:hover {
+                        background: #E5E6EB;;
+                        // .recruit-delete {
+                        //     color: #00CFC5;
+                        // }
+                    }
+                }
+                
+            }
+        }
+
+        .page-back-tracking-progress {
+            margin-top: 30px;
+            .attachment-list {
+                margin-top: 16px;
+            }
+            .tracking-progress-title {
+                font-size: 16px;
+                font-weight: 500;
+                color: #1D2129;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 5px;
+                    left: -26px;
+                    display: block;
+                    width: 5px;
+                    height: 14px;
+                    background: linear-gradient(180deg, #5DE1BF 0%, #11CD9E 100%);
+                }
+            }
+
+            .tracking-progress-subtitle {
+                margin-top: 3px;
+                font-size: 12px;
+                color: #86909C;
+            }
+            .tracking-progress-info {
+                .info-item.big-info {
+                    .info-value{
+                        width: 652px;
+                        min-height: 100px;
+                        height: auto;
+                        white-space: pre-line;
+                    }
+                }
+                .info-item {
+                    display: flex;
+                    margin-top: 12px;   
+                }
+                .info-title {
+                    width: 68px;
+                    font-size: 14px;
+                    color: #1D2129;
+                    line-height: 28px;
+                }
+                .info-value {
+                    height: 28px;
+                    background: #F6F7FB;
+                    border-radius: 2px;
+                    padding: 4px 12px;
+                }
+                .step-1 {
+                    width: 220px;
+                    margin-right: 12px;
+                }
+                .step-2 {
+                    width: 420px;
+                }
+            }
+        }
+    }
+    ::v-deep .delivery-record-container {
+        border-top: 1px dashed #E8EAEF;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        padding-top: 24px;
+
+        .record-blod {
+            color: #1D2129;
+        }
+        
+        .resume-delivery-header {
+            display: flex;
+            justify-content: space-between;
+            line-height: 20px; 
+            h4 {
+                font-size: 14px;
+                font-weight: 500;
+                color: #13141A;
+            }
+            .flex-r {
+                font-size: 12px;
+                font-weight: 400;
+                color: #6C7281;
+                cursor: pointer;
+                vertical-align: middle;
+                .resume-delivery-icon {
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                }
+
+                .recruit-edit {
+                    color: #C5C8D0;
+                }
+
+                &:hover {
+                    color: #00CFC5;
+
+                    .recruit-edit {
+                        color:#00CFC5;
+                    }
+                }
+            }
+            margin-bottom: 10px;
+        }
+
+        .input-wrap-textarea {
+            min-width: auto;
+            width: 100%;
+        }
+
+        .resume-delivery-content {
+
+            .resume-delivery-no-data {
+                
+                text-align: center;
+                font-size: 12px;
+                color: #86909c;
+                line-height: 16px;
+                padding-top: 10px;
+
+                img {
+                    width: 100px;
+                }
+            }
+            .resume-delivery-item {
+                padding: 8px 6px;
+                border-radius: 2px;
+                margin-left: -6px;
+                margin-right: -6px;
+
+                &:hover {
+                    background-color: #F5F6F9;
+                    .resume-delivery-info .btn-delete {
+                        display: block;
+                    }
+                }
+            }
+            .resume-delivery-text {
+                white-space: pre-line;
+                font-size: 14px;
+                color: #4e5969;
+                line-height: 22px;
+            }
+
+            .resume-delivery-info {
+                font-size: 12px;
+                color: #86909c;
+                line-height: 17px;
+                margin-top: 5px;
+                position: relative;
+
+                span {
+                    display: inline-block;
+                }
+                span+span {
+                    margin-left: 8px;
+                }
+
+                .btn-delete {
+                    display: none;
+                    padding: 6px 8px;
+                    position: absolute;
+                    right: -6px;
+                    top: -6px;
+                    cursor: pointer;
+
+                    .recruit-delete {
+                        color: #B2B5BF;
+                    }
+                    &:hover {
+                        .recruit-delete {
+                            color: #00CFC5;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: #F1F1F1;
+    }
+    
+}
+
+.aside-logic {
+    width: 330px;
+    flex-shrink: 0;
+    border-left: 1px solid #E8EAEF;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-pages {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    .tab-page {
+        min-height: calc(~'100vh - 320px');
+    }
+    &.success-load {
+        height: auto;
+
+        ::v-deep .tab-page .doc-preview-wrap .doc-container {
+            position: relative;
+            min-height: calc(~'100vh - 300px');
+            .pdf-container {
+                overflow: unset;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    .hide-resume {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    ::v-deep .tab-page {
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .selector-wrap {
+            // position: sticky;  top: 0;
+            // position: absolute;
+            width: 100%;
+            height: 60px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            background: #fff;
+            z-index: 98;
+
+            > span {
+                font-size: 13px;
+                font-weight: 400;
+                color: #444444;
+                line-height: 18px;
+                margin-right: 20px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .ui-select {
+                width: 320px;
+                height: 30px;
+                .ui-select-inner {
+                    height: 30px;
+                }
+                .ui-select-selected-value {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    max-width: 260px;
+                    display: inline-block;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
+
+.resume-btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #00CFC5;
+    transition: all ease-in-out 0.2s;
+    display: flex;
+    &:hover {
+        opacity: 0.7;
+        color: #6adbcf;
+    }
+
+    & + .resume-btn {
+        margin-left: 20px;
+    }
+
+    .svg-icon {
+        width: 14px; height: 14px; margin-right: 8px;
+        margin-top: 3px;
+    }
+}
+
+.slide-fade-enter-active, .slide-fade-leave-active {
+    transition: all .2s ease-in-out;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(-100%);
+    opacity: 0;
+}

@@ -1,0 +1,89 @@
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+.flex-align-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.suction-bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 20px 30px 40px;
+    background-color: #fff;
+    .btn {
+        width: 90px;
+        margin-right: 20px;
+        &.btn-primary {
+            background-color: @primary-color;
+            border-color: @primary-color;
+        }
+        &.btn-outline {
+            background-color: #fff;
+            border-color: @primary-color;
+            color: @primary-color;
+        }
+    }
+}
+
+.text {
+    cursor: pointer;
+    &-error {
+        color: @error-color;
+    }
+}
+
+// 重写tinymce的工具栏吸顶效果
+.tiny-editor.fixed-toolbar {
+    .tox {
+        overflow: visible;
+        .tox-editor-container {
+            overflow: visible;
+        }
+        .tox-editor-header{
+            position: sticky;
+            top:0;
+        }
+        &.tox-fullscreen {
+            .tox-editor-container {
+                overflow: auto;
+            }
+        }
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.edit-color {
+    color: #00C2B3;
+    cursor: pointer;
+    &:hover {
+        color: #5dd5c8;
+    }
+}
+
+.min-w-1400 {
+    min-width: 1400px!important;
+}
+
+.white-space-pre-wrap {
+    white-space: pre-wrap;
+}

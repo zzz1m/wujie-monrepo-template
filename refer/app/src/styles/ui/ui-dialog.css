@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*dialog*/
+.dialog-wrap { position:fixed; width:100%; height:100%; top:0; left:0; z-index:1010; display: flex; justify-content: center; align-items: center; }
+.dialog-layer { position: fixed; width:100%; height:100%; top: 0; left: 0; background:#252830; filter:alpha(opacity=70); background:rgba(37,40,48,.7); z-index:1002; }
+.dialog-container { position: relative; z-index: 1003; min-width: 260px; padding:24px 30px; background-color:#fff; box-shadow:0 0 14px rgba(0,0,0,.11); }
+.dialog-header { font-size:14px; line-height:26px; font-weight:normal; }
+.dialog-header .close { position:absolute; width:24px; height:24px; right:8px; top:8px; z-index:1; }
+.icon-close { display:inline-block; width:24px; height:24px; position:relative; vertical-align:top; }
+.icon-close:before,.icon-close:after { content:''; position:absolute; width:16px; height:1px; background:#d1d4db; -webkit-transform:rotate(45deg); transform:rotate(45deg); left:4px; top:12px; }
+.icon-close:after { -webkit-transform:rotate(-45deg); transform:rotate(-45deg);  }
+.dialog-header .close:hover { background:#ddd; }
+.dialog-header .close:hover .icon-close:before,.dialog-header .close:hover .icon-close:after { background:#363636; }
+.dialog-header h3.title { font-weight: normal; }
+
+
+.icon-dialog-success,.icon-dialog-info,.icon-dialog-warning,.icon-dialog-error,.icon-dialog-lock { display:inline-block; width:24px; height:24px; vertical-align:middle; background-image:url(../../images/ui/icons-dialog.png); background-repeat:no-repeat;}
+.icon-dialog-info { background-position:0 -242px; }
+.icon-dialog-warning { background-position:0 -163px; }
+.icon-dialog-error { background-position:0 -82px; }
+.icon-dialog-lock { background-position:0 -320px; }
+.dialog-icons-default .dialog-container { width:400px; }
+.dialog-icons-default .dialog-header .icon-dialog { float:left; width:24px; margin-top:5px; }
+.dialog-icons-default .dialog-header h3.title { margin-left: 44px; font-weight:normal; word-wrap: break-word; word-break: break-all; }
+.dialog-icons-default .dialog-body { padding-left:44px; }
+
+
+.dialog-primary-default .dialog-container { width: 340px; padding:24px 30px; margin-left:-200px; }
+.dialog-primary-default .dialog-title h3.title { font-weight:normal; }
+.dialog-primary-default .dialog-footer .btns .btn:first-of-type { margin-left:0; }
+
+
+.dialog-around-default { position:absolute; width:auto; height:auto; }
+.dialog-around-default .dialog-container:before, .dialog-around-default .dialog-container:after { content: ''; position: absolute; width:12px; height:12px; left: calc(50% - 6px); background:#fff; }
+.dialog-around-default .dialog-container:after { -webkit-transform:rotate(45deg); transform:rotate(45deg); box-shadow:0 1px 10px rgba(0,0,0,.09);  }
+.dialog-around-default .dialog-container:before { width: 30px; left: calc(50% - 14px); z-index: 1; }
+
+.dialog-top-default .dialog-container:after { -webkit-transform:rotate(45deg); transform:rotate(45deg); box-shadow:0 1px 10px rgba(0,0,0,.09); top: calc(100% - 6px);  }
+.dialog-top-default .dialog-container:before { width: 30px; top: calc(100% - 12px); left: calc(50% - 14px); z-index: 1; }
+
+.dialog-top-default { top:auto; bottom:100%; margin-bottom: 12px; }
+.dialog-top-default .dialog-container:after { top: calc(100% - 6px); }
+.dialog-top-default .dialog-container:before { top: calc(100% - 12px); }
+
+.dialog-top-left-default { top:auto; bottom:100%; margin-bottom: 12px; }
+.dialog-top-left-default .dialog-container:after { top: calc(100% - 6px); left: calc(100% - 36px); }
+.dialog-top-left-default .dialog-container:before { top: calc(100% - 12px); left: calc(100% - 44px); }
+
+.dialog-top-right-default { top:auto; bottom:100%; margin-bottom: 12px; }
+.dialog-top-right-default .dialog-container:after { top: calc(100% - 6px); left: 30px; }
+.dialog-top-right-default .dialog-container:before { top: calc(100% - 12px); left: 22px; }
+
+.dialog-bottom-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-bottom-default .dialog-container:after { bottom: calc(100% - 6px);  }
+.dialog-bottom-default .dialog-container:before { bottom: calc(100% - 12px); }
+
+.dialog-bottom-left-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-bottom-left-default .dialog-container:after { bottom: calc(100% - 6px); left: calc(100% - 36px); }
+.dialog-bottom-left-default .dialog-container:before { bottom: calc(100% - 12px); left: calc(100% - 44px); }
+
+.dialog-bottom-right-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-bottom-right-default .dialog-container:after { bottom: calc(100% - 6px); left: 30px;  }
+.dialog-bottom-right-default .dialog-container:before { bottom: calc(100% - 12px); left: 22px; }
+
+/* left部分暂时没调试暂时 */
+.dialog-left-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-left-default .dialog-container:after { bottom: calc(100% - 6px);  }
+.dialog-left-default .dialog-container:before { bottom: calc(100% - 12px); }
+
+.dialog-left-top-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-left-top-default .dialog-container:after { bottom: calc(100% - 6px); left: calc(100% - 36px); }
+.dialog-left-top-default .dialog-container:before { bottom: calc(100% - 12px); left: calc(100% - 44px); }
+
+.dialog-left-bottom-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-left-bottom-default .dialog-container:after { bottom: calc(100% - 6px); left: 30px;  }
+.dialog-left-bottom-default .dialog-container:before { bottom: calc(100% - 12px); left: 22px; }
+
+.dialog-right-default {left: 100%; top: -50%; }
+.dialog-right-default .dialog-container:after { left: -6px;  }
+.dialog-right-default .dialog-container:before { left: -12px; }
+
+.dialog-right-top-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-right-top-default .dialog-container:after { bottom: calc(100% - 6px); left: calc(100% - 36px); }
+.dialog-right-top-default .dialog-container:before { bottom: calc(100% - 12px); left: calc(100% - 44px); }
+
+.dialog-right-bottom-default { bottom:auto; top:100%; margin-top: 12px; }
+.dialog-right-bottom-default .dialog-container:after { bottom: calc(100% - 6px); left: 30px;  }
+.dialog-right-bottom-default .dialog-container:before { bottom: calc(100% - 12px); left: 22px; }
+
+
+.dialog-alert-default .dialog-container { width:240px; }
+.dialog-alert-default .dialog-header h3.title { font-size:15px; margin-left:0; text-align:center; padding-bottom:12px; }
+.dialog-alert-default .dialog-footer .btns { text-align:center; }
+.dialog-alert-default .dialog-footer .btns .btn:first-of-type { margin-left:0; }
+.dialog-alert-default .dialog-layer { /*background: rgba(255, 255, 255, 0.8);*/ }
+.dialog-alert-default  .dialog-body { padding-left:0; }
+
+.dialog-large-default .dialog-container { width: 800px; }
+
+
+.dialog-inline-default .dialog-container { top:25px; }
+
+
+
+
+/*.dialog-layer-full .dialog-container { position: absolute; width:100%; height:100%; top:0; left:0; padding: 0; background:none; margin:0; }
+.dialog-layer-full .dialog-header { position: absolute; width: 100%; top: 0; }
+.dialog-layer-full .dialog-header .close { top:15px; right:35px; }
+.dialog-layer-full .dialog-header .icon-close:before, .dialog-layer-full .dialog-header .icon-close:after { background:#d1d4db; width:18px; height:1px; left:3px; }
+.dialog-layer-full .dialog-header .close:hover { background:none; }
+.dialog-layer-full .dialog-header .close:hover .icon-close:before,.dialog-layer-full .dialog-header .close:hover .icon-close:after { background:#fff; }
+.dialog-layer-full .dialog-body { height:100%; max-height:100%; overflow:auto; }
+.dialog-layer-full .dialog-layer { background-color:rgba(37,40,48,.95); }
+.dialog-layer-full .dialog-body .data-tips { height:100%; background:none; }*/
+.dialog-layer-full { display: block; }
+.dialog-layer-full .dialog-container { width: 1000px !important; margin: 0 auto; padding: 0; height: 100%; }
+.dialog-layer-full .dialog-body { max-height: 100%; overflow: auto; }
+.dialog-layer-full .dialog-header .close { right: -32px; top: 0; width: 32px; height: 32px; background-color: #ddd; }
+.dialog-layer-full .dialog-header .icon-close { width: 32px; height: 32px; }
+.dialog-layer-full .dialog-header .icon-close:before,.dialog-layer-full .dialog-header .icon-close:after { top: 15px; left: 7px; background-color: #363636; }
+.dialog-layer-full .dialog-header .close:hover { opacity: .8; }
+
+
+.dialog-opacity-layer { background:rgba(255,255,255,0); top:0; left:0; }
+
+
+.dialog-promotion-iframe .dialog-container { width: 750px; height: 100%; top: 0; margin-left: -375px; margin-top: 0; }
+.dialog-promotion-iframe .dialog-body { height: 100%; }
+.dialog-promotion-iframe .dialog-body iframe { width: 100%; height: 100%; border: 0; }
+
+
+
+.dialog-body { max-height:100%; min-height: 20px; }
+.dialog-body .tip-text { padding:10px 0; color:#9fa3b0; line-height:24px; font-size: 14px; background-image: none; }
+.dialog-body .tip-warning { background-color:#FFF7F5; border:1px #FBB49D solid; font-size:12px; padding: 10px; margin-top: 20px; border-radius:0; }
+.dialog-footer { margin-top:20px; position:relative; }
+.dialog-footer .btns { text-align:right; }
+.dialog-footer .btns .btn { margin:0 0 0 20px; -webkit-transition: none; transition:none;}
+/*兼容旧的ui.css*/
+/* .dialog-footer .btns .btn-outline:hover { background-color: #fff; color: #5DD5C8; line-height: 30px; border-width: 2px; padding: 0 29px;} */
+
+@media (max-width:374px) {
+	.dialog-container { position:absolute; width:302px; margin:-93px 0 0 -151px; }
+}

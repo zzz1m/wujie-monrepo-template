@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*table*/
+.ui-table {
+    margin-top: 20px;
+    background-color: #fff;
+}
+.ui-table a,
+.data-page a {
+    -webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+}
+.ui-table table {
+    width:100%;
+    table-layout: fixed;
+}
+.ui-table tr:hover {
+    background-color: #F8F9FB;
+}
+.ui-table th,
+.ui-table td {
+    font-size:13px;
+    padding: 5px;
+    height: 40px;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px #EEF0F5 solid;
+}
+.ui-table th {
+    background: #FBFBFC;
+    color: #61687c;
+    font-size: 14px;
+}
+.ui-table th:first-of-type,
+.ui-table td:first-of-type {
+    padding-left: 10px;
+}
+.sort-caret {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.sort-ascending,
+.sort-descending {
+    display: block;
+    border: 5px solid transparent;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sort-ascending {
+    border-bottom-color: #c0c4cc;
+}
+.sort-descending {
+    border-top-color: #c0c4cc;
+}
+.sort-ascending.active {
+    border-bottom-color: #1FCBC7;
+}
+.sort-descending.active {
+    border-top-color: #1FCBC7;
+}
+.descending .active {
+    border-top-color: #1FCBC7;
+}
+.ui-table table a {
+    color: #18c3b1;
+}
+.ui-table table a:hover {
+    color: #00d7c6;
+}
+.ui-table td {
+    position: relative;
+}
+
+.ui-table-fixed {
+    overflow: hidden;
+}
+.ui-table-fixed .table-header {
+    background-color: #FBFBFC;
+    position: relative;
+}
+.ui-table-fixed .table-body {
+    overflow: auto;
+}
+
+.ui-table-border {
+    border: 1px #EEF0F5 solid;
+}
+.ui-table-border th,
+.ui-table-border td {
+    border-left: 1px #EEF0F5 solid;
+}
+.ui-table-border .table-header,
+.ui-table-border .table-body {
+    margin-left: -1px;
+}
+.ui-table-border > table {
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+.ui-table-border .table-body {
+    margin-bottom: -1px;
+}
+
+.ui-table-stripe tbody tr:nth-child(2n) {
+    background-color: #f9f9f9;
+}
+.ui-table ~ .pager {
+    margin-top: 20px;
+}

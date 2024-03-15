@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="13.6573804%" y1="0.841955236%" x2="90.9244792%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFC43B" offset="0%"></stop>
+            <stop stop-color="#FFA250" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFDFA6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人目标" transform="translate(-940.000000, -110.000000)">
+            <g id="编组备份" transform="translate(922.000000, 92.000000)">
+                <g id="编组-11" transform="translate(18.000000, 18.000000)">
+                    <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="32" height="32" rx="8"></rect>
+                    <g id="编组-5" transform="translate(5.000000, 5.000000)">
+                        <polygon id="路径" points="0 0 22 0 22 22 0 22"></polygon>
+                        <path d="M11.9,1.1 L11.9009,3.855809 C15.15728,4.262285 17.73821,6.843467 18.14429,10.1 L20.9,10.1 L20.9,11.9 L18.1442,11.9009 C17.73776,15.15701 15.15701,17.73776 11.9009,18.1442 L11.9,20.9 L10.1,20.9 L10.1,18.14429 C6.843467,17.73821 4.262285,15.15728 3.855809,11.9009 L1.1,11.9 L1.1,10.1 L3.855701,10.1 C4.261808,6.843161 6.843161,4.261808 10.1,3.855701 L10.1,1.1 L11.9,1.1 Z M11,9.2 C10.00586,9.2 9.2,10.00586 9.2,11 C9.2,11.99414 10.00586,12.8 11,12.8 C11.99414,12.8 12.8,11.99414 12.8,11 C12.8,10.00586 11.99414,9.2 11,9.2 Z" id="形状" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

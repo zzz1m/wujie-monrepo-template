@@ -1,0 +1,169 @@
+// 管理范围过滤器
+.filter-viewer {
+    color: @default-color;
+    font-size: 13px;
+    padding-bottom: 90px;
+    user-select: none;
+    min-height: 250px;
+    // 过滤组
+    .filter-list-viewer {
+        position: relative;
+        padding: 32px 0;
+    }
+    .filter-split {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-top: 1px dashed @border-color-usual;
+        .filter-split-label {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            background-color: #fff;
+            width: 100px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+    .filter-content {
+        .flex-align-center;
+    }
+    .filter-tip {
+        .flex-align-center;
+        .svg-active {
+            display: none;
+        }
+        .filter-tip-label {
+            margin-left: 10px;
+            margin-right: 14px;
+        }
+        &:hover {
+            .svg-active {display: block;}
+            .svg-disabled {display: none;}
+        }
+    }
+    .filter-list {
+        border-left: 1px solid @gray-3-color;
+        .filter-item {
+            .flex-align-start;
+            position: relative;
+            margin-bottom: 20px;
+            min-height: 36px;
+            &:last-child {
+                align-items: center;
+            }
+            &:first-child::after {
+                content: '';
+                position: absolute;
+                left: -1px;
+                top: 0;
+                width: 1px;
+                height: 16px;
+                background-color: #fff;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                height: 34px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -1px;
+                    top: 16px;
+                    width: 1px;
+                    height: 16px;
+                    background-color: #fff;
+                }
+            }
+            padding-left: 25px;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 16px;
+                width: 16px;
+                height: 1px;
+                background-color: @gray-3-color;
+            }
+            .svg-icon,.ui-select {
+                margin-right: 10px; 
+            }
+            .ctrl-box-viewer {
+                .ui-select {
+                    margin-right: 0;
+                }
+            }
+            .ui-tree-viewer{
+                .ui-tree-empty-block{
+                    padding: 0 10px;
+                }
+            }
+            .icon-remove {
+                position: relative;
+                top: 10px;
+                .svg-active {display: none;}
+                &:hover {
+                    .svg-active { display: block; }
+                    .svg-disabled { display: none; }
+                }
+            }
+            .ui-select {
+                width: 185px;
+            }
+            .ui-select-mini.ui-select{
+                width: 95px;
+            }
+        }
+    }
+    .add-filter {
+        .flex-align-center;
+        width: 100px;
+        cursor: pointer;
+        .label {
+            line-height: 20px;
+            color: @primary-color;
+            font-size: @font-size-base;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .ui-select-disabled .ui-select-selection {
+        background-color: #F8F9FB;
+        .ui-select-inner {
+            opacity: 1;
+        }
+    }
+}
+
+.bossui-new .ui-select-error, .ui-select-error {
+    &.ui-select:not(.ui-select-disabled):not(.ui-select[readonly]) .ui-select-selection:hover {
+        border: 1px solid @error-color !important;
+    }
+    .ctrl-box-viewer:not(.no-justify){
+        border: 1px solid @error-color !important;
+        border-radius: 4px;
+        .ui-select-selection {
+            border: none;
+        }
+        .ui-tree-viewer .ctrl-input {
+            height: 32px;
+        }
+    }
+    .ui-select-selection {
+        border: 1px solid @error-color !important;
+        &-focused {
+            box-shadow: none;
+        }
+    }
+    .input:hover,.input:focus {
+        border:1px solid transparent;
+        box-shadow: none;
+    }
+    .ui-cascader-new .cascader-viewer {
+        top: 35px;
+    }
+}

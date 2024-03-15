@@ -1,0 +1,26 @@
+@import './setting.less';
+@import './components/class-panel.less';
+@import './components/schedule-setting.less';
+@import './components/copy-shift.less';
+
+.page-working-schedule{
+    .data-list  {
+        .ui-table-pro {
+            td{
+                height: auto;
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+    }
+    .attendance-times{
+        li{
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            & + li{
+                margin-top: 4px;
+            }
+        }
+    }
+}

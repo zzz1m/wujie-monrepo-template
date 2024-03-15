@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": "commonjs",
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    [
+      "@babel/plugin-transform-runtime", {
+        "regenerator": true
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "vxe-table",
+        "style": true
+      }
+    ],
+    [
+      "component",
+      {
+        "libraryName": "umy-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}

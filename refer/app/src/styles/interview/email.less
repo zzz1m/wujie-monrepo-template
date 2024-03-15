@@ -1,0 +1,163 @@
+
+/deep/ .input::-webkit-input-placeholder{ 
+    // color: #d1d4db; 
+} 
+/deep/ .input:-moz-placeholder{
+    // color: #d1d4db ; 
+}
+/deep/ .input:-ms-input-placeholder{ 
+    // color: #d1d4db ; 
+}
+.dialog-notice {
+    ::v-deep.dialog-header h3.title {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    ::v-deep.dialog-body {
+        max-height: calc(~'100vh - 214px');
+        overflow: auto;
+        margin: 0 -30px;
+        padding: 20px 30px 0 30px;
+        .ui-select, .input-wrap {
+            width: 510px;
+        }
+        .ui-form .item-label {
+            font-size: 13px;
+            color: #646F79
+        }
+        .form-item {
+            margin-bottom: 20px;
+        }
+        .form-item .form-error-tip {
+            padding-top: 4px;
+        }
+    }
+    
+}
+
+.form-bg {
+    width: 605px;
+    // background-color: #F8F8F8;
+    padding: 20px 20px 0 0;
+    // border-radius: 2px;
+    margin-bottom: 20px;
+    border: 1px dashed #E3E7ED;
+    ::v-deep.ui-select, .input-wrap {
+        width: 490px!important;
+    }
+}
+.variable-wrap {
+    height: 129px;
+    overflow: auto;
+    margin-right: -20px;
+    padding: 20px 30px;
+    border-top: 1px dashed #E3E7ED;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    .quill-add-btn{
+        // width: auto;
+        // display: block;
+        padding: 3px 15px;
+        background: #fff;
+        border-radius: 11px;
+        border: 1px solid #D0D4DB;
+        margin: 0 10px 10px 0;
+        font-size: 12px;
+        line-height: 15px;
+        color: #B6BAC4;
+        &:hover{
+            border: 1px solid #5DD5C8;
+            color: #5DD5C8;
+        }
+    }
+}
+
+::v-deep.quill-editor-form.form-item  {
+    .item-content {
+        line-height: 24px;
+        // z-index: 10;
+    }
+}
+
+::v-deep .ql-snow {
+    width: 490px;
+    border: 1px solid #e3e7ed !important;
+    background: #fff;
+    .quill-add-btn {
+        color: #5DD5C8;
+    }
+    .ql-formats {
+        margin-right: 5px;
+        button {
+            padding: 3px 0;
+        }
+    }
+}
+
+::v-deep .ql-container {
+    min-height: 160px;
+    &.ql-snow {
+        border-top: none !important;
+    }
+}
+
+::v-deep .ql-editor {
+    min-height: 160px;
+    max-height: 300px;
+}
+::v-deep .ql-blank::before {
+    font-style: normal;
+    color: #d1d4db;
+}
+
+.quill-add-btn {
+    cursor: pointer;
+    margin-right: 25px;
+    color: #5DD5C8;
+}
+
+.file-add-btn {
+    color: #5DD5C8;
+    font-size: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+
+    &.tmp-btn {
+        position: relative;
+        top: -4px;
+    }
+}
+
+.file-del-btn {
+    color: #5DD5C8;
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.accessory-list {
+    margin-bottom: 5px;
+}
+.accessory-text {
+    font-size: 12px;
+    color: #646F79;
+    span {
+        margin-left: 10px;
+        color: #5DD5C8;
+    }
+}
+
+
+.interview-email-upload {
+    .upload-btn {
+        padding: 3px 15px;
+        display: flex;
+        align-items: center;
+        .file-add-btn {
+            height: 26px;
+        }
+        
+    }
+}

@@ -1,0 +1,190 @@
+.page-set-time {
+ 
+    .place-list-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    .mt-28 {
+        margin-top: 28px;
+    }
+    .ui-tab-content {
+        display: none;
+    }
+    .ui-tab .ui-tab-nav-wrap .ui-tab-nav.is-showbar .ui-tab-nav-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .place-wrapper {
+        margin-right: 20px;
+        float: left;
+        width: 380px;
+        height: 200px;
+        padding: 30px;
+        position: relative;
+        margin-bottom: 24px;
+       
+        border-radius: 8px;
+        cursor: pointer;
+       
+        background-position: center;
+        background-size: 100% 100%;
+
+        transition: all 0.3s;
+        
+        &.minsheng {
+            background-image: url('https://img.bosszhipin.com/static/file/2022/rd0ipbgjv51645538337156.png');
+
+            &:hover .place-detail {
+                color: #11244D;
+
+                .triangle-right {
+                    border-left-color: #11244D;
+                }
+                
+            }
+
+            .place-detail {
+                color: #1C3979;
+
+                .triangle-right {
+                    border-left-color: #1C3979;
+                }
+            }
+            h3 {
+                color: #173066;
+            }
+        }
+
+        &.guanjie {
+            background-image: url('https://img.bosszhipin.com/static/file/2022/z09s8bo8m61645538337067.png');
+
+            &:hover .place-detail {
+                color: #472806;
+
+                .triangle-right {
+                    border-left-color: #472806;
+                }
+            }
+
+            .place-detail {
+                color: #613708;
+
+                .triangle-right {
+                    border-left-color: #613708;
+                }
+            }
+
+            h3 {
+                color: #613708;
+            }
+        }
+
+        &.zaixian {
+            background-image: url('https://img.bosszhipin.com/static/file/2022/hiy7g91i9i1645538336894.png');
+
+            &:hover .place-detail{
+                color: #26234D;
+
+                .triangle-right {
+                    border-left-color: #26234D;
+                }
+            }
+
+            .place-detail {
+                color: #332F66;
+
+                .triangle-right {
+                    border-left-color: #332F66;
+                }
+            }
+
+            h3 {
+                color: #332F66;
+            }
+        }
+
+        &.taiyanggong {
+            background-image: url('https://img.bosszhipin.com/static/file/2022/q6na66rpnp1656316079426.png');
+
+            &:hover .place-detail{
+                color: #5A1010;
+
+                .triangle-right {
+                    border-left-color: #5A1010;
+                }
+            }
+
+            .place-detail {
+                color: #822727;
+
+                .triangle-right {
+                    border-left-color: #822727;
+                }
+            }
+
+            h3 {
+                color: #822727;
+            }
+        }
+        &.taiyanggongguangchang {
+            background-image: url('https://img.bosszhipin.com/static/file/2023/91tb0v1lb71684141869415.png');
+
+            &:hover .place-detail{
+                color: #3f5540;
+
+                .triangle-right {
+                    border-left-color: #3f5540;
+                }
+            }
+
+            .place-detail {
+                color: #3f5540;
+
+                .triangle-right {
+                    border-left-color: #3f5540;
+                }
+            }
+
+            h3 {
+                color: #23481e;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 20px 50px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 500;
+            color: #000000;
+            line-height: 50px;
+            margin-left: -2px;
+        }
+
+        .place-detail {
+            margin-top: 6px;
+            position: relative;
+            .detail-title {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px; 
+            }
+
+            .triangle-right {
+                display: block;
+                width: 0;
+                height: 0;
+                border: 4px solid transparent;
+                border-left-color: #c3c3c3;
+                position: absolute;
+                bottom: 7px;
+                left: 70px;
+            }
+        }
+        
+    }
+}

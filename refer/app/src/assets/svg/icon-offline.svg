@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="7"></circle>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="标签/下线" transform="translate(-4.000000, -4.000000)">
+            <g id="icon-/-status-/-warning-/-filled-/-16" transform="translate(4.000000, 4.000000)">
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon-color" fill="#8A8E9A" xlink:href="#path-1"></use>
+                <rect id="矩形" fill="#FFFFFF" mask="url(#mask-2)" x="5" y="7.4" width="6" height="1.2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

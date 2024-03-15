@@ -1,0 +1,504 @@
+/* ----------- */
+.line-overflow{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.evaluation-form{
+    margin: 0 auto;
+    width: 940px;
+    border: 1px solid #D7D7D7;
+    color: #161B26;
+}
+.evaluation-content{
+    border: 1px solid #D7D7D7;
+    border-bottom: 0;
+    width: 920px;
+    margin: 10px auto;
+}
+.evaluation-content .header-title{
+    width: 100%;
+    height: 78px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 78px;
+    text-align: center;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.evaluation-content .main-ul{
+    width: 100%;
+}
+
+.evaluation-content .main-li >.com-title{
+    background-color: #F4F5F8;
+    border-top: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 16px;
+    color: #161B26;
+    font-weight: 500;
+    margin-top: -1px;
+}
+    
+    
+.item-table-wrap{
+    width: 100%;
+}
+
+.item-table-wrap ul{
+    width: 100%;
+    overflow: auto
+}
+
+.item-table-wrap ul li{
+    width: 50%; 
+    float: left; 
+    border-bottom: 1px solid #D7D7D7;
+    height: 44px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.item-table-wrap ul li .com-title{
+    width: 30%; 
+    float: left;
+    height: 100%;
+    color: #646F79;
+    line-height: 44px;
+    text-align: center;
+    border-right: 1px solid #D7D7D7;
+    padding-left: 30px;
+    text-align: left;
+}
+.item-table-wrap ul li .com-content{
+    padding-left: 40px;
+    width: 70%;
+    font-weight:500;
+    line-height: 44px;
+    height: 44px;
+    /* text-align: center; */
+    text-align: left;
+}
+.item-table-wrap ul li:nth-child(2n+1) .com-content{
+    border-right: 1px solid #D7D7D7;
+}
+    
+.item-text-wrap li{
+    border-bottom: 1px solid #D7D7D7;
+    padding: 20px 40px
+}
+
+.item-text-wrap .com-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height:22px;
+    position: relative;
+    text-align: left;
+    color: #161B26;
+}
+.item-text-wrap .com-title .num{
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.item-text-wrap .com-content{
+    white-space: pre-wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height:24px;
+    text-align: left;
+    word-break: break-all;
+}
+.item-text-wrap .com-content .question-one{
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.item-radio-wrap{
+    height: 44px;
+    border-bottom: 1px solid #D7D7D7;
+    font-size: 14px;
+    line-height: 20px;
+}
+.item-radio-wrap .com-title{
+    width: 135px;
+    height: 100%;
+    color: #646F79;
+    border-right: 1px solid #D7D7D7;
+    line-height: 44px;
+    text-align: center;
+    float:left;
+}
+    
+    
+.item-radio-wrap .com-content{
+    padding-top: 11px;
+    width: 85%;
+    height: 100%;
+    color: #212121;
+    float:left;
+    padding-left: 40px;
+}
+
+.item-radio-wrap .com-content label{
+    margin-right: 20px;
+}
+.item-radio-wrap .com-content input{
+    margin-right: 12px;
+}
+
+/* 选中样式 */
+.item-radio-wrap .input-opts .ico {
+    display: inline-block;
+    width:14px;
+    height:14px;
+    border:1px solid rgba(216,216,216,1);
+    margin-right: 10px;
+    position: relative;
+}
+.item-radio-wrap .input-opts .active i{
+    display: inline-block !important;
+}
+
+.item-radio-wrap .radio .ico {
+    border-radius:7px;
+    position: relative;
+    top: 2px;
+    
+}
+.item-radio-wrap .radio .ico.active{
+    border-color: #ACAFB9;
+}
+.item-radio-wrap .radio .ico.active i{
+    background-color: #ACAFB9;
+}
+.item-radio-wrap .radio .ico.active + span{
+    color: #161B26;
+}
+
+.item-radio-wrap .radio .ico i{
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    background: #9B9FAB;
+
+    /* width: 14px;
+    height: 14px;
+    position: absolute;
+    border-radius: 2px;
+    top: -1px;
+    left: -1px;
+    background: url('https://verneyzhou.oss-cn-beijing.aliyuncs.com/images/radio_active.png') no-repeat center;
+    background-size: 15px; */
+}
+
+.item-radio-wrap .input-opts span {
+    display: inline-block;
+    height:20px;
+    font-size:14px;
+    
+    font-weight:400;
+    color:rgba(33,33,33,1);
+    line-height:20px;
+}
+
+.item-table-wrap .table-viewer tr .title{
+    padding: 12px 38px;
+    font-weight: 700;
+
+}
+.item-table-wrap .table-viewer tr .content {
+    padding: 20px 38px;
+    padding-top: 0;
+}
+
+
+/* 离职表------------- */
+/* 文本 */
+.resign-wrap .item-text-wrap li{
+    padding: 20px 30px;
+}
+.resign-wrap .item-text-wrap .com-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #161B26;
+}
+.resign-wrap .item-text-wrap .com-content{
+    font-size: 13px;
+    line-height: 24px;
+    word-break: break-all;
+}
+
+/* 单选，多选 */
+.item-radio-resign {
+    padding: 20px 30px;
+    font-size:14px;
+    line-height: 20px;
+    border-bottom: 1px solid #D7D7D7;
+}
+.item-radio-resign .com-title{
+    font-weight: 500;
+    margin-bottom: 17px;
+    position: relative;
+    text-align: left;
+    color: #161B26;
+}
+.item-radio-resign .com-title .num{
+    position: absolute;
+    left: -20px;
+    top: 0%;
+}
+.item-radio-resign .com-content .check-input{
+    white-space: pre-wrap;
+    padding-left: 24px;
+    margin: 6px 0;
+    text-align: left;
+}
+.item-radio-resign .com-content li {
+    text-align: left;
+}
+.item-radio-resign .com-content li:not(:last-child){
+    margin-bottom: 24px;
+}
+.item-radio-resign li label{
+    display: inline-block;
+    position: relative;
+}
+.item-radio-resign li label .ico{
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+.item-radio-resign li input{
+    margin-right: 10px;
+}
+
+/* 选中样式 */
+.item-radio-resign li .input-opts .ico {
+    display: inline-block;
+    width:14px;
+    height:14px;
+    border:1px solid #D8D8D8;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.item-radio-resign li .input-opts .ico.active {
+    border-color: #ACAFB9;
+}
+.item-radio-resign li .input-opts .ico.active i{
+    display: inline-block !important;
+    background-color: #ACAFB9;
+}
+
+.item-radio-resign li .radio .ico {
+    border-radius:7px;
+}
+.item-radio-resign li .radio .ico.active + span{
+    color: #161B26;
+}
+.item-radio-resign li .checkbox .ico {
+    border-radius:2px;
+}
+
+.item-radio-resign li .radio .ico i{
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    background: #9B9FAB;
+
+    /* width: 14px;
+    height: 14px;
+    position: absolute;
+    border-radius: 2px;
+    top: -1px;
+    left: -1px;
+    background: url('https://verneyzhou.oss-cn-beijing.aliyuncs.com/images/radio_active.png') no-repeat center;
+    background-size: 15px; */
+}
+
+.item-radio-resign li .checkbox .active{
+    background: #ACAFB9;
+    border-color: #ACAFB9;
+}
+.item-radio-resign li .checkbox .active + span{
+    color: #161B26;
+}
+.item-radio-resign li .checkbox .ico i{
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    border: 1px solid #fff;
+    top:2px;
+    left: 2px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+}
+
+
+.item-radio-resign li .input-opts span {
+    display: inline-block;
+    height:20px;
+    font-size:14px;
+    
+    font-weight:400;
+    color:rgba(33,33,33,1);
+    line-height:20px;
+}
+
+
+/* 矩阵问题 */
+.item-matrix-wrap .com-title{
+    padding: 12px 30px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-bottom: 1px solid #D7D7D7;
+    position: relative;
+    text-align: left;
+    color: #161B26;
+    margin-top: 12px;
+    padding-top: 0px;
+    height: 32px;
+
+}
+.item-matrix-wrap .com-title .num{
+    position: absolute;
+    left: 10px;
+    top: 0%;
+}
+.item-matrix-wrap li{
+    border-bottom: 1px solid #D7D7D7;
+    padding: 13px 30px 13px 70px;
+}
+.item-matrix-wrap .item-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    text-align: left;
+    color: #161B26;
+}
+.item-matrix-wrap .item-title .item-num{
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+.item-matrix-wrap .item-content{
+    white-space: pre-wrap;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+}
+/* 段落标题 */
+.item-title-wrap{
+    height: 54px;
+    background-color: #F4F5F8;
+    border-top: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    color: #161B26;
+    font-size:14px;
+    font-weight:500;
+    line-height:54px;
+    text-align: center;
+    margin-top: -1px;
+}
+/* 评分 */
+.item-score-wrap .com-title{
+    padding: 16px 30px;
+    border-bottom: 1px solid #D7D7D7;
+    text-align: left;
+}
+.item-score-wrap .com-title >p{
+    font-size: 14px;
+    line-height:20px;
+}
+.item-score-wrap .com-title >p:not(:last-child){
+    margin-bottom: 8px
+}
+
+.item-score-wrap .com-content{
+    text-align: left;
+
+}
+.item-score-wrap .question{
+    border-bottom: 1px solid #D7D7D7;
+    padding: 16px 30px;
+}
+.item-score-wrap .question .ques-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    color: #161B26;
+}
+.item-score-wrap .ques-title .num{
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.item-score-wrap .question .ques-content{
+    margin-top: 20px;
+}
+.item-score-wrap .ques-content >p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.item-score-wrap .ques-content >p:not(:last-child){
+    margin-bottom: 20px;
+}
+.item-score-wrap .score{
+    height: 44px;
+    border-bottom: 1px solid #D7D7D7;
+    padding-left: 30px;
+}
+.item-score-wrap .score li{
+    float:left;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #D8D8D8;
+    font-size: 20px;
+    font-family: DINAlternate-Bold,DINAlternate;
+    font-weight: bold;
+    color: #808080;
+    text-align: center;
+    line-height: 31px;
+    margin-right: 13px;
+}
+.item-score-wrap .score .score-active{
+    background: #ACAFB9;
+    border:1px solid #ACAFB9;
+    color: #fff;
+}
+.item-score-wrap .score p{
+    font-size: 13px;
+    line-height: 40px;
+}
+.item-score-wrap .score .active {
+    color: #161B26;
+    font-size: 16px;
+}
+
+.item-content {
+    word-break: break-all;
+}

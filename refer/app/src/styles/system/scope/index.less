@@ -1,0 +1,134 @@
+.page-scope {
+    padding: 8px 30px 0;
+    .suction-bottom {
+        position: fixed;
+        border-top: 1px solid #E0E6E8;
+        padding: 12px 20px;
+        text-align: center;
+    }
+}
+
+
+.filter-viewer .filter-list .filter-item {
+    .input[disabled] {
+        background-color: #F8F9FB;
+    }
+    .filter-value-box {
+        position: relative;
+        top: -1px;
+        .input[readonly] {
+            background-color: @background-gray-color;
+        }
+        .input-wrap,.ui-select{
+            min-width: unset;
+            width: 290px;
+        }
+        .ui-select.filterabl-input {
+            width: 100%;
+        }
+        .radio-inner {
+            margin-right: 10px;
+        }
+        .ctrl-phone-viewer {
+            width: 290px;
+            height: 34px;
+            border:1px solid @gray-3-color;
+            .flex-align-center;
+            &:hover {
+                border-color: @primary-background-color;
+            }
+            .ui-select {
+                width: 80px;
+                .ui-icon-arrow-down {
+                    right: 6px;
+                }
+            }
+            .input-wrap {
+                flex: 1;
+                &.input-focusing .input{
+                    border:none;
+                    box-shadow: unset;
+                }
+            }
+            .ui-select-selection {
+                height: 32px;
+                border:none;
+                &:hover,&-focused {
+                    box-shadow: unset;
+                }
+            }
+            .input {
+                padding-left: 6px;
+                border:none;
+                height: 32px;
+            }
+        }
+        .ctrl-address-viewer {
+            .ui-cascader { margin-right: 10px; }
+            .ui-cascader, .ui-cascader .input-wrap {
+                width: 185px;
+            }
+            .input[readonly] { background-color: #fff; }
+            .input-wrap { width: 292px;}
+            .ui-cascader-disabled .input[readonly] { background-color: #F8F9FB; }
+        }
+        .ctrl-date-viewer {
+            cursor: pointer;
+            .ctrl-input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                .input {
+                    background-color: #fff;
+                }
+            };
+            .input-wrap {
+                width: 185px;
+            }
+            .ui-date-editor-datetimerange.ui-input-inner {
+                width: 294px;
+                .ui-range-input {
+                    font-size: 13px;
+                    width: 42%;
+                }
+            }
+            &.isDateVar {
+                .ui-date-editor { opacity: 0; }
+            }
+            .ui-date-editor .ui-range-input {
+                color: @default-color;
+            }
+        }
+        .ui-cascader-new {
+            .input[readonly] {
+                cursor: pointer;
+                background-color: #fff;
+                padding-right: 20px;
+                .ellipsis;
+            }
+            .input.input-disabled {
+                background-color: #F8F9FB;
+            }
+        }
+    }
+}
+.ui-tooltip-popper{
+    max-width: 60%;
+    &.ui-cascader-new-tooltip {
+        max-width: 290px;
+    }
+}
+
+.ctrl-box-viewer {
+    position: relative;
+    min-height: 34px;
+    .flex-align-center;
+    border: 1px solid transparent;
+    .ctrl-error {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        color: @error-color;
+    }
+}

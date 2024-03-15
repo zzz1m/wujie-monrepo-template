@@ -1,0 +1,132 @@
+
+.application-detail {
+    &::before {
+        content: '';
+        width: 100%;
+        height: 614px;
+        background: linear-gradient(0deg, #FFFFFF 0%, #88FFFE 50%, #00BEBD 100%);
+        opacity: 0.1;
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    padding-top: 38px;
+    .page-inner {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .page-head-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2129;
+        line-height: 20px;
+        margin-bottom: 23px;
+    }
+    .schedule-container {
+        min-width: 380px;
+    }
+    .apply-detail-box {
+        background: #ffffff;
+        width: 0;
+        flex: 1;
+        border-radius: 12px;
+        padding: 24px 30px;
+        position: relative;
+        z-index: 1;
+        min-height: calc(~'100vh - 110px');
+        .item-label {
+            min-width: 158px;
+        }
+        
+    }
+
+    .cancel-detail-box-wrap {
+        display: flex;
+        flex-direction: column;
+
+        .cancel-detail-box {
+            width: 382px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 24px 12px 24px 30px;
+            position: relative;
+            z-index: 1;
+            margin-left: 16px;
+
+            .item-label {
+                margin-right: 20px;
+            }
+
+            & + .cancel-detail-box {
+                margin-top: 16px;
+            }
+        }
+    }
+    
+
+    .form-item {
+        margin-bottom: 22px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    // .large-group .item-content {
+    //     max-width: 88%;
+    //     overflow: auto;
+    // }
+
+
+    .ti-reload {
+        position: absolute;
+        right: 35px;
+        top: 12px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .dialog-img {
+        ::v-deep .dialog-container {
+            padding-top: 40px;
+        }
+    }
+    .item-label,
+    .item-content {
+        display: inline-block;
+    }
+    .form-btns {
+        .btn {
+            &+.btn {
+                margin-left: 20px;;
+            }
+        }
+    }
+    .sales-leave {
+        ::v-deep .form-item .form-error-tip {
+            margin-left: 60px;
+        }
+    }
+    
+    ::v-deep.input-wrap-textarea {
+        min-width: 540px; 
+        border-radius: 4px;
+    }
+    
+    .img-wrap {
+        display: inline-flex;
+        flex-wrap: wrap;
+        max-width: 560px;
+        margin-bottom: -24px;
+    }
+    .attach-img-item {
+        width: 90px;
+        height: 90px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        object-fit: cover;
+    }
+}

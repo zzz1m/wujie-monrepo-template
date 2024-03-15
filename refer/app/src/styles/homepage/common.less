@@ -1,0 +1,423 @@
+@import "./help-center.less";
+@import "./home.less";
+/////首页2.0弹框样式
+.dialog-homepage-small {
+    h3.title {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    &.broadcast-dialog, &.question-dialog, &.rule-dialog, &.companynews-dialog {
+        .dialog-container {
+            width: 80%;
+            max-width: 1200px;
+        }
+        .hompage-tag-icon {
+            cursor: default;
+        }
+    }
+    &.tag-dialog {
+        .hompage-tag-icon {
+            cursor: default;
+        }
+    }
+    .dialog-container {
+        width: 660px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .dialog-header {
+        padding: 0 30px;
+    }
+    .dialog-body {
+        padding: 0 30px 30px;
+        min-height: 200px;
+        // overflow: visible;
+        overflow: auto;
+        max-height: calc(~"100vh - 170px");
+    }
+    .dialog-footer {
+        padding: 0 30px;
+        .btns .btn {
+            min-width: 70px;
+        }
+    }
+    .ui-form {
+        margin-top: 20px;
+    }
+    .form-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 22px;
+        display: flex;
+        align-items: flex-start;
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+        textarea.input {
+            height: 32px;
+        }
+        .item-label {
+            color: @secondary-color;
+            font-size: 13px;
+            text-align: right;
+            flex: left;
+        }
+        .item-content {
+            flex: 1;
+            margin-left:0px !important;
+            .input-wrap {
+                min-width: 0;
+                width: 100%;
+            }
+        }
+        .ui-select {
+            width: 100%;
+        }
+        .radio-group .radio-checked {
+            .radio-edging {
+                background-color: #5DD5C8;
+            }
+            .radio-inner:after {
+                width: 6px;
+                height: 6px;
+                left: 3px;
+                top: 3px;
+                background: #fff;
+            }
+        }
+        
+        
+    }
+    .save-tip {
+        position: absolute;
+        bottom: 32px;
+        right: 200px;
+        color:rgba(21,27,38,1);
+        font-size: 13px;
+    }
+    .dialog-detail {
+        padding: 25px 0px;
+        .ql-container,.ql-snow{
+            border: none !important;
+        }
+        h2.title {
+            font-size:16px;
+            font-weight:500;
+            color:rgba(22,27,38,1);
+            line-height:24px;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            .hompage-tag-icon {
+                margin-right: 10px;
+            }
+        }
+        .content {
+            word-wrap: break-word;
+        }
+        
+    }
+
+    //////  标签输入框
+    .tag-input {
+        position: relative;
+        display: flex;
+        width: 100%;
+        // max-width: 510px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 34px;
+        align-items: center;
+        border: 1px solid #e3e7ed;
+        padding: 5px 8px;
+        font-size: 14px;
+        border-radius: 2px;
+        background-color: #fff;
+        &:hover {
+            border-color: #2CD7C8;
+            box-shadow: 0 1px 2px #96ebe4;
+        }
+        &.active {
+            border-color: #2CD7C8;
+            box-shadow: 0 1px 2px #96ebe4;
+        }
+        input {
+            flex: 1;
+            min-width: 160px;
+            display: inline-block;
+            width: auto;
+            border: none;
+            background: none;
+            outline: none;
+            height: 24px; 
+            border-radius: 0;
+            color: #414a60;
+            
+            background-image: none;
+            position: relative;
+            cursor: text;
+            transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            &::placeholder {
+                color: rgba(0,0,0,0.2);
+            }
+        }
+        // 选中标签显示
+        .select-tag-list {
+            white-space: nowrap;
+            li {
+                margin-right: 10px;
+            }
+            
+        }
+    }
+
+    // 标签item
+    .tag-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 3px;
+        overflow: hidden;
+        height: 28px;
+        &.tag-show {
+            overflow: inherit;
+            height: auto;
+        }
+        .tag-list {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 10px;
+            li {
+                margin-right: 4px;
+                margin-bottom: 4px;
+            }
+        }
+        .tag-right {
+            width: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .show-btn {
+            display: flex;
+            align-items: center;
+            font-size:13px;
+            font-weight: 400;
+            margin-right: 10px;
+            min-width: 80px;
+            cursor: pointer;
+            margin-left: 5px;
+            span,i {
+                line-height: 26px;
+            }
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+/// 标签icon
+.hompage-tag-icon {
+    display: inline-block;
+    font-size:12px;
+    
+    font-weight:400;
+    line-height:16px;
+    border-radius:3px;
+    padding: 3px 12px;
+    position: relative;
+    cursor: pointer;
+    &.default {
+        color:rgba(192,192,192,1);
+        border:1px dashed rgba(192,192,192,1);
+        background: #fff;
+    }
+    &.add-btn {
+        color: #000;
+        i {
+            margin-right: 4px;
+        }
+    }
+    i.del {
+        font-size: 12px;
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+}
+
+.dialog-homepage-content-set {
+    .l-h-initial {
+        line-height: initial;
+    }
+
+    .batch-import-btn {
+        cursor: pointer;
+        display: inline-block;
+        color: #00CFC7;
+        font-size: 13px;
+        position: relative;
+        top: 4px;
+        :hover {
+            color: #6ADBCF;
+        }
+    }
+
+    h3.title {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    .dialog-container {
+        width: 80%;
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .dialog-header {
+        padding: 0 30px;
+    }
+    .dialog-body {
+        padding: 0 30px 30px;
+        min-height: 200px;
+        // overflow: visible;
+        overflow: auto;
+        max-height: calc(~"100vh - 170px");
+    }
+    .dialog-footer {
+        padding: 0 30px;
+        .btns .btn {
+            min-width: 70px;
+        }
+    }
+    .ui-form {
+        margin-top: 20px;
+    }
+    .form-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 22px;
+        display: block;
+        align-items: flex-start;
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+        textarea.input {
+            height: 32px;
+        }
+        .item-label {
+            color: @secondary-color;
+            font-size: 13px;
+            text-align: right;
+            flex: left;
+        }
+        .item-content {
+            .input-wrap {
+                min-width: 0;
+                width: 100%;
+            }
+        }
+        .ui-select {
+            width: 100%;
+        }
+        .radio-group .radio-checked {
+            .radio-edging {
+                background-color: #5DD5C8;
+            }
+            .radio-inner:after {
+                width: 6px;
+                height: 6px;
+                left: 3px;
+                top: 3px;
+                background: #fff;
+            }
+        }
+        
+        
+    }
+
+    .manager-select {
+        width: 100%;
+    }
+
+    .ctrl-box-viewer {
+        width: 100%;
+    }
+
+    .ui-tree-viewer .ctrl-input {
+        width: calc(~'100% - 15px');
+    }
+    
+}
+
+.bossui-reset {
+    .drag-toast.toast {
+        z-index: 9999;
+    }
+}
+
+.page-content.companynews-list-page {
+    padding-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    padding-top: 38px;
+    .home-search {
+        padding: 0px 24px 20px;
+
+        .input-wrap {
+            height: 32px;
+        }
+        .ui-select {
+            height: 32px;
+        }
+        .btn {
+            padding: 8px 11px;
+            max-width: 60px;
+        }
+    }
+}
+.companynews-list-inner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 1180px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px 0;
+    .companynews-list {
+        flex: 1;
+        overflow: auto;
+        overflow: overlay;
+        padding: 0 24px;
+    }
+    .content {
+        margin: 0 auto;
+    }
+    .home-search {
+        position: relative;
+        z-index: 1;
+        &.shadow {
+            box-shadow: inset 0px -1px 0px 0px #E5E6EB;
+        }
+    }
+
+    .title-info .tooltip{
+        vertical-align: bottom;
+    }
+
+}
+.company-news-page {
+    #container {
+        z-index: 100;
+    }
+}
+.banner-manage-page .flex-list-page .search-panel .btn {
+    line-height: 32px;
+}

@@ -1,0 +1,76 @@
+.dialog-layer-full {
+    ::v-deep .input {
+        height: 42px;
+        border-radius: 2px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    ::v-deep .item-group {
+        .input-wrap-textarea .input {
+            height: 42px;
+            line-height: 30px;
+        }
+        .form-item .item-content {
+            line-height: 1.5;
+        }
+    }
+    ::v-deep .ui-select-dropdown {
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+    }
+    ::v-deep .ui-select-inner {
+        height: 40px;
+        line-height: 30px;
+        padding-left: 14px;
+        padding-right: 14px;
+
+        .ui-icon-arrow-down {
+            right: 14px;
+            font-size: 16px;
+        }
+    }
+    ::v-deep .ui-dropdown-not-found {
+        padding: 10px 14px;
+    }
+    ::v-deep .ui-select-item {
+        line-height: 42px;
+        padding: 0 14px;
+        color: #646F79;
+
+        &:hover {
+            background-color: #F3F3F3;
+        }
+    }
+    ::v-deep .form-error-tip {
+        color: #FB4B53;
+    }
+    ::v-deep .item-group {
+        padding: 0!important;
+    }
+    ::v-deep .datepicker-wrap {
+        width: 276px;
+        .input-wrap {
+            width: 100%;
+            .input {
+                padding-left: 30px;
+            }
+            .ui-icon-date {
+                top: 14px;
+                left: 14px;
+            }
+        }
+    }
+    ::v-deep .el-date-editor {
+        width: 276px;
+    }
+    ::v-deep .ui-col:first-of-type {
+        padding-left: 5px;
+    }
+    ::v-deep .ui-col:last-of-type .input-wrap,
+    ::v-deep .ui-col:last-of-type .input-wrap-area,
+    ::v-deep .ui-col:last-of-type .ui-select {
+        width: 100%;
+    }
+    ::v-deep .item-group:not(:last-of-type)::after {
+        display: none;
+    }
+}

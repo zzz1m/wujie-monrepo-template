@@ -1,0 +1,976 @@
+.page-badge {
+    width: 1180px;
+    // min-height: calc(~'100vh - 80px');
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 0px solid #FFFFFF;
+    margin: 17px auto 20px;
+
+    background-image: url(https://img.bosszhipin.com/static/file/2023/g2y67wpacp1680250838910.png);
+    background-size: 1176px 180px;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    padding: 28px 32px;
+    flex: 1;
+
+    .page-badge-header {
+        text-align: center;
+        position: relative;
+        .header-animation {
+            pointer-events: none;
+            width: 756px;
+            height: 109px;
+            position: absolute;
+            top: -4px;
+            z-index: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @keyframes fade-data {
+            0% {
+                opacity: 1
+            }
+        
+            20% {
+                opacity: 1
+            }
+        
+            50% {
+                opacity: 0
+            }
+        
+            80% {
+                opacity: 1
+            }
+        
+            to {
+                opacity: 1
+            }
+        }
+
+        .badge-avatar {
+            display: inline-block;
+            margin-bottom: 29px;
+            img {
+                width: 40px;
+                height: 40px;
+                border: 2px solid rgba(255,255,255,0.5);
+                border-radius: 50%;
+            }
+        }
+        .badge-avatar-info {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1D2129;
+            line-height: 28px;
+
+            span {
+                margin: 0 6px;
+                display: inline-block;
+                color: #0791FF;
+            }
+        }
+        
+    }
+    .page-badge-content {
+        margin-left: -2px;
+        margin-right: -2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .badge-item-new {
+        width: 220px;
+        height: 290px;
+        text-align: center;
+        // padding-top: 10px;
+        margin: 5px 2px;
+        display: inline-block;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            // background: #FFFFFF;
+            box-shadow: 0px 4px 10px 0px rgba(153,153,153,0.1);
+
+            background-image: url(https://img.bosszhipin.com/static/file/2023/ql5mmwkjpu1680775143676.png);
+            background-size: cover;
+            border-radius: 10px;
+            border: none;
+
+            .badge-btn-new.hidden-badge-btn {
+                display: inline-block;
+            }
+        }
+        img {
+            margin-top: 10px;
+            width: 160px;
+            height: 160px;
+        }
+
+        h4 {
+            margin-top: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1D2129;
+            line-height: 22px;
+            margin-bottom: 4px;
+        }
+        
+        .badge-time-new {
+            font-size: 14px;
+            color: #86909C;
+            line-height: 20px;
+            &.badge-text-light {
+                color: #00A6A7;
+            }
+        }
+       
+        .badge-btn-new {
+            color: #fff;
+            padding: 0 14px;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-block;
+            background: linear-gradient(89deg, #76DE2C 0%, #00DED1 100%);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            height: 30px;
+            line-height: 26px;
+            border-radius: 20px;
+            margin-top: 11px;
+            cursor: pointer;
+            border: 2px solid #F4E79C;
+            position: relative;
+            &.hidden-badge-btn {
+                display: none;
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: calc(~'100% - 6px');
+                height:  calc(~'100% - 6px');
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,0.3) 100%);
+                border-radius: 20px;
+                
+            }
+
+            // opacity: 0.4;
+            &:hover {
+                background: linear-gradient(89deg, #00DED1 0%, #76DE2C 100%);
+                border-radius: 20px;
+                border: 2px solid #F4E79C;
+            }
+            &.disabled {
+                cursor: not-allowed;
+                background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+                opacity: 0.5;
+                border: 2px solid #F4E79C;
+                &:hover {
+                    cursor: not-allowed;
+                    background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+                    opacity: 0.5;
+                    border: 2px solid #F4E79C;
+                }
+            }
+
+            // color: #fff;
+            // padding: 0 14px;
+            // font-weight: 500;
+            // font-size: 14px;
+            // display: inline-block;
+            // background-image: url(https://img.bosszhipin.com/static/file/2023/1awm8eptka1681204590385.png);
+            // background-size: 100% 100%;
+            // background-repeat: no-repeat;
+            // border-radius: 20px;
+            // height: 28px;
+            // line-height: 28px;
+            // border-radius: 20px;
+            // margin-top: 11px;
+            // cursor: pointer;
+
+            // &.hidden-badge-btn {
+            //     display: none;
+            // }
+            // &.show-badge-bth {
+            //     display: inline-block;
+            // }
+            // &:before {
+            //     content: '';
+            //     display: block;
+            //     visibility: hidden;
+            //     width: 0;
+            //     height: 0;
+            //     background-image: url(https://img.bosszhipin.com/static/file/2023/yf7bwrw21h1681204772370.png);
+            // }
+
+            // &:hover {
+            //     background-image: url(https://img.bosszhipin.com/static/file/2023/yf7bwrw21h1681204772370.png);
+            //     border-radius: 20px;
+                
+            // }
+            // &.disabled {
+            //     cursor: not-allowed;
+            //     background-image: url(https://img.bosszhipin.com/static/file/2023/1awm8eptka1681204590385.png);
+            //     opacity: 0.5;
+            //     &:hover {
+            //         cursor: not-allowed;
+            //         background-image: url(https://img.bosszhipin.com/static/file/2023/1awm8eptka1681204590385.png);
+            //         opacity: 0.5;
+            //     }
+            // }
+        }
+    }
+}
+
+.page-badge-active-dialog.page-badge-dialog {
+    &.hide-badge-content {
+        .dialog-badge-content {
+            opacity: 0;
+        }
+    }
+    .badge-back-bth {
+        display: none;
+    }
+    box-shadow: none;
+    @keyframes badge-common {
+        25% {
+            transform: translateY(110px)
+        }
+        
+        30% {
+            transform: translateY(110px)
+        }
+    
+        50% {
+            transform: translateY(110px)
+        }
+    
+        75% {
+            transform: translateY(110px)
+        }
+    
+        to {
+            transform: translateY(110px)
+        }
+    }
+    @keyframes badge-zoom {
+        0% {
+            transform: scale(1)
+        }
+    
+        25% {
+            transform: scale(1.5)
+        }
+        
+        30% {
+            transform: scale(1.5)
+        }
+    
+        50% {
+            transform: scale(1.4)
+        }
+    
+        75% {
+            transform: scale(1.5)
+        }
+    
+        to {
+            transform: scale(1.4)
+        }
+    }
+    @keyframes content-animation {
+        // 0% {
+        //     opacity: 1;
+        // }
+    
+        100% {
+            display: none;
+            opacity: 0;
+        }
+    }
+    @keyframes badge-img-before {
+        0% {
+            opacity: 0;
+        }
+    
+        25% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+            transform:translateX(-50%) rotate(0deg);
+        }
+        75% {
+            opacity: 1;
+        }
+        to {
+            transform:translateX(-50%) rotate(25deg);
+            opacity: 1;
+        }
+    }
+    @keyframes badge-ribbon {
+        0% {
+            opacity: 0;
+        }
+    
+        25% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+        }
+        
+        40% {
+            opacity: 1;
+            transform: translateX(-50%) scale(0.6);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.3);
+        }
+    }
+    @keyframes badge-ribbon-2 {
+        0% {
+            opacity: 0;
+        }
+    
+        25% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 0;
+            bottom: -26px;
+        }
+        
+        40% {
+            opacity: 1;
+            transform: translateX(-50%) scale(0.6);
+        }
+
+        to {
+            bottom: -100px;
+            opacity: 1;
+            transform: translateX(-50%) scale(1.3);
+        }
+    }
+   
+    .badge-ribbon {
+        &:before {
+            opacity: 0;
+            content: '';
+            display: block;
+            width: 250px;
+            height: 121px;
+            z-index: 1;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            background-image: url(https://img.bosszhipin.com/static/file/2023/pi3s20xstz1681282746998.png);
+            background-size: 250px 121px;
+            background-repeat: no-repeat;
+            transform: translateX(-50%) scale(0.6);
+        }
+        &:after {
+            opacity: 0;
+            content: '';
+            display: block;
+            width: 250px;
+            height: 121px;
+            z-index: 1;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            background-image: url(https://img.bosszhipin.com/static/file/2023/rvx96jtafg1681282747260.png);
+            background-size: 250px 121px;
+            background-repeat: no-repeat;
+            transform: translateX(-50%) scale(0.6);
+        }
+    }
+    .dialog-badge-img {
+        canvas, img {
+            position: relative;
+            z-index: 3;
+        }
+        .canvas-confetti {
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            width: 240px;
+            height: 240px;
+            top: 50%;
+            transform: translate(-50%, -48%);
+        }
+        .badge-img-wrapper:before {
+            opacity: 0;
+            content: '';
+            display: block;
+            width: 216px;
+            height: 216px;
+            z-index: 1;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            background-image: url(https://img.bosszhipin.com/static/file/2023/evkj9luo1i1681208629566.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &.page-badge-light {
+        .dialog-body {
+            overflow: hidden;
+        }
+        .badge-back-bth {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            top: 422px;
+            z-index: 9;
+        }
+        .dialog-badge-img {
+            transition: transform 1s;
+            transform: translateY(110px);
+            // animation: badge-common 4s both;
+            // &>img {
+            //     animation: badge-zoom 4s both;
+            // }
+            .badge-img-wrapper {
+                position: relative;
+                z-index: 2;
+                animation: badge-zoom 4s both linear;
+            }
+        }
+        .dialog-badge-content {
+            pointer-events: none;
+            animation: content-animation 1s both;
+        }
+        .badge-img-wrapper:before {
+            animation: badge-img-before 4s both;
+        }
+        .badge-ribbon {
+            &:before {
+                animation: badge-ribbon 4s both;
+            }
+            &:after {
+                animation: badge-ribbon-2 4s both;
+            }
+        }
+    }
+
+    .dialog-body {
+        padding-right: 0;
+        margin: 20px 0;
+        background-color: transparent;
+        border-radius: 18px;
+        overflow: overlay;
+        max-height: 100vh;
+    }
+
+    .dialog-container {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .dialog-badge-content {
+        background: #fff;
+        padding-top: 206px;
+
+        &>.relative{
+            position: relative;
+            z-index: 1;
+        }
+      
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0px;
+            width: 540px;
+            height: 180px;
+            padding: 20px;
+            z-index: 0;
+            background-image: url(https://img.bosszhipin.com/static/file/2023/ic5x5gxvsh1680750307209.png);
+            background-size: 540px 180px;
+            background-repeat: no-repeat;
+        }
+    }
+    .close {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 12px;
+        top: 12px;
+        z-index: 6;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ui-icon-close {
+            display: inline-block;
+            position: relative;
+            color: #a1a6b0;
+        }
+        &:hover {
+            background-color: rgba(221, 221, 221, 0.6);
+            .ui-icon-close {
+                // color: #ddd
+            }
+        }
+    }
+}
+.page-badge-dialog {
+    text-align: center;
+    .dialog-body {
+        margin-right: -20px;
+        padding-right: 20px;
+        background-color: #fff;
+    }
+    .dialog-container {
+        padding: 20px;
+        position: relative;
+        background-image: url(https://img.bosszhipin.com/static/file/2023/ic5x5gxvsh1680750307209.png);
+        background-size: 540px 180px;
+        background-repeat: no-repeat;
+        border-radius: 18px;
+        &:before{
+            position: absolute;
+            content: '';
+            background: transparent;
+        }
+    }
+    .dialog-header .close:hover {
+        background-color: rgba(221, 221, 221, 0.6);
+    }
+    .badge-direction {
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        border: 1px solid #F2F3F5;
+        position: absolute;
+        top: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        color: #00BEBD;
+        cursor: pointer;
+        &.badge-direction-left {
+            left: 32px;
+        }
+        &.badge-direction-right {
+            right: 32px;
+        }
+        &.badge-disable {
+            color: #E5E6EB;
+            cursor: not-allowed;
+            &:hover {
+                box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.05);
+                border-color: #E5E6EB;
+            }
+            .svg-icon {
+                cursor: not-allowed;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.1);
+            border-color: #00BEBD;
+        }
+    }
+    
+    .dialog-header {
+        margin: 0;
+    }
+    .dialog-badge-img {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        
+        img {
+            width: 200px;
+            height: 200px;
+            user-select: none;
+        }
+    }
+    .page-badge-name {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 6px;
+            border-radius: 50%;
+            background: #eeeeee;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -7px;
+            filter: blur(1px);
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1D2129;
+            line-height: 30px;
+            margin-bottom: 4px;
+            text-shadow: 0px 0px 1px #1D2129;
+
+            .svg-icon {
+                width: 42px;
+                height: 10px;
+                display: inline-block;
+                margin: 0 8px;
+                position: relative;
+                top: -2px;
+            }
+        }
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 14px;
+        }
+    }
+    .badge-info {
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 24px;
+        padding: 0 60px;
+        margin: 15px 0 24px;
+        text-align: left;
+        min-height: 72px;
+    }
+
+    .badge-btn-new {
+        cursor: pointer;
+        // opacity: 0.4;
+        color: #fff;
+        padding: 0 14px;
+        font-weight: 500;
+        font-size: 14px;
+        display: inline-block;
+        background: linear-gradient(89deg, #76DE2C 0%, #00DED1 100%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        line-height: 36px;
+        min-width: 114px;
+        border-radius: 20px;
+        margin-top: 11px;
+        cursor: pointer;
+        border: 2px solid #F4E79C;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            width: calc(~'100% - 6px');
+            height:  calc(~'100% - 6px');
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,0.3) 100%);
+            border-radius: 20px;
+            
+        }
+
+        // opacity: 0.4;
+        &:hover {
+            background: linear-gradient(89deg, #00DED1 0%, #76DE2C 100%);
+            border-radius: 20px;
+            border: 2px solid #F4E79C;
+        }
+        &.disabled {
+            cursor: not-allowed;
+            background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+            opacity: 0.5;
+            border: 2px solid #F4E79C;
+            &:hover {
+                cursor: not-allowed;
+                background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+                opacity: 0.5;
+                border: 2px solid #F4E79C;
+            }
+        }
+    }
+    .stall-badge-wrapper {
+        margin-top: 30px;
+        padding-bottom: 18px;
+        .stall-badge {
+            cursor: pointer;
+            margin: 0 21px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            &+.stall-badge:before {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -31px;
+                content: '';
+                width: 18px;
+                height: 3px;
+                background: linear-gradient(270deg, #D8D8D8 0%, rgba(229,230,235,0) 100%);
+                border-radius: 1px 2px 2px 1px;
+            }
+            
+            .svg-icon {
+                position: absolute;
+                left: 50%;
+                color: #00BEBD;
+                bottom: 0;
+                transform: translateX(-50%) rotate(180deg);
+
+            }
+              
+        }
+        .stall-badge img {
+            width: 42px;
+            height: 42px;
+        }
+
+
+    }
+
+}
+
+.page-badge-header-dialog {
+    @keyframes badge-common {
+        0% {
+            filter: grayscale(0);
+        }
+
+        50% {
+            filter: grayscale(100%);
+        }
+    
+        to {
+            filter: grayscale(0);
+        }
+    }
+    .dialog-body {
+        margin-right: -20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .dialog-container {
+        padding: 20px;
+        position: relative;
+        background-image: url(https://img.bosszhipin.com/static/file/2023/ic5x5gxvsh1680750307209.png);
+        background-size: 540px 180px;
+        background-repeat: no-repeat;
+        border-radius: 18px;
+        &:before{
+            position: absolute;
+            content: '';
+        }
+    }
+    .dialog-header .close:hover {
+        background-color: rgba(221, 221, 221, 0.6);
+    }
+    .badge-direction {
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        border: 1px solid #F2F3F5;
+        position: absolute;
+        top: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        cursor: pointer;
+        &.badge-direction-left {
+            left: 32px;
+        }
+        &.badge-direction-right {
+            right: 32px;
+        }
+        &.badge-disable {
+            color: #E5E6EB;
+            cursor: not-allowed;
+            &:hover {
+                box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.05);
+                color: #E5E6EB;
+            }
+            .svg-icon {
+                cursor: not-allowed;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.1);
+            color: #00BEBD;
+        }
+    }
+    
+    .dialog-header {
+        margin: 0;
+    }
+    .dialog-badge-img {
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 6px;
+            border-radius: 50%;
+            background: #eeeeee;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            filter: blur(1px);
+        }
+      
+        img {
+            animation: badge-common 2s linear infinite;
+            width: 200px;
+            height: 200px;
+            user-select: none;
+        }
+    }
+    .page-badge-name {
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1D2129;
+            line-height: 30px;
+            margin-bottom: 4px;
+            text-shadow: 0px 0px 1px #1D2129;
+
+            .svg-icon {
+                width: 42px;
+                height: 10px;
+                display: inline-block;
+                margin: 0 8px;
+                position: relative;
+                top: -2px;
+            }
+        }
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 14px;
+        }
+    }
+    .badge-info {
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 24px;
+        padding: 0 60px;
+        margin: 15px 0 24px;
+        text-align: left;
+    }
+
+    .badge-btn-new {
+        color: #fff;
+        padding: 0 14px;
+        min-width: 120px;
+        font-weight: 500;
+        font-size: 15px;
+        display: inline-block;
+        border-radius: 20px;
+        line-height: 36px;
+        min-width: 114px;
+        background: linear-gradient(89deg, #76DE2C 0%, #00DED1 100%);
+        border-radius: 20px;
+        margin-top: 40px;
+        border: 2px solid #F4E79C;
+        position: relative;
+        cursor: pointer;
+        &:before {
+            content: '';
+            display: block;
+            width: calc(~'100% - 6px');
+            height:  calc(~'100% - 6px');
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,0.3) 100%);
+            border-radius: 20px;
+            
+        }
+        // opacity: 0.4;
+        &:hover {
+            background: linear-gradient(89deg, #00DED1 0%, #76DE2C 100%);
+            border-radius: 20px;
+            border: 2px solid #F4E79C;
+        }
+        &.disabled {
+            cursor: not-allowed;
+            background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+            opacity: 0.5;
+            border: 2px solid #F4E79C;
+            &:hover {
+                cursor: not-allowed;
+                background: linear-gradient(89deg, #7AE62E 0%, #00E6D8 100%);
+                opacity: 0.5;
+                border: 2px solid #F4E79C;
+            }
+        }
+    }
+    .stall-badge-wrapper {
+        margin-top: 30px;
+        margin-bottom: 18px;
+        .stall-badge {
+            cursor: pointer;
+            margin: 0 21px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            &+.stall-badge:before {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -31px;
+                content: '';
+                width: 18px;
+                height: 3px;
+                background: linear-gradient(270deg, #D8D8D8 0%, rgba(229,230,235,0) 100%);
+                border-radius: 1px 2px 2px 1px;
+            }
+            
+            .svg-icon {
+                position: absolute;
+                left: 50%;
+                color: #00BEBD;
+                bottom: 0;
+                transform: translateX(-50%) rotate(180deg);
+
+            }
+              
+        }
+        .stall-badge img {
+            width: 42px;
+            height: 42px;
+        }
+
+
+    }
+
+}

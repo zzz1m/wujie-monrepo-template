@@ -1,0 +1,269 @@
+.course-edit {
+    .ui-tab .ui-tab-nav-wrap .ui-tab-nav .ui-tab-nav-item {
+        padding: 0;
+        margin-top: 20px;
+        width: 94px;
+        background: #ffffff;
+        color: #13141A;
+        &.is-active {
+            border-color: #00cfc5;
+            background: #ffffff;
+            position: relative;
+            z-index: 1;
+            color: #00cfc5;
+            font-weight: 500;
+        }
+    }
+    .tab-con {
+        display: none;  
+    }
+    .edit-wrap {
+        margin-top: 20px;
+    }
+    .radio-block-label.margin-btm-0 {
+        margin-bottom: 0;
+        .radio {
+            margin-bottom: 30px;
+        }
+    }
+}
+.train-manage-edit-page.course-config {
+    padding-top: 20px;
+    .banner-item {
+        display: flex;
+        width: 100%;
+        background: #ffffff;
+        padding: 24px 0px 10px 24px;
+        .item-right {
+            margin-left: 30px;
+            width: 100%;
+            .select-course {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 25px;
+                background: #F7F8F9;
+                border-radius: 2px;
+                margin-top: 38px;
+            }
+        }
+        margin-bottom: 20px;
+        .del-icon-wrap {
+            position: relative;
+            top: -10px;
+            left: -16px;
+            .el-icon-close {
+                font-size: 16px;
+                color: #C5C8D0;
+                &:hover {
+                    color: #00CFC5;
+                }
+            }
+        }
+        .drag-item-icon {
+            position: relative;
+            top: -8px;
+            left: -30px;
+            color: #C5C8D0;
+            &:hover {
+                color: #00CFC5;
+            }
+        }
+        .around-notice-tip{
+            right: -16px;
+            &.tip-first {
+                top: 20px;
+                &:after {
+                    bottom: auto;
+                    right: 26px;
+                    top: -12px;
+                    border-bottom-color: #ffffff;
+                    border-bottom-width: 5px; 
+                    border-top-color: transparent;
+                    content: '';      
+                }
+            }
+        }
+    }
+}
+.course-category-dialog {
+    .dialog-body {
+        min-height: 190px;
+        .ui-tree-viewer {
+            min-width: 482px;
+        }
+    }
+}
+.btn-banner {
+    color: #00cfc5;
+    border-color: #00cfc5;
+    margin-bottom: 20px;
+}
+.btn.btn-disabled {
+    cursor: not-allowed;
+}
+.btn-outline.btn-disabled:hover {
+    background-color: #fff;
+}
+
+.learn-data-page {
+    .ui-tree-viewer .ctrl-input {
+        width: 200px;
+    }
+    .search-item a.btn {
+        line-height: 34px;
+    }
+}
+.dialog-banner-config {
+    .dialog-header {
+        margin-bottom: 0;
+    }
+    .dialog-body {
+        height: calc(~'100vh - 200px');
+        max-height: 700px;
+        .fasion-pager {
+            position: inherit;
+            left: 0;
+        }
+        th {
+            .checkbox {
+                display: none;
+            }
+        }
+        .ui-table-pro {
+            border: 1px solid #E3E7ED;
+            height: 100% !important;
+        }
+        .learn-data-page {
+            height: 100%;
+            padding: 0;
+            .data-list {
+                overflow: hidden;
+            }
+            .ui-tree-viewer .ctrl-input {
+                width: 130px;
+            }
+        }
+        .flex-list-page .search-panel {
+            .ui-select {
+                width: 130px;
+            }
+            .search-item {
+                &.item-reset {
+                    margin-right: 0px;
+                }
+            }
+            .input {
+                width: 130px;
+            }
+        }
+    }
+    .class-icon {
+        width: 24px;
+        vertical-align: middle;
+        height: 24px;
+        margin-right: 8px;
+        cursor: default;
+    }
+}
+
+.search-file-dialog {
+    &.dialog-safe-body .dialog-body {
+        height: calc(~'100vh - 200px');
+        max-height: 700px;
+    }
+
+    .class-icon {
+        width: 24px;
+        vertical-align: middle;
+        height: 24px;
+        margin-right: 8px;
+        cursor: default;
+    }
+
+    .flex-list-page {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .data-list {
+        padding-bottom: 0;
+        border: 1px solid #E3E7ED;
+    }
+
+    .search-file-pager {
+        padding: 14px 0 14px;
+        background: #fff;
+        font-size: 13px;
+        text-align: center;
+        border: 1px solid #E3E7ED;
+        border-top: none;
+    }
+    .ui-tree-viewer .ctrl-input {
+        width: 130px;
+    }
+    .flex-list-page .search-panel {
+        margin-top: -10px;
+    }
+    .flex-list-page .search-panel .ui-form{
+        margin-right: -5px;
+    }
+    .flex-list-page .search-panel .input {
+        // width: 430px;
+        width: 163px;
+    }
+
+    .reset-wraper {
+        margin-right: 0;
+    };
+}
+.dialog-course-offline {
+    .dialog-container {
+        padding: 30px 0;
+        .dialog-header {
+            padding-left: 30px;
+        }
+        .pane-detail-content {
+            margin-top: 0;
+            .offline-title {
+                padding: 10px 30px;
+                background:rgba(253, 209, 58, 0.15);
+                margin-bottom: 16px;
+            }
+            .offline-desc {
+                padding-left: 30px;
+                margin-bottom: 10px;
+            }
+            .offline-text {
+                padding-left: 30px;
+            }
+        }
+        .input-wrap-textarea {
+            min-width: 594px;
+        }
+    }
+    .form-item {
+        padding-left: 30px;
+    }
+    .dialog-footer {
+        padding-right: 30px;
+    }
+} 
+.dialog-train-progress {
+    .dialog-body {
+        border: 1px solid #E3E7ED;
+        .ui-table-body-wrapper {
+            max-height: 540px !important;
+            height: auto !important;
+        }
+    }
+    .class-icon {
+        width: 24px;
+        vertical-align: middle;
+        height: 24px;
+        margin-right: 8px;
+        cursor: default;
+    }
+}  

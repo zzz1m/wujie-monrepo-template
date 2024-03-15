@@ -1,0 +1,19 @@
+.ui-icon-star {
+    font-size: 18px;
+    margin-right: 6px;
+    color: #c0c4cc;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.ui-icon-star.hover {
+    color: rgb(247, 186, 42);
+}
+.ui-icon-star:hover {
+    transform: scale(1.2);
+}
+.ui-icon-star-off:before {
+    content: "\E63D";
+}
+.ui-icon-star-on:before {
+    content: "\E637";
+}

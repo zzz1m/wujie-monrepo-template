@@ -1,0 +1,133 @@
+
+
+.template-page {
+    padding: 25px 30px;
+    .temp-list {
+        h2 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+            i {
+                width: 20px;
+                height: 20px;
+                &.icon-01 {
+                    background: url('@/assets/images/interview/temp-icon-01.png') no-repeat center;
+                    background-size: 20px;
+                }
+                &.icon-02 {
+                    background: url('@/assets/images/interview/temp-icon-02.png') no-repeat center;
+                    background-size: 20px;
+                }
+                &.icon-04 {
+                    background: url('@/assets/images/interview/temp-icon-04.png') no-repeat center;
+                    background-size: 20px;
+                }
+                &.icon-06 {
+                    background: url('@/assets/images/interview/temp-icon-06.png') no-repeat center;
+                    background-size: 20px;
+                }
+                &.icon-07 {
+                    background: url('@/assets/images/interview/temp-icon-07.png') no-repeat center;
+                    background-size: 20px;
+                }
+                &.icon-08 {
+                    background: url('@/assets/images/interview/temp-icon-08.png') no-repeat center;
+                    background-size: 20px;
+                }
+            }
+            span {
+                font-size:16px;
+                
+                font-weight:400;
+                color:rgba(21,27,38,1);
+                line-height:22px;
+                margin-left: 10px;
+            }
+        }
+        .ul-list {
+            display: flex;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+           .list {
+            width:250px;
+            min-width: 250px;
+            height:60px;
+            background:rgba(255,255,255,1);
+            border-radius:4px;
+            border:1px solid rgba(224,230,232,1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 16px 0px 30px;
+            margin-right: 20px;
+            
+            font-weight:400;
+            color:rgba(21,27,38,1);
+            margin-bottom: 12px;
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                width:4px;
+                height:20px;
+                border-radius:0px 4px 4px 0px;
+                opacity:0.3;
+            }
+            &.bg-01 {
+                &::before{
+                    background:rgba(116,212,134,1);
+                }
+            }
+            &.bg-02 {
+                &::before{
+                    background:rgba(170,136,239,1);
+                }
+            }
+            &.bg-04 {
+                &::before{
+                    background:rgba(255,135,119,1);
+                }
+            }
+            &.bg-06 {
+                &::before{
+                    background:rgba(120,211,241,1);
+                }
+            }
+            &.bg-07 {
+                &::before{
+                    background:rgba(122,227,180,1);
+                    
+                }
+            }
+            &.bg-08 {
+                &::before{
+                    background:rgba(242,204,87,1);
+                }
+            }
+            span.name {
+                font-size:14px;
+                line-height:20px;
+            }
+            .btns {
+                .link-btn {
+                    width:44px;
+                    height:28px;
+                    background:rgba(255,255,255,1);
+                    border-radius:4px;
+                    border:1px solid rgba(224,230,232,1);
+                    line-height: 28px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size:13px;
+                    margin-left: 10px;
+                    padding: 3px 9px;
+                }
+            }
+        }
+        }
+        
+    }
+}

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.pager .total,
+.pager .options-pages,
+.pager .options-dropdown,
+.pager .options-elevator {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager .options-dropdown {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.pager:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.pager .disabled {
+    cursor: default;
+    background: #f7f7f7;
+}
+
+.pager a {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #E3E7ED;
+    margin: 0 3px;
+}
+
+.pager a:hover {
+    background: #f2f5fa;
+}
+
+.pager .selected,
+.pager .selected:hover {
+    background-color: #5dd5c8;
+    border-color: #5dd5c8;
+    color: #fff;
+}
+
+.pager .disabled:hover {
+    background: #FBFBFB;
+    color: #151B26;
+}
+
+.pager .options-elevator input {
+    width: 30px;
+    min-width: 30px;
+    margin-left: 6px;
+}
+
+.pager .options-dropdown .dropdown-select input {
+    min-width: 50px;
+    width: 50px;
+}
+.pager .options-dropdown .dropdown-menu {
+    min-width: 50px;
+}

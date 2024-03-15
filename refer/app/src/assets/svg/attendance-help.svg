@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon / status / warning / filled / 16</title>
+    <defs>
+        <circle id="path-1" cx="7" cy="7" r="6.125"></circle>
+        <path d="M7,9.22327686 C7.35236918,9.22327686 7.63802083,9.50892852 7.63802083,9.86129769 C7.63802083,10.2136669 7.35236918,10.4993185 7,10.4993185 C6.64763082,10.4993185 6.36197917,10.2136669 6.36197917,9.86129769 C6.36197917,9.50892852 6.64763082,9.22327686 7,9.22327686 Z M7.48064236,3.49591985 L7.48064236,8.03882545 L6.52361111,8.03882545 L6.52361111,3.49591985 L7.48064236,3.49591985 Z" id="path-3"></path>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人考勤页面" transform="translate(-1080.000000, -393.000000)">
+            <g id="编组-14" transform="translate(130.000000, 362.000000)">
+                <g id="编组-8" transform="translate(950.000000, 30.000000)">
+                    <g id="icon-/-status-/-warning-/-filled-/-16" transform="translate(0.000000, 1.000000)">
+                        <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <circle stroke="currentColor" cx="7" cy="7" r="5.625"></circle>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="icon-color" fill="currentColor" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

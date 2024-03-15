@@ -1,0 +1,592 @@
+@form-title-color: #1D2129;
+@active-color: @hover-text-color;
+@error-color: #FA594A;
+@description-color: #86909C;
+
+.template-preview-page {
+    width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    background-color: #fff;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.template-preview .tmp-form .tmp-group-interview .interview-item {
+    background-color: #effafa;
+}
+
+.template-preview .tmp-form .tmp-group-interview .interview-item-title {
+    font-weight: 500;
+}
+
+.tmp-form {
+    .p-l-30 {
+        padding-left: 30px;
+    }
+    
+    .p-l-32 {
+        padding-left: 32px;
+    }
+    .m-t-25 {
+        padding-top: 32px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .tmp-form-item {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .tmp-group-interview-footer {
+        padding: 12px 0;
+    }
+    .tmp-form-item-sort {
+        margin-right: 4px;
+        display: inline-block;
+        min-width: 26px;
+        padding-left: 8px;
+        position: relative;
+        min-height: 22px;
+        vertical-align: top;
+    }
+    .required {
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            content: '*';
+            display: inline-block;
+            margin-right: 4px;
+            font-size: 16px;
+            color: @error-color;
+        }
+    }
+    .tmp-form-item-wrapper {
+        margin-bottom: 13px;
+    }
+    .tmp-form-item-content {
+        margin-left: 32px;
+    }
+    .tmp-form-type-remark {
+        padding-top: 12px;
+        .tmp-form-item-title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+    .tmp-form-item-title {
+        font-size: 16px;
+        color: @form-title-color;
+        line-height: 22px;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+    .title-description {
+        font-size: 13px;
+        color: @description-color;
+        line-height: 18px;
+        margin-left: 32px;
+        white-space: pre-line;
+    }
+    .option-description {
+        font-size: 13px;
+        color: @description-color;
+        line-height: 18px;
+        cursor: pointer;  
+        margin-top: 6px;
+    }
+    .option-extra {
+        margin-left: 20px;
+        min-width: 62px;
+
+        .input {
+            height: 28px;
+            line-height: 28px;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 200px;
+
+        }
+    }
+   
+    .radio-option-item {
+        padding: 4px 0;
+
+        .option-item-content {
+            min-height: 28px;
+            line-height: 28px;
+            .checkbox {
+                white-space: normal;
+            }
+        }
+        .radio {
+            line-height: 28px;
+            white-space: normal;
+        }
+    }
+    
+    .tmp-radio, .tmp-checkbox {
+        // margin-top: -5px;
+        .radio-item, .checkbox-item {
+            margin-right: -8px;
+        }
+    }
+    // 分栏特殊样式
+    .tmp-columns {
+        .tmp-form-item {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ui-date-editor-daterange.ui-input, .ui-date-editor-timerange.ui-input, .ui-date-editor-daterange.ui-input-inner, .ui-date-editor-timerange.ui-input-inner {
+            max-width: 100%;
+            min-width: 100px;
+        }
+        .input-wrap {
+            max-width: 100%;
+            min-width: 100px;
+        }
+    }
+
+    .form-tip {
+        margin-top: 10px;
+        font-size: 12px;
+        color: @description-color;
+        line-height: 17px;
+    }
+
+    .score-list {
+        margin: 11px 0 0 0;
+        display: inline-block;
+        user-select: none;
+        &.score-list-readonly {
+            &>li {
+                cursor: not-allowed;
+
+                &.acitve {
+                    color: @active-color;
+                    border-color: @active-color;
+
+                    &:hover {
+                        color: @active-color;
+                        border-color: @active-color;
+                    }
+                }
+    
+                &:hover {
+                    color: #151B26;
+                    border-color: #E5E6EB;
+                }
+            }
+        }
+        &>li {
+            width: 40px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #E5E6EB;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 18px;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.acitve {
+                color: @active-color;
+                border-color: @active-color;
+            }
+
+            &:hover {
+                color: @default-text-color;
+                border-color: @default-text-color;
+            }
+        }
+    }
+    .tmp-score {
+        .tmp-form-item-content {
+            display: inline-block;
+        }
+        .prompt-view {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0 0 0;
+            color: @description-color;
+            font-size: 12px;
+        }
+    }
+
+    .form-attachment {
+        .btn svg {
+            vertical-align: bottom;
+        }
+        .middle {
+            display: flex;
+            justify-content: center;
+        }
+        .attachment-list {
+            .attachment-list-content {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 12px;
+                width: 360px;
+                background: #F7F8F9;
+                border-radius: 2px;
+                margin-top: 10px;
+                line-height: 36px;
+                height: 36px;
+                background: #F7F8FA;
+                border-radius: 2px;
+            }
+      
+            .attachment-name {
+                position: relative;
+                display: flex;
+                align-items: center;
+    
+                .svg-icon {
+                    width: 16px;
+                    height: 16px;
+                    cursor: unset;
+                }
+        
+                .attachment-title {
+                    font-size: 14px;
+                    color: #24272E;
+                    display: inline-block;
+                    max-width: 260px;
+                    margin-left: 8px;
+    
+                    .tooltip {
+                        vertical-align: bottom;
+                    }
+                }
+            }
+        
+            .attachment-operation {
+                position: relative;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .ui-icon-view  {
+                    cursor: pointer;
+                    font-size: 14px;
+                    vertical-align: middle;
+                }
+                .recruit-delete {
+                    cursor: pointer;
+                    font-size: 14px;
+                    vertical-align: middle;
+                }
+                .attachment-delete {
+                    position: absolute;
+                    right: -30px;
+                }
+            }
+        }
+    }
+    // 访谈
+    .tmp-group-interview {
+        position: relative;
+        .interview-target-info {
+            position: absolute;
+            right: 0;
+            top: -30px;
+            color: #4E5969;
+
+            span {
+                color: #00A6A7;
+                cursor: pointer;
+
+                &:hover {
+                    color: #00bebd;
+                }
+            }
+        }
+        .tmp-group-interview-content {
+            border-radius: 4px;
+            border: 1px solid #E5E6EB;
+            padding: 32px 24px 12px 24px;
+        }
+        .target-light-color {
+            display: inline-block;
+            color: #00A6A7;
+        }
+        .tmp-group-interview-target-wrapper {
+            display: inline;
+        }
+        .tmp-group-interview-target-title {
+            display: flex;
+            background-color: #F6F7FB;
+            &>div {
+                display: inline-flex;       
+                padding: 10px 0px 10px 10px;
+            }
+        }
+        .target-info-no-data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            color: #8B8E99;
+        }
+        .tmp-group-interview-target-content {
+            display: flex;
+            border-top: 1px solid #E5E6EB;
+            .target-result-item {
+                display: flex;
+                padding: 0;
+                flex: 1;
+                .target-result-content {
+                    padding: 10px 20px;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    white-space: pre-line;
+                    &+div {
+                        border-left: 1px solid #E5E6EB;
+                    }
+
+                    .input-wrap {
+                        min-width: auto;
+                        max-width: 100%;
+                    }
+
+                    .ui-select {
+                        max-width: 100%;
+                        width: auto;
+                    }
+                }
+            }
+            .target-main-title, .target-result{
+                &+div {
+                    border-left: 1px solid #E5E6EB;
+                }
+                padding: 10px 20px;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .target-title {
+                font-size: 14px;
+                color: #00A6A7;
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
+            .target-content {
+                color: #1D2129;
+                line-height: 20px;
+                white-space: pre-line;
+            }
+            .target-result {
+                padding: 0;
+                &>div+div {
+                    border-top: 1px solid #E5E6EB;
+                }
+            }
+        }
+
+        .interview-delete {
+            position: absolute;
+            right: 24px;
+            top: 28px;
+            width: 22px;
+            height: 22px;
+            z-index: 9;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 3px;
+            cursor: pointer;
+            border-radius: 2px;
+            border-radius: 50%;
+            transition: background-color 0.2s;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        .interview-item {
+            display: inline-block;
+        }
+        .interview-item+.interview-item {
+            margin-left: 40px;
+        }
+
+        .interview-item-title {
+            display: inline-block;
+            margin-right: 6px;
+            color: @form-title-color;
+            font-weight: 500;
+        }
+
+        .interview-item-content {
+            display: inline-block;
+            .ui-select, .ui-date-editor {
+                width: 340px;
+            }
+        }
+        
+    }
+    .temp-relation-interview-single {
+        // .tmp-form-item-sort {
+        //     display: none;
+        // }
+        .tmp-form-item-wrapper {
+            margin-bottom: 10px;
+        }
+        .tmp-form-item-title {
+            font-size: 14px;
+            color: @description-color;
+        }
+        .tmp-form-item-content {
+            white-space: pre-line;
+        }
+    }
+    .tmp-group-interview-evaluation {
+        margin-top: 32px;
+        .radio-group {
+            display: inline-block;
+
+            .radio {
+                vertical-align: baseline;
+            }
+        }
+    }
+    .multiple-row-table-title {
+        font-size: 14px;
+        color: @description-color;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .tmp-relation-multiple {
+        .tmp-form-item-content {
+            padding: 0 26px;
+        }
+        
+        .tmp-form-item-title {
+            font-size: 14px;
+            color: @description-color;
+        }
+        .multiple-row-table-content {
+            font-size: 14px;
+            margin-bottom: 30px;
+            td {
+                padding: 3px 5px; 
+            }
+            &.ui-table td {
+                height: 40px;
+            }
+            tr {
+                td:first-child {
+                    text-align: right;
+                    padding-right: 12px;
+                    line-height: 20px;
+                    background: #F2F3F5;
+                    color: @form-title-color;
+                }
+            }
+        }
+        .row-table-line {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            .title {
+                display: inline-flex;
+                padding-right: 12px;
+                background: #F2F3F5;
+                font-size: 14px;
+                font-weight: 500;
+                color: @form-title-color;
+                line-height: 20px;
+                text-align: right;
+                height: 40px;
+                align-items: center;
+            }
+            .value {
+                display: inline-flex;
+                align-items: center;
+                height: 40px;
+            }
+        }
+        .tmp-form-item-content {
+            margin-left: 0;
+        }
+    }
+    .tmp-form-error {
+        color: @error-color;
+        font-size: 13px;
+        margin-left: 32px;
+        position: absolute;
+        bottom: -22px;
+    }
+    .tmp-date {
+        .ui-date-editor-daterange.ui-input, .ui-date-editor-timerange.ui-input, .ui-date-editor-daterange.ui-input-inner, .ui-date-editor-timerange.ui-input-inner {
+            width: 440px;
+        }
+        .input-wrap {
+            width: 340px;
+        }
+    }
+    .tmp-fill {
+        .input-wrap {
+            width: 100%;
+            min-width: 100px;
+        }
+    }
+
+    .tmp-form-type-evaluation {
+        .tmp-form-error {
+            // margin-left: 72px;
+        }
+    }
+    .tmp-form-type-oneself, .tmp-form-type-superior, .tmp-form-type-junior, .tmp-form-type-collaboration, .tmp-form-type-custom, .tmp-form-type-assessment{
+        &>.tmp-form-error {
+            margin-left: 0;
+        }
+    }
+    
+    .tmp-form-type-target {
+        .tmp-group-interview-content {
+            padding: 0;
+        }
+    }
+
+    .attachment-type {
+        width: 16px;
+        height: 16px;
+    }
+    .ui-table {
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-radius: 4px;
+    }
+    .ui-table th {
+        background-color: #F2f3f5;
+        font-weight: 500;
+        color: #1D2129;
+        font-size: 14px;
+    }
+
+    .ui-table-empty-block {
+        min-height: 80px;
+    }
+
+    .ui-table-border > table {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .multiple-no-data.ui-table tr:hover {
+        background-color: transparent;
+        transition: none;
+    }
+}

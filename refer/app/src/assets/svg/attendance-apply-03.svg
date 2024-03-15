@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4BDDB3" offset="0%"></stop>
+            <stop stop-color="#2DC588" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13,1.08333333 C15.3941667,1.08333333 17.3333333,3.0225 17.3333333,5.41666667 C17.3333333,7.81083333 15.3941667,9.75 13,9.75 C10.6058333,9.75 8.66666667,7.81083333 8.66666667,5.41666667 C8.66666667,3.0225 10.6058333,1.08333333 13,1.08333333 Z" id="path-3"></path>
+        <filter x="-80.8%" y="-46.2%" width="261.5%" height="284.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.784313725   0 0 0 0 0.556862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="特殊考勤申请" transform="translate(-465.000000, -180.000000)">
+            <g id="mk_控件备份" transform="translate(445.000000, 162.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4备份" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g transform="translate(7.000000, 7.000000)" id="路径">
+                        <polygon points="0 0 26 0 26 26 0 26"></polygon>
+                        <path d="M19.8943333,11.895 C21.5865,13.5860833 21.5865,16.3301667 19.8943333,18.0223333 L13.7659167,24.15075 C13.3434167,24.57325 12.6565833,24.57325 12.2340833,24.15075 L6.10566667,18.0223333 C4.4135,16.3301667 4.4135,13.5860833 6.10566667,11.8939167 C7.79783333,10.20175 10.5419167,10.20175 12.2340833,11.8939167 L12.9989167,12.6598333 L13.7659167,11.8939167 C15.4580833,10.20175 18.2021667,10.20175 19.8943333,11.8939167 L19.8943333,11.895 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <g opacity="0.9">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

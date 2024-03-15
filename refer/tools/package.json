@@ -1,0 +1,24 @@
+{
+  "name": "@noah/tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{vue,js}\" "
+  },
+  "keywords": [],
+  "author": "BZL/FE技术中心/FE七组/Noah项目组",
+  "license": "ISC",
+  "dependencies": {
+    "@boss/utils": "^1.5.12",
+    "crypto-js": "4.1.1",
+    "dayjs": "^1.11.10",
+    "magpie-monitor": "2.3.8",
+    "object-assign": "^4.1.1",
+    "qs": "^6.11.2",
+    "vuex": "^3.1.0",
+    "blueimp-md5": "^2.10.0",
+    "@boss/boss-js-upload": "^1.1.5"
+  }
+}

@@ -1,0 +1,80 @@
+@import "./train-manage.less";
+@import "./course-introduction.less";
+@import "./my.less";
+@import "./learning-platform.less";
+@import "./registration-detail.vue.less";
+@import "./sign-detail.vue.less";
+@import "./teacher-manage.less";
+@import "./course-manage.less";
+
+
+.upload-img-container{
+    display: inline-block;
+    .upload-box{
+        position: relative;
+        width: 160px;
+        height: 120px;
+        border: 1px solid #00CFC5;
+        color: #00CFC5;
+        margin: 2px 0 6px;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover{
+            background-color: #E5FAF9;
+        }
+        &.is-uploaded{
+            border: 1px solid #E3E7ED;
+            &:hover{
+                background-color: #fff;
+            }
+        }
+        .upload-box-icon{
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin: 38px auto 15px;
+        }
+        .avatar{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .avatar-bg {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                background-position: bottom center;
+            }
+        }
+        .upload-tip{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+            line-height: 34px;
+            height: 34px;
+            background-color: rgba(0,0,0,0.6);
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        .desc{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .tips{
+        font-size: 12px;
+        text-align: center;
+        color: #646F79;
+    }
+}
+
+

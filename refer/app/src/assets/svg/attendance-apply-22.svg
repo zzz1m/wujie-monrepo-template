@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4BDDB3" offset="0%"></stop>
+            <stop stop-color="#2DC588" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8.1552,7.2 C10.1434251,7.2 11.7552,5.5882251 11.7552,3.6 C11.7552,1.6117749 10.1434251,-7.10542736e-16 8.1552,-7.10542736e-16 C6.16697493,-7.10542736e-16 4.55520008,1.61177493 4.55520008,3.6 C4.55520008,5.58822507 6.16697493,7.2 8.1552,7.2 Z" id="path-3"></path>
+        <filter x="-97.2%" y="-55.6%" width="294.4%" height="322.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.784313725   0 0 0 0 0.556862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M17.6752,8.8 C19.4425112,8.8 20.8752,7.3673112 20.8752,5.6 C20.8752,3.8326888 19.4425112,2.4 17.6752,2.4 C15.9078888,2.4 14.4752,3.8326888 14.4752,5.6 C14.4752,7.3673112 15.9078888,8.8 17.6752,8.8 Z" id="path-6"></path>
+        <filter x="-109.4%" y="-62.5%" width="318.7%" height="350.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.784313725   0 0 0 0 0.556862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要休假" transform="translate(-1035.000000, -276.000000)">
+            <g id="mk_控件备份-9" transform="translate(1015.000000, 258.000000)">
+                <g id="编组" transform="translate(20.000000, 18.000000)">
+                    <g id="编组-4备份" fill="url(#linearGradient-1)">
+                        <rect id="矩形" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    </g>
+                    <g transform="translate(8.453000, 11.000000)" id="路径">
+                        <path d="M8.8752,20.3968 L8.8752,15.04 C8.8752,12.9872 10.4672,11.3728 12.8224,10.4512 C11.3035123,9.88631194 9.69572908,9.59802725 8.0752,9.59998994 C5.0512,9.59998994 2.2576,10.5872 -6.28119778e-13,12.256 C1.42144998,16.2760616 4.7476175,19.3269973 8.8752,20.3968 L8.8752,20.3968 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M23.0832,14.5376 C22.4512,13.6848 20.3472,12.8 17.6752,12.8 C14.4656,12.8 12.0752,14.0752 12.0752,15.04 L12.0752,20.8 C16.5928517,20.8025095 20.7769154,18.4222151 23.0832,14.5376 L23.0832,14.5376 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <g opacity="0.9">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g opacity="0.9">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

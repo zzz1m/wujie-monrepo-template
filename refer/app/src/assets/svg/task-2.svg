@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下级协作</title>
+    <defs>
+        <linearGradient x1="11.6154167%" y1="8.32459322%" x2="73.2688791%" y2="63.3759394%" id="linearGradient-1">
+            <stop stop-color="#F05345" offset="0%"></stop>
+            <stop stop-color="#FE8C73" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#DB5140" offset="0%"></stop>
+            <stop stop-color="#FE7260" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="16.3103326%" y1="72.1887707%" x2="100%" y2="72.1887707%" id="linearGradient-3">
+            <stop stop-color="#F8A799" offset="0%"></stop>
+            <stop stop-color="#FFE8DE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="93.5903685%" y1="46.163382%" x2="8.80976716%" y2="46.163382%" id="linearGradient-4">
+            <stop stop-color="#FFDDD4" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-49.0%" y="-50.2%" width="197.9%" height="200.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="364.287342%" x2="100%" y2="364.287342%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="下级协作" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-26">
+            <rect id="矩形" x="0" y="0" width="38" height="38"></rect>
+            <g id="编组-4" transform="translate(2.000000, 4.000000)">
+                <rect id="矩形" stroke="url(#linearGradient-2)" stroke-width="0.6" fill="url(#linearGradient-1)" x="0.3" y="0.3" width="28.7333333" height="28.7333333" rx="4"></rect>
+                <path d="M25.2804373,19.2886854 C28.1469581,18.6753454 30.2992898,16.0831527 30.2858639,12.9978828 C30.2703456,9.46887878 27.4271894,6.61033949 23.9479585,6.62619048 C20.4685532,6.64199689 17.6506795,9.52582673 17.6661978,13.0546539 C17.6797981,16.1401007 19.8546226,18.7126623 22.7265486,19.3001811 C18.3931154,19.9503074 15.0655799,23.7564463 15.0857143,28.3262537 C15.088112,28.8413267 15.5015958,29.2570044 16.0094046,29.2547619 L32.0845882,29.1822414 C32.5923563,29.179805 33.0021152,28.7604634 33,28.24543 C32.9799401,23.6754458 29.6191014,19.8997263 25.2804373,19.2886854 Z" id="路径" stroke="url(#linearGradient-4)" stroke-width="0.6" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                <path d="M8.10818956,22.7196487 C10.1147679,13.0457176 14.6391229,10.8527056 21.6812544,16.1406125 C28.7233859,21.4285194 28.0370304,26.4655053 19.6221879,31.2515702 C16.3453717,29.9643541 14.0591188,28.8745935 12.763429,27.9822885 C11.4677393,27.0899836 9.91599278,25.3357703 8.10818956,22.7196487 Z" id="路径-14" fill="#FB5547" opacity="0.481919062" filter="url(#filter-5)"></path>
+                <polygon id="路径-28" fill="url(#linearGradient-6)" points="5.55040736 10.3648142 12.0980263 10.3648142 12.0980263 12.4668662 5.55040736 12.4668662"></polygon>
+                <polygon id="路径-28" fill="url(#linearGradient-7)" points="5.55040736 14.407222 13.9837407 14.407222 13.9837407 16.5092741 5.55040736 16.5092741"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

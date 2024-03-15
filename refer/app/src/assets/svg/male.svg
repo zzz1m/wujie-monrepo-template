@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #646464;">
+    <title></title>
+    <g id="ICON/15px/男" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#646464" x="0" y="0" width="15" height="15"></rect>
+        <g id="Group-7复制备份" transform="translate(0.500000, 0.500000)" stroke="#FFFFFF">
+            <circle id="Oval" stroke-width="0.8" fill="#4BA1F1" cx="7" cy="7" r="7"></circle>
+            <g id="Group-22" transform="translate(7.000000, 7.000000) rotate(45.000000) translate(-7.000000, -7.000000) translate(4.500000, 2.500000)">
+                <circle id="Oval" fill-opacity="0" fill="#FFFFFF" cx="2.5" cy="6" r="2.5"></circle>
+                <line x1="2.5" y1="3.5" x2="2.5" y2="3.55271368e-15" id="Path-19"></line>
+                <polyline id="Path" stroke-linecap="round" transform="translate(2.506727, 1.625000) rotate(45.000000) translate(-2.506727, -1.625000) " points="1.35292171 2.76929197 1.35292171 0.480708035 3.66053186 0.480708035"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,108 @@
+.page-reserve{
+    padding: 16px;
+    padding-bottom: 0;
+    background-color: #F8F9FB;
+    display: block;
+    &-inner{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
+        border-radius: 6px;
+        padding: 0 20px;
+        min-height: 100%;
+        padding-bottom: 60px;
+        .approval-tab{
+            margin-top: 2px;
+            .ui-tab-nav-wrap{
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .search-panel{
+            margin-left: 0;
+        }
+    }
+    .module-time__container{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+    .module-address__container{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+    .data-list{
+        padding-bottom: 0;
+    }
+    .fasion-pager{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0 0 6px 6px;
+    }
+}
+
+.book-reverse-dialog{
+
+    .ui-select-input[disabled] {
+        color: #151B26;
+    }
+
+    &.book-time-auth{
+        .dialog-body {
+            overflow: visible;
+            .ui-cascader-new{
+                width: 336px;
+                .cascader-viewer {
+                    overflow-y: hidden;
+                    .cascader-panel {
+                        height: 230px;
+                        ul {
+                            height: 230px;
+                        }
+                    }
+                }
+            } 
+        }
+        .ui-form{
+            .input-wrap, .ui-select{
+                width: 336px;
+            }
+        }
+    }
+    .dialog-container{
+        padding: 0;
+        width: 560px;
+    }
+    .dialog-header{
+        padding: 24px 24px 0 24px;
+    }
+    .dialog-body{
+        padding: 0 24px;
+        padding-bottom: 32px
+    }
+    .dialog-footer{
+        padding: 0 24px 24px 24px;
+        margin-top: 0;
+    }
+    .ui-form{
+        .form-item{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .input-wrap, .ui-select{
+            width: 100%;
+        }
+        // .ui-select-dropdown{
+        //     max-height: 132px;
+        // }
+    }
+}

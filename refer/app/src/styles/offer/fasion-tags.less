@@ -1,0 +1,59 @@
+.fasion-tags {
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+    .entrance-warning {
+        color: #ed3f14;
+    }
+    .tags-group {
+        margin-top: 20px;
+        float: left;
+        .ui-tag {
+            line-height: 32px;
+            border: 1px #E0E6E8 solid;
+            padding: 0 10px;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 14px;
+            margin: 0 10px 0 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f9f9f9;
+            }
+
+            &.active,
+            &.router-link-exact-active {
+                background-color: @primary-color;
+                border-color: @primary-color;
+                color: #fff;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    .op,
+    .btns {
+        float: right;
+        margin-top: 19px;
+        .btn {
+            border-radius: 2px;
+            padding: 9px 7px;
+            &+.btn {
+                margin-left: 10px;
+            }
+        }
+        &~.btns {
+            top: 0;
+        }
+
+    }
+    .tabs-width {
+        min-width: 72px;
+    }
+}

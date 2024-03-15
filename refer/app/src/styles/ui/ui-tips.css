@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*tips*/
+.data-tips {
+    display: flex;
+    text-align: center;
+    height: calc(100vh - 132px);
+    min-height: 340px;
+    position: relative;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-tips .boss-loading {
+    margin-top: -20px;
+    margin-right: -5px;
+}
+.data-tips .boss-loading p {
+    margin-top: 10px;
+}
+
+
+.tip-nodata {
+    display: block;
+    width: 204px;
+    height: 232px;
+    margin: 0 auto 5px;
+    background: url("../../assets/images/ui/tip-nodata.png") center 0 no-repeat;
+}
+.tip-errordata {
+    display: block;
+    width: 412px;
+    height: 212px;
+    margin: -20px auto 15px;
+    background: url("../../assets/images/ui/tip-errordata.png") 118px 0 no-repeat;
+}
+.tip-lockdata {
+    display: block;
+    width: 92px;
+    height: 92px;
+    margin: 20px auto 15px;
+    background: url("../../assets/images/ui/icon-lock-1.png") 0 0 no-repeat;
+}
+.tip-noposition {
+    display: block;
+    width: 177px;
+    height: 160px;
+    margin: 0 auto 43px;
+    background: url("../../assets/images/ui/tip-noposition.png") center 0 no-repeat;
+}
+.tip-closedata {
+    display: block;
+    width: 107px;
+    height: 108px;
+    margin: 0 auto 20px;
+}
+.boss-loading .component-b,
+.boss-loading .component-s1,
+.boss-loading .component-o,
+.boss-loading .component-s2 {
+    display: inline-block;
+    width: 40px;
+    height: 42px;
+    background: url("../../assets/images/ui/icons-boss.png") no-repeat;
+    vertical-align: middle;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation: bossLoading 0.6s infinite linear alternate;
+    -moz-animation: bossLoading 0.6s infinite linear alternate;
+    animation: bossLoading 0.6s infinite linear alternate;
+}
+
+.boss-loading .component-b {
+    background-position: 0 0;
+}
+.boss-loading .component-o {
+    content: "";
+    background-position: 0 -68px;
+    margin-left: -4px;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.boss-loading .component-s1 {
+    background-position: 0 -141px;
+    margin-left: 6px;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.boss-loading .component-s2 {
+    content: "";
+    background-position: 0 -141px;
+    margin-left: -4px;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.data-tips .data-blank {
+    width: 400px;
+    margin: -120px 0 0 -200px;
+}
+.data-tips .data-blank b {
+    font-size: 18px;
+    font-weight: normal;
+    color: #9fa3b0;
+}
+.data-tips .data-blank p {
+    margin-top: 20px;
+}
+.data-tips .data-blank .btn {
+    margin-right: 0;
+}
+.data-tips .data-blank .info {
+    color: #151B26;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0;
+}
+.data-tips .data-blank .info-small {
+    color: 14px;
+    color: #9fa3b0;
+    line-height: 14px;
+    margin-top: 17px;
+}
+.data-tips .data-blank .btn-box {
+    margin-top: 97px;
+}
+.data-tips .spinner {
+    color: #9fa3b0;
+}
+
+.loadmore {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+/*form tip*/
+.tip-error {
+    color: #fc6c38;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.tip-error i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@keyframes bossLoading {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -10px, 0);
+    }
+}

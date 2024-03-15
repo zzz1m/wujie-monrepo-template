@@ -1,0 +1,114 @@
+
+
+// iuc 相关
+.page-iuc-apply {
+    padding-top: 20px;
+    .ui-select {
+        width: 600px;
+    }
+    .iuc-roles-show:not(:first-of-type){
+        margin-top: 20px;
+    }
+    .form-item-select-roles {
+        .form-error-tip {
+            display: none;
+        }
+    }
+    .input-keyword {
+        margin-left: 20px;
+        .input {
+            border: none;
+            padding-left: 0;
+            border-bottom: 1px solid #e3e7ed;
+            &:focus {
+                box-shadow: none;
+                border-color: #2CD7C8;
+            }
+        }
+    }
+    .time-wrapper {
+        .radio-group {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+        .item-content {
+            min-height: 34px;
+        }
+    }
+    .ui-tag {
+        display: none;
+    }
+    .select-tag-list {
+        .hompage-tag-icon {
+            background: #ffffff;
+            font-size: 14px;
+            border-radius: 11px;
+            margin: 10px 10px 10px 0;
+            position: relative;
+            &:hover {
+                color: #00CFC5;
+                .del {
+                    color: #00CFC5;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                background-color: #00CFC5;
+                height: 16px;
+                top: 3px;
+                left: 0px;
+            }
+            
+        }
+        .role-text {
+            margin-left: 30px;
+            span {
+                display: inline-block;
+                padding-right: 10px;
+                color: #646F79;
+                font-size: 12px;
+                &:nth-of-type(2n+1) {
+                    color: rgba(100,111,121, .7);
+                }
+            }
+        }
+    }
+    .system-filter {
+        .ui-select-selection {
+            border:none;
+        }
+        .input {
+            width: 600px;
+        }
+    }
+}
+
+.iuc-checked-green {
+    color: #00A6A7;
+}
+.iuc-checked-yellow {
+    color: #F8A120;
+}
+.iuc-checked-red {
+    color: #F56C6C;
+}
+.iuc-checked-tag {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 6px;;
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+.iuc-checked-blue {
+    color: #67a8f8;
+}
+.iuc-checked-bg-blue {
+    background: #67a8f8;
+}
+.iuc-checked-bg-yellow {
+    background: #F8A120;
+}

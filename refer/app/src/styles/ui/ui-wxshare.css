@@ -1,0 +1,5 @@
+@charset "utf-8";
+#wx-share { position:absolute; width:100%; height:100%; top:0; left:0; z-index:1001; }
+#wx-share { background-color:rgba(4,4,4,.8); display:none; }
+.wx-share-tip { background:url(/v2/h5/wap/images/wx-share-timeline.png) no-repeat; height:114px; -webkit-background-size:auto 100%; background-size:auto 100%; display:none; }
+.wx-browser-tip { background:url(/v2/h5/wap/images/wx-browser-tip.png) no-repeat; height:115px; -webkit-background-size:auto 100%; background-size:auto 100%; display:none; }

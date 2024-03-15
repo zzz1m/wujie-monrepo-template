@@ -1,0 +1,432 @@
+.setting-option{
+    width: 100%;
+    & + .setting-option{
+        margin-top: 12px;
+    }
+    .column-operate-btn {
+        & + .column-operate-btn{
+            margin-left: 16px;
+        }
+    }
+    .setting-option-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        span{
+            color: #646F79;
+        }
+        a{
+            display: inline-flex;
+            align-items: center;
+            float: right;
+            &:hover{
+                opacity: 0.8;
+            }
+            img{
+                width: 14px;
+                margin-right: 8px;
+            }
+            i{
+                margin-right: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+    .setting-option-table{
+        margin-top: 4px;
+        border: 1px solid #E8EAEF;
+        border-radius: 2px;
+        .ui-table-empty-block{
+            min-height: 40px;
+        }
+        .ui-table-header-wrapper{
+            background-color: #F7F8F9;
+            tr, th{
+                background-color: #F7F8F9;
+            }
+            th{
+                height: 44px;
+                line-height: 43px;
+                color: #6C7281;
+                padding: 0;
+            }
+        }
+        .ui-table-body{
+            tr{
+                &:hover{
+                    > td{
+                        background-color: #FAFAFA;
+                    }
+                }
+            }
+        }
+        .ui-table-row{
+            &:last-child{
+                td{
+                    border: none;
+                }
+            }
+        }
+        .ui-table-body-wrapper{
+            td{
+                height: 48px;
+                color: #13141A;
+                border-color: #E8EAEF;
+            }
+        }
+    }
+
+    &.no-value{
+        .no-value-header{
+            justify-content: flex-start;
+            a{
+                float: none;
+                margin-left: 32px;
+            }
+        }
+    }
+    &.attendance-class{
+        .attendance-class-input{
+            position: relative;
+            display: inline-block;
+            min-height: 34px;
+            max-width: 730px;
+            min-width: 400px;
+            padding: 1px 30px 1px 11px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            border: 1px solid #D8DBE3;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                border-color: #2CD7C8;
+            }
+        }
+        .attendance-class-icon{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -7px;
+            color: #9fa3b0;
+        }
+        .placeholder{
+            color: #C5C8D0;
+        }
+        .attendance-class-list{
+            margin-left: -4px;
+            .attendance-class-item{
+                position: relative;
+                float: left;
+                line-height: 24px;
+                padding: 2px 8px 2px 22px;
+                background: #EFF2F7;
+                border-radius: 2px;
+                font-size: 13px;
+                font-weight: 400;
+                color: #3A4256;
+                line-height: 18px;
+                margin: 4px;
+                em{
+                    position: absolute;
+                    top: 50%;
+                    left: 8px;
+                    margin-top: -4px;
+                    width: 8px;
+                    height: 8px;
+                    background: #B685F2;
+                    border-radius: 1px;
+                }
+            }
+        }
+    }
+    .join-scope-input{
+        position: relative;
+        min-height: 34px;
+        width: 730px;
+        padding: 2px 12px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #D8DBE3;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            border-color: #2CD7C8;
+        }
+        .selected-options-list{
+            min-height: auto;
+            overflow: hidden;
+            font-size: 12px;
+            .options-list-box{
+                line-height: 22px;
+            }
+            .rule-viewer{
+                line-height: 22px;
+                border-radius: 2px;
+                background-color: #EFF2F7;
+                margin: 3px 4px;
+                border: none;
+            }
+            .split-block{
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                margin-left: 4px;
+                margin-right: 4px;
+                border: none;
+                border-radius: 2px;
+            }
+        }
+    }
+    .join-user-input{
+        position: relative;
+        min-height: 34px;
+        width: 730px;
+        padding: 1px 12px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #D8DBE3;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            border-color: #2CD7C8;
+        }
+        .user-tag{
+            position: relative;
+            float: left;
+            line-height: 22px;
+            padding: 0 8px;
+            background: #EFF2F7;
+            border-radius: 11px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #3A4256;
+            margin: 4px;
+        }
+    }
+}
+.clock-date-dialog{
+    .dialog-container{
+        width: 500px;
+        .ui-date-editor{
+            width: 100%;
+        }
+        .form-item{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// 班次弹窗
+.select-class-dialog{
+    &.with-form{
+        .dialog-container{
+            width: 560px;
+        }
+        .form-area{
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            .input-wrap{
+                margin: 0;
+            }
+            .form-item{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .dialog-container{
+        width: 580px;
+        padding: 24px 0;
+    }
+    .dialog-header{
+        margin-bottom: 18px;
+        padding: 0 24px;
+    }
+    .dialog-footer{
+        padding: 24px 24px 0 24px;
+        margin-top: 0;
+        border-top: 1px solid #D8DBE3;
+    }
+    .select-class-container{
+        .input-wrap{
+            margin: 0 24px;
+            width: 250px;
+            min-width: auto;
+        }
+        .no-data{
+            display: block;
+            line-height: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    }
+    .select-class-list{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        max-height: 384px;
+        overflow: hidden;
+        overflow: overlay;
+        padding: 0 24px;
+        .select-class-radio{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-bottom: 1px solid #ECEEF0;
+            margin-right: 0;
+            padding: 0 16px;
+            transition: all 0.15s linear;
+            &:hover{
+                background-color: #f5f7fa;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            .select-class-item{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .radio-inner{
+                    margin-top: 0;
+                    margin-right: 16px;
+                }
+                .attendance-name {
+                    max-width: 370px;
+                }
+            }
+        }
+        .select-class-checkbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-bottom: 1px solid #D8DBE3;
+            margin-right: 0;
+            padding: 0 16px;
+            transition: all 0.15s linear;
+            &:hover{
+                background-color: #f5f7fa;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            .checkbox-inner{
+                margin-top: 0;
+                margin-right: 16px;
+            }
+            .select-class-item{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .attendance-name {
+                    max-width: 370px;
+                }
+            }
+        }
+    }
+}
+
+// 排班周期弹窗
+.schedule-cycle-dialog{
+    .dialog-container{
+        width: 554px;
+        padding: 24px;
+    }
+    .dialog-body{
+        margin-right: -24px;
+        padding-right: 24px;
+    }
+    .dialog-footer{
+        margin-top: 10px;
+    }
+    .form-item{
+        .input-wrap, .ui-select{
+            width: 100%;
+        }
+        .cycle-input{
+            .input-wrap{
+                width: 80px;
+                min-width: auto;
+                margin-right: 10px;
+                .inputnumber-up, .inputnumber-down{
+                    display: none;
+                }
+            }
+            .tip{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// 考勤参与人员
+.attendance-user-dialog{
+    .dialog-container{
+        width: 590px;
+        padding: 24px;
+    }
+    .selected-user-container{
+        margin-top: 20px;
+    }
+    .selected-user-header{
+        display: flex;
+        height: 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 14px;
+        .delete-btn{
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.15s linear;
+            &:hover{
+                opacity: 0.8;
+            }
+            .delete-icon{
+                margin-right: 8px;
+            }
+        }
+    }
+    .selected-user-list{
+        width: 100%;
+        height: 240px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #D8DBE3;
+        overflow: auto;
+        overflow: overlay;
+        .user-tag{
+            position: relative;
+            float: left;
+            line-height: 22px;
+            padding: 0 10px;
+            background: #EFF2F7;
+            border-radius: 11px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #3A4256;
+            margin: 4px;
+            i{
+                color: #c0c4cc;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover{
+                    color: #9fa3b0;
+                }
+            }
+        }
+    }
+}

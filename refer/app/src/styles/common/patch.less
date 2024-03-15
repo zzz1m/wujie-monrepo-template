@@ -1,0 +1,783 @@
+@charset "utf-8";
+body {
+    font-family: @font-family;
+    font-size: 14px;
+    min-width: 1200px;
+    color: @default-color;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    word-break: break-all;
+    word-wrap: break-word;
+    /* min-height: 100.1%; */
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: #F1F1F1;
+    }
+}
+
+#wrap {
+    min-width: 960px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#sidebar {
+    width: 200px;
+}
+#main {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    overflow: overlay;
+    background-color: #EFF0F4;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    overflow: overlay;
+    height: 100%;
+    max-height: 100%;
+    background-color: #EFF0F4;
+    position: relative;
+    min-height: 100%;
+    z-index: 1;
+}
+
+
+
+.page-content {
+    flex: 1;
+    // height: calc(~'100vh - 48px');
+    overflow-y: overlay;
+    overflow-x: hidden;
+    padding: 0 20px 60px;
+    background-color: #fff;
+    box-sizing: border-box;
+    &.full {
+        padding-bottom: 0;
+    }
+    &.page-inner{
+        width: 1200px;
+        margin: 20px auto;
+        border-radius: 4px;
+    }
+}
+
+.fix-table-warp {
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    position: relative;
+}
+.fix-table-content {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    display:flex;
+    flex-direction:column;
+}
+
+.data-list-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.caret-wrapper {
+    .descending.active {
+        border-top-color: #409eff;
+    }
+    .ascending.active {
+        border-bottom-color: #409eff;
+    }
+}
+
+.flex-page-content {
+    display: flex;
+    flex-direction: column;
+
+    .nowrap .cell{
+        white-space: nowrap;
+    }
+
+}
+
+.page-title {
+    padding-bottom: 15px;
+    margin-top: 15px;
+
+    & + .data-search {
+        margin-top: 0;
+    }
+
+    h2 {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        position: relative;
+        padding-left: 6px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 2px;
+            height: 16px;
+            background: #1FCBC7;
+        }
+        &.detail-title {
+            font-size: 24px;
+            padding: 30px 0 30px 50px;
+        }
+    }
+    &.no-preline {
+        h2 {
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+        .attendance-rule {
+            margin-left: 0;
+        }
+    }
+    .alert-warning {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        padding: 0 10px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+
+    .alert-error {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        padding: 0 10px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+}
+
+
+.welcome-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    min-width: 400px;
+    height: 400px;
+    background: url(../../assets/images/guide-profile.png) center top no-repeat;
+}
+
+.welcome-box .gray {
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.data-search {
+    background: #f7fafc;
+    border: 1px #edf5fa solid;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 13px;
+    position: relative;
+    z-index: 99;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .input-wrap {
+        min-width: auto;
+    }
+    .input {
+        min-width: auto;
+        width: 200px;
+        padding: 2px 7px;
+        font-size: 13px;
+        // height: 30px;
+        background-color: #fff;
+        vertical-align: middle;
+        font-size: 13px;
+    }
+    .ipt-short {
+        width: 100px;
+    }
+    .input-wrap-prefix .input {
+        padding-left: 30px;
+    }
+    .ipt {
+        line-height: 23px;
+    }
+    ::-webkit-input-placeholder,
+    .ui-select-placeholder {
+        font-size: 13px;
+    }
+    .search-item {
+        display: inline-block;
+        vertical-align: middle;
+        & + .search-item {
+            margin-left: 15px;
+        }
+    }
+    .form-row + .form-row,
+    .search-row + .search-row {
+        padding-top: 10px;
+    }
+    .form-row .t,
+    .search-row .t {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 7px;
+        margin-top: -2px;
+    }
+    .datepicker-wrap .ui-icon-date {
+        top: 8px;
+    }
+    .ui-date-editor {
+        // height: 30px;
+        background-color: #fff;
+        .ui-range-separator {
+            font-size: 13px;
+        }
+    }
+    .ui-range-editor {
+        width: 300px;
+    }
+    .ui-select {
+        width: 150px;
+        // .ui-select-inner {
+        //     // padding: 4px 8px 3px;
+        //     font-size: 13px;
+        // }
+    }
+    .btns {
+        float: right;
+    }
+    .btn {
+        // padding: 0 15px;
+        // line-height: 28px;
+        font-size: 13px;
+        margin-right: 10px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+    }
+    .datepicker-wrap {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+.ui-dropmenu-list li,
+.ui-dropdown-list li:not(.ui-select-group-wrap):not(.ui-select-group) {
+    line-height: 20px;
+    font-size: 13px;
+    padding: 10px 18px;
+    color: @secondary-color;
+    &:hover,
+    &.active,
+    &.ui-select-item-selected {
+        background-color: #F3F3F3;
+        color: @default-color;
+    }
+}
+.ui-dropdown-list li {
+    padding: 10px 15px;
+}
+.ui-dropdown-list li.ui-select-group-wrap {
+    padding: 0;
+}
+.ui-dropdown-list li.ui-select-group {
+    padding: 0;
+}
+
+
+.data-search .dropdown-select:after, .data-search .dropdown-label:after {
+    top: 2px;
+}
+/*
+.data-search-box {
+    background: #f7fafc;
+    border: 1px #edf5fa solid;
+    padding: 10px 20px;
+}
+
+.data-search-box .data-tab {
+    float: right;
+}
+
+.data-search-box .data-tab span {
+    display: inline-block;
+}
+
+.data-search-box .data-tab button {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.data-search-box .data-search {
+    float: left;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.data-search-box .search-label, .data-search-box .search-ipt {
+    margin-left: 10px;
+}
+.data-search-box .search-label {
+    margin-right: 10px;
+}
+.data-search-box .btn-primary {
+    margin-left: 10px;
+}
+*/
+
+
+.depart-tree .dropdown-menu {
+    width: 252px;
+    top: 29px;
+}
+
+.data-search .depart-tree .dropdown-select:after {
+    top: 5px;
+    right: 8px;
+}
+
+.depart-tree li {
+    padding: 0 0 0 20px;
+}
+
+.depart-tree .dropdown-menu>ul>li {
+    padding: 0 20px;
+}
+
+
+.data-list {
+    margin-top: 15px;
+    max-width: 100%;
+    flex:1;
+    position: relative;
+}
+.margin-top-6 {
+    margin-top: 6px;
+}
+.fix-table-warp {
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+.fix-table-content {
+    position: absolute;
+    height: 100%;
+    width:100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.prewrap {
+    white-space: pre-wrap;
+}
+
+.progressCell {
+    position: relative;
+    cursor: default;
+}
+
+.page-title + .data-list {
+    margin-top: 0;
+}
+.page-title + .fasion-search {
+    margin-top: 0;
+}
+.page-title + .page-info {
+    margin-top: 0;
+}
+
+.data-list .table-title {
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.data-list .table-title:first-of-type {
+    margin-top: 0;
+}
+
+
+.mini-sidebar #container {
+    max-width: none;
+}
+.mini-sidebar .nav-logo {
+    width: 45px;
+}
+
+.mini-sidebar .nav-logo .home-link {
+    display: none;
+}
+
+.mini-sidebar .nav-logo .sidebar-button {
+    right: 0;
+}
+
+.mini-sidebar .sidebar {
+    display: none;
+}
+
+.mini-sidebar #container {
+    margin-left: 0;
+}
+
+.mini-sidebar .navbar .links {
+    margin-left: 0;
+}
+
+.tab-line {
+    margin-top: 15px;
+    border-bottom: 1px solid #53CAC3;
+}
+
+.tab-line a {
+    border: none;
+}
+
+.tab-line a.selected {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #53CAC3;
+    color: #53CAC3;
+}
+
+.tab-line a:first-of-type, .tab-line a:last-of-type {
+    border-radius: 0;
+}
+
+.page-info {
+    display: flex;
+    border-bottom: 1px #eee solid;
+    margin: 15px 0 20px;
+    padding-bottom: 10px;
+}
+
+.page-info div {
+    margin-right: 20px;
+}
+
+.page-info a {
+    color: #18c3b1;
+}
+
+.page-info a:hover {
+    color: #00d7c6;
+}
+
+.form-single {
+    .default-box {
+        padding-left: 12%;
+    }
+    .dropdown-select:after, .dropdown-label:after {
+        top: 0;
+    }
+}
+.form-single .item-label {
+    min-width: 200px;
+    width: 86px;
+    text-align: right;
+    line-height: 34px;
+    padding: 0 12px 0 0;
+
+    em.red {
+        padding-right: 10px;
+    }
+}
+
+.form-single .form-btns {
+    padding-top: 20px;
+    .btn-primary {
+        min-width: 90px;
+    }
+}
+.form-single .item-content {
+    line-height: 34px;
+}
+
+.form-single .item-content .radio-group {
+    line-height: 30px;
+}
+
+.form-single .form-btns {
+    margin-bottom: 0;
+}
+
+.time-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    width: 185px;
+    margin-top: 10px;
+    padding: 0 10px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+/*.ui-table .schedule {
+    position: absolute;
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.1);
+}*/
+
+.text-blue {
+    color: #2db7f5;
+}
+
+.icon-male,
+.icon-female {
+    width: 16px;
+    height: 16px;
+}
+
+.el-date-range-picker .today {
+    background: none;
+    position: relative;
+    top: auto;
+    left: auto;
+}
+.ui-tablepro:after {
+    display: none;
+}
+.ui-tablepro-tip {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    color: @gray-color;
+}
+
+.dialog-large-default .ui-form {
+    .input {
+        width: 300px;
+    }
+}
+
+
+
+
+/*旧组件适配*/
+.btn-muted {
+    border-color: #ddd;
+    background: #ddd;
+    color: #5e5e5d;
+}
+.ipt-wrap {
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-area {
+    width: 600px;
+    min-height: 100px!important;
+}
+.dropdown-wrap .input[readonly] {
+    background: #fff;
+}
+.data-search {
+    .btn {
+        vertical-align: middle;
+    }
+    .dropdown-select:after {
+        top: 5px;
+    }
+    .dropdown-menu {
+        top: 30px;
+    }
+}
+.item-label em.red {
+    padding-right: 5px;
+}
+/*徽章和标签*/
+.badge, .tag { display: inline-block; padding: 0 6px; line-height: 18px; font-size: 11px; min-width: 10px; vertical-align: middle; margin-top: -4px; margin-right: 3px; border-radius: 10px; white-space: nowrap; background: #4285f4; font-style: normal; color: #fff }
+.tag { border-radius: 4px; font-size: 12px; line-height: 18px }
+a.badge:hover, a.tag:hover { color: #fff; opacity: .8 }
+.badge-warning, .tag-warning { background: #f8ac59 }
+.badge-danger, .tag-danger { background: #ed5565 }
+.badge-success, .tag-success { background: #1ab394 }
+.badge-muted, .tag-muted { background: #ddd; color: #5E5E5D }
+a.badge-muted:hover, a.tag-muted:hover { color: #5E5E5D }
+
+.ipt-wrap .suffix-close, .dropdown-select .suffix-close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #c0c4cc;
+    z-index: 1;
+}
+.dropdown-select .suffix-close {
+    padding: 0 2px;
+    right: 9px;
+    z-index: 3;
+}
+.ipt-wrap .suffix-close:hover, .dropdown-select .suffix-close:hover {
+    color: #909399;
+    transition: all 0.3s;
+}
+.ui-table .schedule {
+    position: absolute;
+    box-shadow: 0 12px 30px 0 rgba(0,0,0,.1);
+}
+.dialog-large-default .dialog-container {
+    width: 800px;
+}
+.dialog-large-default .ui-form .dropdown-select:after {
+    top: 1px;
+}
+.sort-ascending.active {
+    border-bottom-color: #1FCBC7;
+}
+.sort-descending.active {
+    border-top-color: #1FCBC7;
+}
+
+
+.page-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.page-content::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
+
+.page-content::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+.page-content::-webkit-scrollbar-corner {
+    background-color: #F1F1F1;
+}
+
+/* 去掉 input[type="number"] 的上下箭头 */
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}*/
+
+// 表单组件不需要上下留白的
+.form-item.no-padding {
+    .item-label {
+        line-height: 18px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .item-content {
+        line-height: 18px;
+    }
+}
+
+// 表单类型的弹框，表单元素宽度100%
+.form-dialog {
+    // 滚动条靠边
+    .dialog-body {
+        padding-right: 30px;
+        margin-right: -30px;
+    }
+    .ui-select {
+        width: 100%;
+    }
+    .input-wrap, .input-wrap-textarea {
+        min-width: 0;
+        width: 100%;
+    }
+    .form-item {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .ui-cascader {
+        width: 100%;
+        &-selection {
+            width: 100%;
+        }
+    }
+    .dep-select {
+        width: 100%;
+    }
+}
+
+// 不滚动的弹框
+.noscroll-dialog .dialog-body {
+    overflow: visible;
+}
+// 滚动条靠边的弹框
+.side-scroll-dialog .dialog-body {
+    padding-right: 30px;
+    margin-right: -30px;
+}
+// 表单错误时的动画提示
+.form-error--shake {
+    font-size: 20px;
+    animation: shake .3s ease-in-out;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(-10%);
+    }
+    75% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+// 弹性
+.flex {
+    display: flex;
+    &-none {
+        flex: none;
+    }
+}
+
+.flex-warp {
+    display: flex;
+    flex-wrap: wrap;
+}

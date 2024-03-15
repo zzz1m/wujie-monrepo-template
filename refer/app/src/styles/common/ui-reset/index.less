@@ -1,0 +1,196 @@
+@import "./pager";
+@import "./table";
+@import "./dialog";
+@import "./select";
+
+.input:-ms-input-placeholder{
+    color: #c9c9c9;
+}
+
+// btn
+.btn{
+    min-width: 70px;
+    &-text {
+        min-width: auto;
+        &:hover {
+            background: none;
+        }
+    }
+    // 文字类型的操作按钮
+    &-action {
+        display: inline-block;
+        color: @primary-color;
+        line-height: 1;
+        padding: 5px;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            color: @link-default-hover-color;
+        }
+    }
+}
+
+// radio
+.radio-inner {
+    margin-right: 10px;
+}
+
+// 输入框等 右部留白
+.input-show-clear .input,
+.ui-date-editor .input,
+.ui-select-inner,
+.ui-cascader .input,
+.ui-cascader .ui-select-item-arrow {
+    padding-right: @input-padding-horizontal * 2;
+}
+
+.ui-dropmenu {
+    font-size: 13px;
+
+    .ui-dropmenu-label {
+        .ui-icon-arrow-down {
+            transform: scale(.6);
+            font-weight: bold;
+            right: 12px;
+            margin-top: -7px;
+        }
+    }
+    &-visible {
+        .ui-dropmenu-label {
+            .ui-icon-arrow-down {
+                transform: scale(.6) rotate(180deg);
+            }
+        }
+    }
+}
+
+
+// ---------- 日期选择 ----------
+.el-date-picker {
+    .el-date-table td {
+        width: 30px;
+    }
+    .el-date-table .today {
+        top: 0;
+        left: 0;
+        background: none;
+    }
+    .available.today {
+        span {
+        }
+    }
+}
+.quill-editor .ql-snow {
+    white-space: unset;
+}
+.quill-editor.fixed-toolbar {
+    .ql-toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+}
+
+
+.ui-icon-more:hover{
+    color:#00C2B3;
+}
+.ui-dropmenu-visible .ui-icon-more {
+    color:#00C2B3;
+}
+.dialog-container {
+    border-radius: 8px;
+}
+.dialog-icons-default .dialog-container {
+    width: 460px;
+}
+.dialog-icons-default .dialog-header {
+    margin-bottom: 0;
+    .icon-dialog{
+        margin-top: 0;
+    }
+}
+.ui-dropmenu-list ul{
+    border-radius: 4px;
+    li {
+        padding:10px 20px;
+    }
+}
+.ui-range-editor .ui-range-input{
+    line-height: 1.5;
+}
+
+// ---------- 表单 ----------
+.ui-form .item-label {
+    font-size: 13px;
+    color: @secondary-color;
+    padding-right: 5px;
+}
+.input-wrap .suffix-counter {
+    font-size: 13px;
+    color: @gray-2-color;
+    em{
+        float: left;
+        color: @primary-color;
+    }
+    .text-red{
+        color: @error-color;
+    }
+}
+
+
+//
+.button-menu-more{
+    margin-right: 10px;
+    .ui-dropmenu-label{
+        padding-right: 0;
+    }
+    .ui-dropmenu-list{
+        top: calc(100% + 8px);
+        width: 144px;
+        left: auto;
+        right: 0;
+        &::before{
+            box-shadow: none;
+            width: 0;
+            height: 0;
+            content: '';
+        }
+    }
+    .dropdown-img{
+        vertical-align: middle;
+        transition: all 0.1s linear;
+        position: relative;
+        top: -2px;
+    }
+    &:hover{
+        .dropdown-img{
+            transform: rotate(180deg);
+        }
+    }
+    .ui-icon-arrow-down{
+        display: none;
+    }
+}
+
+.bossui-reset {
+    .toast {
+        width: 40%;
+        left: 30%;
+        transform: none;
+        z-index: 9999;
+    }
+}
+
+// 级联cascader
+.ui-cascader {
+    .ui-icon-arrow-down {
+        right: @input-padding-horizontal;
+    }
+}
+
+.ui-cascader-new .suffix {
+    min-width: 0;
+    color: #9fa3b0;
+    right: 8px;
+}

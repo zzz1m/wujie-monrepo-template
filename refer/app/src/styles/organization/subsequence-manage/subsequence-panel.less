@@ -1,0 +1,145 @@
+.subsequence-panel{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 397px;
+        height: 100%;
+        box-shadow: 0px 2px 10px 0px rgba(6,25,40,0.1);
+        border-bottom-left-radius: 24px;
+        overflow: hidden;
+    }
+    &__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 20px 16px 30px;
+        height: 66px;
+        align-items: center;
+        background-color: #F4F5F8;
+        h3{
+            font-size: 16px;
+            font-weight: normal;
+        }
+        button + button{
+            margin-left: 10px;
+        }
+    }
+    &__list{
+        max-height: 100%;
+        flex: 1;
+        padding: 18px 0;
+        overflow: auto;
+        .list-item{
+            & + .list-item{
+                margin-top: 1px;
+            }
+            &.expanded{
+                height: auto;
+                .ui-icon-arrow-right{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    &__label{
+        display: flex;
+        height: 42px;
+        padding-left: 30px;
+        padding-right: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        // background-color: #F4F5F8;
+        .ui-icon-arrow-right, .ui-icon-loading{
+            color: #979797;
+            font-size: 12px;
+            transition: all 0.25s ease;
+        }
+    }
+    &__child{
+        // padding: 0 10px 0 30px;
+        .list-item-child{
+            display: flex;
+            height: 42px;
+            padding: 0 10px 0 18px;
+            padding-left: 48px;
+            padding-right: 20px;
+            margin: 10px 0;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.25s ease;
+            & + .list-item{
+                margin-top: 10px;
+            }
+            span{
+                color: @secondary-color;
+            }
+            &:hover, &.active{
+                background-color: @background-gray-color;
+                span{
+                    color: @default-color;
+                }
+            }
+        }
+        .subsequence-panel__item{
+            &.disable{
+                span{
+                    color: @font-disable-color; 
+                }
+            }
+            span, em{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        .expand-btn-wrapper{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            margin-right: 6px;
+        }
+        &.disable{
+            span, em{
+                color: @font-disable-color;
+            }
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: @font-normal-color;
+            font-weight: bold;
+        }
+        em{
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+    &__operate{
+        display: flex;
+        align-items: center;
+        a{
+            font-weight: normal;
+            & + a{
+                margin-left: 20px;
+            }
+        }
+        .operate-btn__more{
+            margin-left: 25px;
+            float: none;
+        }
+    }
+}

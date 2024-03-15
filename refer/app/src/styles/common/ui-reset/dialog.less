@@ -1,0 +1,120 @@
+// ---------- 弹框 ----------
+
+.dialog-container {
+    padding: 30px;
+}
+.dialog-header {
+    margin-bottom: 20px;
+    h3.title {
+        font-size: 18px;
+        color: #161B26;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    .close {
+        right: 13px;
+        top: 13px;
+        .icon-close {
+            &:before, &:after {
+                width: 14px;
+                background: #A1A6B0;
+                left: 5px;
+            }
+        }
+    }
+}
+
+.dialog-footer {
+    margin-top: 30px;
+    .btns .btn {
+        min-width: 70px;
+    }
+    .btn-cancel {
+        color: @primary-color;
+        border-color: @primary-color;
+        &:hover {
+            background-color: tint(@primary-color, 90%);
+        }
+    }
+}
+
+.reset-dialog{
+    .dialog-body {
+        max-height: calc(~"100vh - 209px");
+        overflow-y: overlay;
+    }
+    .dialog-container{
+        max-height: calc(~"100% - 40px");
+    }
+}
+.dialog-flyin-large-reset {
+    .dialog-container {
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        .dialog-header {
+            height: 48px;
+            width: 266px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1D2129;
+            padding: 13px 24px;
+            box-shadow: 0px 1px 0px 0px #E5E6EB;
+            width: 100%;
+            margin-bottom: 1px;
+            background: #ffffff;
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                color: #1D2129;
+            }
+            .close {
+                right: 16px;
+                left: unset;
+                top: 14px;
+                width: 24px;
+                height: 24px;
+                background-color: transparent;
+                &:hover {
+                    background: rgba(0,0,0,.1);
+                }
+            }
+            .icon-close {
+                width: 24px;
+                height: 24px;
+                // margin-top: -4px;
+                // margin-left: 1px;
+                &:before {
+                    width: 12px;
+                    background: #4e5969;
+                    height: 2px;
+                }
+                &:after {
+                    width: 12px;
+                    background: #4e5969;
+                    height: 2px;
+                }
+            }
+        }
+        .dialog-body {
+            padding: 24px 0px;
+            padding-bottom: 0px;
+            flex: 1;
+            overflow: auto;
+            width: 100%;
+            max-height: none;
+            background: #ffffff;
+        }
+        .dialog-footer {
+            height: 72px;
+            padding: 20px 24px;
+            margin-top: 0px;
+            background: #ffffff;
+        }
+    }
+}
+
+.dialog-layer-full .dialog-header .icon-close {
+    max-width: 100%;
+    max-height: 100%;
+}

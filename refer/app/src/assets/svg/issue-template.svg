@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 15</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D59DFF" offset="0%"></stop>
+            <stop stop-color="#B243FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="查看证明" transform="translate(-160.000000, -586.000000)">
+            <g id="编组-15" transform="translate(160.000000, 586.000000)">
+                <rect id="矩形" opacity="0.300000012" x="0" y="0" width="24" height="24"></rect>
+                <g id="编组-12" transform="translate(2.700000, 0.000000)">
+                    <path d="M4,2 L14.447205,2 C16.656344,2 18.447205,3.790861 18.447205,6 L18.447205,17.5652174 C18.447205,19.7743564 16.656344,21.5652174 14.447205,21.5652174 L4,21.5652174 C1.790861,21.5652174 -1.04441636e-13,19.7743564 -1.04805054e-13,17.5652174 L-1.04805054e-13,6 C-1.05075595e-13,3.790861 1.790861,2 4,2 Z" id="矩形" fill="url(#linearGradient-1)"></path>
+                    <g id="编组-9" transform="translate(3.250000, 7.220000)" fill="#FFFFFF">
+                        <rect id="矩形" x="0" y="0" width="4.7" height="5" rx="1.5"></rect>
+                        <rect id="矩形备份-5" x="7.3" y="0" width="4.7" height="2" rx="0.75"></rect>
+                        <rect id="矩形备份-6" x="7.3" y="3" width="4.7" height="2" rx="0.75"></rect>
+                    </g>
+                    <rect id="矩形备份-7" fill="#FFFFFF" x="3.25" y="15.07" width="12" height="2" rx="0.75"></rect>
+                    <rect id="矩形" fill="#E198FF" x="4" y="-4.52970994e-14" width="10.5" height="4.6" rx="2"></rect>
+                    <path d="M14.447205,2 L14.5,2.001 L14.5,3 C14.5,4.1045695 13.6045695,5 12.5,5 L6,5 C4.8954305,5 4,4.1045695 4,3 L4,2 L4,2 L14.447205,2 Z" id="形状结合" fill="#A52DF8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

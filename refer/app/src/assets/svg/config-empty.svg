@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 5</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hover和点击分栏" transform="translate(-1276.000000, -240.000000)">
+            <g id="编组-4" transform="translate(1200.000000, 60.000000)">
+                <g id="编组-5" transform="translate(76.000000, 180.000000)">
+                    <rect id="矩形" x="0" y="0" width="80" height="80"></rect>
+                    <g id="编组-32" transform="translate(13.800000, 13.600000)">
+                        <polygon id="矩形" fill="#E7EAEB" transform="translate(31.140041, 26.394969) rotate(-345.000000) translate(-31.140041, -26.394969) " points="4.83917276 6.74923557 57.4869735 6.67863278 57.4409095 46.0407017 4.79310874 46.1113045"></polygon>
+                        <polygon id="矩形备份-6" fill="#F0F2F4" points="0 12.6032825 15.1007247 12.6032825 16.2104102 17.4571749 52.2929126 17.4571749 52.6628078 51.9555603 0 51.9555603"></polygon>
+                        <rect id="矩形" fill="#FFFFFF" x="4.06884687" y="16.6488438" width="7.39790339" height="2.20666978"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

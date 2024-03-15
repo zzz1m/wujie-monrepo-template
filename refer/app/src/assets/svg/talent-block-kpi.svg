@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#66D7FF" offset="0%"></stop>
+            <stop stop-color="#4CB9F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="人才图谱" transform="translate(-150.000000, -2041.000000)">
+            <g id="绩效成绩" transform="translate(130.000000, 2021.000000)">
+                <g id="ICON/绩效成绩" transform="translate(20.000000, 20.000000)">
+                    <rect id="矩形" x="0" y="0" width="28" height="28"></rect>
+                    <g id="编组-15" transform="translate(2.000000, 2.000000)">
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="24" height="20" rx="5"></rect>
+                        <rect id="矩形" fill="#FFFFFF" transform="translate(6.853553, 11.646447) rotate(-90.000000) translate(-6.853553, -11.646447) " x="4.35355339" y="10.1464466" width="5" height="3" rx="1"></rect>
+                        <rect id="矩形备份-9" fill="#FFFFFF" transform="translate(11.853553, 9.646447) rotate(-90.000000) translate(-11.853553, -9.646447) " x="7.35355339" y="8.14644661" width="9" height="3" rx="1"></rect>
+                        <rect id="矩形备份-11" fill="#FFFFFF" transform="translate(16.853553, 10.646447) rotate(-90.000000) translate(-16.853553, -10.646447) " x="13.3535534" y="9.14644661" width="7" height="3" rx="1"></rect>
+                        <path d="M13.7149859,16.8583098 L16.1826051,20.9710085 C16.7509014,21.918169 16.4437713,23.1466895 15.4966108,23.7149859 C15.1857799,23.9014843 14.8301071,24 14.4676192,24 L9.53238076,24 C8.42781126,24 7.53238076,23.1045695 7.53238076,22 C7.53238076,21.6375121 7.63089642,21.2818393 7.81739491,20.9710085 L10.2850141,16.8583098 C10.8533105,15.9111492 12.081831,15.6040191 13.0289915,16.1723154 C13.3104907,16.3412149 13.5460863,16.5768105 13.7149859,16.8583098 Z" id="三角形" fill="#9AD8FF"></path>
+                        <path d="M13.0289915,16.1723154 C13.3104907,16.3412149 13.5460863,16.5768105 13.7149859,16.8583098 L15.599,19.999999 L8.4,19.999999 L10.2850141,16.8583098 C10.8533105,15.9111492 12.081831,15.6040191 13.0289915,16.1723154 Z" id="形状结合" fill="#42A8FC"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

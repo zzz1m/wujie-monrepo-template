@@ -1,0 +1,154 @@
+.salary-group-page {
+    .personnel-range {
+        padding: 4px 0;
+    }
+    .personnel-range-item {
+        display: flex;
+
+    }
+    .personnel-range-title {
+        line-height: 34px;
+        flex-shrink: 0;
+    }
+    .personnel-range-content {
+        min-height: 34px;
+        .ruleinput {
+            background-color: transparent;
+            border: none;
+            padding: 0; 
+        }
+        .user-container {
+            margin: 0 -2px;
+        }
+        .user-wrapper {
+            padding: 2px 8px;
+            background: #FFFFFF;
+            border-radius: 6px;
+            border: 1px solid #E5E6EB;
+            display: inline-block;
+            margin: 2px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+    .personnel-range-no-data {
+        line-height: 34px;
+    }
+}
+
+.ui-dialog-salary-group {
+    .input-wrap, .ui-select {
+        width: 100%;
+    }
+    h5 {
+        color: #646F79;
+    }
+}
+.ui-dialog-lowest-salary {
+    .dialog-body {
+        margin-right: -30px;
+        padding-right: 30px;
+        overflow: inherit;
+    }
+    .input-wrap, .ui-select {
+        width: 100%;
+    }
+    .form-item.salary-unit{
+        .item-content {
+            display: flex;
+            .input-wrap {
+                flex: 1;
+                margin-right: 10px;
+            }
+            .ui-select.date-type {
+                width: 90px;
+            }
+        }
+    }
+}
+
+.external-personnel-edit-dialog {
+    &.common-edit-dialog .common-edit-dialog-form {
+        overflow: initial;
+    }
+}
+.determine-salary-edit-dialog {
+    .salary-form-unit .item-content {
+        display: flex;
+
+        &>div {
+            flex: 1;
+        }
+        &>span {
+            min-width: 60px;
+            text-align: right;
+            color: #646F79;
+        }
+        span.pre {
+            min-width: 30px;
+            text-align: left;
+        }
+    }
+}
+
+.determine-salary-edit-dialog {
+    .resignation-import-content {
+        .title {
+            font-weight: 500;
+        }
+    
+        &.content-wrap > * + * {
+            margin-top: 16px;
+        }
+    }
+}
+
+.salary-batch-import-dialog {
+    .dialog-body {
+        .active-color, a {
+            color: #00CFC5;
+            cursor: pointer;
+        }
+
+        label {
+            margin-right: 3px;
+        }
+        .ui-select, .input-wrap {
+            min-width: 240px;
+            width: 240px;
+        }
+        .salary-import-form-wrapper {
+            margin-bottom: 12px;
+            &>label {
+                display: inline-block;
+                min-width: 82px;
+                text-align: right;
+            }
+        }
+        .required {
+            &:before {
+                content: '*';
+                color: #FA594A;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.insure-record-page {
+    .salary-warning {
+        color: #FA594A;
+        padding: 0 4px;
+        position: relative;
+        top: 16px;
+    } 
+ }
+
+ .account-common-form {
+    .loading-wrapper {
+        min-height: 240px;
+        width: 100%;
+        text-align: center;
+        padding-top: 110px;
+    }
+ }

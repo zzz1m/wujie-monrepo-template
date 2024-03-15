@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="50px" viewBox="0 0 125 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FEBEB5" offset="0%"></stop>
+            <stop stop-color="#FFF1F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.213788007%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.396498033" offset="0%"></stop>
+            <stop stop-color="#FEF6F6" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的信息-新（多数据情况）" transform="translate(-469.000000, -127.000000)">
+            <g id="编组-5" transform="translate(230.000000, 119.000000)">
+                <g id="编组-14" transform="translate(239.000000, 8.000000)">
+                    <rect id="矩形" x="0" y="0" width="125" height="50"></rect>
+                    <path d="M22.4150749,45 L48.6039136,5.05706134 L38.2889936,5.05706134 L17.6736539,36.4978602 L21.1547654,5.05706134 L11.4128966,5.05706134 L7,45 L22.4150749,45 Z M46.9416624,45 L52.0642912,32.617689 L73.5537078,32.617689 L83.6173364,5.05706134 L54.3344247,5.05706134 L37.7728446,45 L46.9416624,45 Z M67.3623747,25.1997147 L55.1563861,25.1997147 L60.4111476,12.4750357 L72.0440851,12.4750357 L67.3623747,25.1997147 Z M83.7315436,45 L95.4788045,16.6405136 L92.6711409,45 L106.997419,45 L122.412897,5.05706134 L113.81713,5.05706134 L102.519787,34.3295292 L104.670334,5 L91.089023,5 L74.5054208,45 L83.7315436,45 Z" id="VPN" stroke="url(#linearGradient-2)" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.337541853"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

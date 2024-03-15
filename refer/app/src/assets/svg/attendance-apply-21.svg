@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FE8B97" offset="0%"></stop>
+            <stop stop-color="#FC525E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="12.9157789%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.798148777" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.916839859" offset="58.8012695%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.8510735,1.5 C14.0751695,1.96189611 15.5694493,2.98204414 15.3339128,4.56044408 C15.3247361,4.62009292 15.3017942,4.67515338 15.3017942,4.73021385 C18.4485802,6.00570953 20.5684975,8.99221465 20.7344266,12.3836182 C21.7645255,12.5689702 22.6004229,13.3224021 22.8913898,14.3277863 C23.1823566,15.3331704 22.8780585,16.4165849 22.1061739,17.1234464 C21.3342893,17.8303079 20.228347,18.0383362 19.2523825,17.660246 C17.6342408,20.078038 14.916656,21.5293072 12.0073432,21.5293072 C9.09803043,21.5293072 6.38044557,20.078038 4.7623039,17.660246 C3.78300755,18.0460911 2.66941812,17.8397844 1.89333589,17.128733 C1.11725366,16.4176815 0.814528213,15.3263515 1.11341682,14.3171125 C1.41230543,13.3078735 2.26048904,12.557388 3.29861325,12.3836182 C3.51374902,7.96966283 6.99754709,4.41488756 11.4062665,4.11078363 C11.4122549,4.0544822 11.4328135,4.00071356 11.4659153,3.95477899 C11.8758099,3.39805653 11.6708626,2.57979686 10.8510735,1.5 Z M16.5590082,15.0999344 L7.88698519,15.0999344 C8.05401572,17.3872887 9.93021922,19.1741492 12.2229967,19.2294692 C14.5166541,19.1762757 16.3940587,17.3882713 16.5590082,15.0999344 L16.5590082,15.0999344 Z M8.42814799,10.6 C7.87586324,10.6 7.42814799,11.0477153 7.42814799,11.6 C7.42814799,12.1522847 7.87586324,12.6 8.42814799,12.6 C8.98043274,12.6 9.42814799,12.1522847 9.42814799,11.6 C9.42814799,11.0477153 8.98043274,10.6 8.42814799,10.6 Z M15.7695431,10.6 C15.2172583,10.6 14.7695431,11.0477153 14.7695431,11.6 C14.7695431,12.1522847 15.2172583,12.6 15.7695431,12.6 C16.3218278,12.6 16.7695431,12.1522847 16.7695431,11.6 C16.7695431,11.0477153 16.3218278,10.6 15.7695431,10.6 Z" id="path-3"></path>
+        <filter x="-27.1%" y="-20.0%" width="156.1%" height="161.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.959874575   0 0 0 0 0.391691243   0 0 0 0 0.435965269  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要休假" transform="translate(-1035.000000, -180.000000)">
+            <g id="mk_控件备份-3" transform="translate(1015.000000, 162.000000)">
+                <g id="编组-4备份" transform="translate(20.000000, 18.000000)">
+                    <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="10"></rect>
+                    <g id="编组-9" transform="translate(8.000000, 8.000000)">
+                        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z" id="路径" fill-rule="nonzero"></path>
+                        <g id="形状结合">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

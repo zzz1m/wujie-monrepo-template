@@ -1,0 +1,76 @@
+.counselling-room-page {
+
+}
+
+.counselling-room-order-dialog {
+    // .dialog-footer {
+    //     margin-top: 20px;
+    // }
+
+    .dialog-body {
+        margin-right: -24px;
+        padding-right: 24px;
+        overflow: overlay;
+        max-height: calc(~'100vh - 170px');
+    }
+    
+    .form-wrapper {
+        overflow: hidden;
+        padding-bottom: 20px;
+        
+        .form-item {
+            width: 50%;
+            float: left;
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .item-label {
+                display: block;
+                float:  none;
+                text-align: left;
+            }
+
+            .input-wrap, .ui-select {
+                min-width: 200px;
+                width: 286px;
+            }
+
+            &:nth-of-type(2n) {
+                padding-left: 18px;
+            }
+            
+            &.alone-row{
+                width: 100%;
+                padding-left: 0;
+
+                .input-wrap {
+                    width: 608px;
+                }                
+            }
+
+            .order-time {
+                .input[readonly] {
+                    background-color: #fff;
+                }
+
+                .input[readonly]:hover, .input[readonly]:focus {
+                    border-color:#2cd7c8;
+                }
+            }
+            .ui-select-input[disabled] {
+                color: #151B26;
+            }
+            .input[disabled], .input-disabled {
+                color: #8b8d92;
+            }
+        }
+
+        .ui-form .item-label {
+            text-align: left;
+            float: none;
+        }
+    }
+}

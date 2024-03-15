@@ -1,0 +1,197 @@
+@success-color: #45B753;
+@pending-color: #FFA857;
+@reject-color: #EFF1FA;
+
+.page-content {
+    .option-more {
+        user-select: none;
+        position: absolute;
+        width: calc(100% - 52px);
+        right: 10px;
+        border-radius: 6px;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.11);
+        z-index: 1009;
+        background-color: #fff;
+        // &:hover {
+        //     &::before {
+        //         background: #eff1fa;
+        //     }
+        // }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 4px;
+            margin-left: -6px;
+            background: #fff;
+            width: 30px;
+            top: 0;
+            z-index: 1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 12px;
+            margin-left: -6px;
+            background: #fff;
+            transform: rotate(45deg);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.09);
+            top: -6px;
+        }
+        li {
+            line-height: 40px;
+            color: #646f79;
+            cursor: pointer;
+            padding-left: 16px;
+            &:hover {
+                color: #00c2b3;
+                svg {
+                    fill: #00c2b3;
+                }
+            }
+        }
+    }
+    .option-more.option-more-last {
+        transform: translateY(-60px);
+
+        &::before {
+            top: auto;
+            bottom: 0;
+        }
+        &::after {
+            top: auto;
+            bottom: -6px;
+        }
+    }
+    .offer-avatar {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        .head-portrait {
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .download-box {
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .accessory-box {
+        .accessory-item {
+            width: fit-content;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    .schedule-box {
+        display: flex;
+        width: 130px;
+        align-items: center;
+
+        .schedule {
+            width: 100px;
+            height: 4px;
+            overflow: hidden;
+            border-radius: 2px;
+            display: flex;
+
+            .schedule-item {
+                flex: 1;
+                margin: 0 .5px;
+                background-color: @success-color;
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            .schedule-item.pending-schedule {
+                background-color: @pending-color;
+            }
+            .schedule-item.reject-schedule {
+                background-color: @reject-color;
+            }
+        }
+        .details {
+            margin-left: 5px;
+        }
+    }
+    .data-list {
+        padding-bottom: 60px;
+    }
+    .accessory {
+        width: 220px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 14px;
+        overflow: hidden;
+        color: #646F79;
+        border: 1px solid #E3E7ED;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+
+        .btn-mini {
+            width: 20px;
+            height: 20px;
+        }
+        .btn-mini.brn-close {
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+        }
+    }
+    .accessory:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+.dialog-layer-full {
+    .dialog-container {
+        padding: 30px;
+
+        .dialog-header {
+            .title {
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+            }
+            .close {
+                width: 24px;
+                height: 24px;
+                top: 30px;
+                right: -32px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                .icon-close {
+                    width: 24px;
+                    height: 24px;
+
+                    &:before, &:after {
+                        width: 14px;
+                        top: 12px;
+                        left: 5px;
+                    }
+                }
+            }
+        }
+        .file-resume {
+            width: 100%;
+        }
+    }
+}

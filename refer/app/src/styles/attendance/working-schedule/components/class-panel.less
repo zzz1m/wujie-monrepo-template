@@ -1,0 +1,101 @@
+.class-panel-container{
+    width: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    border: 1px solid #ECEEF0;
+    z-index: 9;
+    .class-panel-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        border-bottom: 1px solid #ECEEF0;
+        .class-panel-btn-wrapper {
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+        }
+
+        .class-panel-btn {
+            color: #00A6A7;
+            cursor: pointer;
+            font-size: 13px;
+            &:hover {
+                opacity: .8;
+            }
+
+            &+.class-panel-btn {
+                margin-left: 12px;
+            }
+        }
+
+        .class-panel-type{
+            display: flex;
+            align-items: center;
+            &.multiple{
+                li{
+                    cursor: pointer;
+                    transition: all 0.15s linear;
+                    &:hover{
+                        color: #00CFC5;
+                    }
+                    &.active{
+                        position: relative;
+                        color: #00CFC5;
+                        &:after{
+                            content: ' ';
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            height: 1px;
+                            background-color: #00CFC5;
+                        }
+                    }
+                }
+            }
+            li{
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                height: 46px;
+                & + li{
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+    .class-panel-body{
+        padding: 16px 15px;
+        height: 234px;
+        overflow: auto;
+        overflow: overlay;
+        .class-panel-list{
+            li{
+                display: block;
+                width: 100%;
+                font-size: 12px;
+                height: 34px;
+                border-radius: 2px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #ffffff;
+                background-color: #FF6B6C;
+                text-align: center;
+                line-height: 34px;
+                cursor: pointer;
+                transition: all 0.15s linear;
+                &:hover{
+                    opacity: 0.8;
+                }
+                & + li{
+                    margin-top: 8px;
+                }
+                &.class-cycle-btn{
+                    background-color: #B685F2;
+                }
+            }
+        }
+    }
+}

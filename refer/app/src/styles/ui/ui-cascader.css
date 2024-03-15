@@ -1,0 +1,23 @@
+.dropdown-wrap-cascader .dropdown-menu {
+    background: #fff;
+}
+.dropdown-wrap-cascader .dropdown-menu ul {
+    float: left;
+    border-right: solid 1px #f4f4f4;
+    overflow: auto;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dropdown-wrap-cascader .dropdown-menu li.selected {
+    background-color: #F2F5FA;
+    color: #151B26;
+}
+.dropdown-wrap-cascader .dropdown-menu li.has-child:after {
+    font-family: ui-icons;
+    content: "\E604";
+    font-size: 14px;
+    color: #bfcbd9;
+    position: absolute;
+    right: 12px;
+}

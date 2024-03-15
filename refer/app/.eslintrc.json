@@ -1,0 +1,101 @@
+{
+    "root": true,
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["plugin:vue/strongly-recommended"],
+    "plugins": ["vue"],
+    "globals": {
+        "process": "readonly",
+        "Aliplayer": true
+    },
+    "rules": {
+        "no-console": "warn",
+        "no-tabs":"warn",
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "warn",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": ["warn", "always"], //代码段后面都加上分号
+        "comma-dangle": ["warn", "never"], //对象里的最后属性不加逗号
+        "no-undef": 2, //不能使用未定义的变量
+        // "eqeqeq":[0,"allow-null"],
+        "eqeqeq": "off",
+        "vue/singleline-html-element-content-newline": 0,
+        "vue/require-default-prop": 0,
+        "vue/no-side-effects-in-computed-properties": 0,
+        "vue/no-unused-components": 1,
+
+        "no-console": 1,
+        "no-redeclare": 2,
+        "vue/html-self-closing": [
+            "warn",
+            {
+                "html": {
+                    "void": "any",
+                    "normal": "any",
+                    "component": "any"
+                }
+            }
+        ],
+        "vue/script-indent": [
+            1,
+            4,
+            {
+                "baseIndent": 0,
+                "switchCase": 1
+            }
+        ],
+        "vue/html-indent": "off",
+        // "vue/html-indent": [
+        //     1,
+        //     4,
+        //     {
+        //         "attribute": 1,
+        //         "baseIndent": 0,
+        //         "closeBracket": 0,
+        //         "alignAttributesVertically": false,
+        //         "ignores": ["ui-option", "ui-select"]
+        //     }
+        // ],
+        "vue/max-attributes-per-line": 0,
+        "vue/no-multi-spaces": 0,
+        "vue/multiline-html-element-content-newline": [
+            1,
+            {
+                "ignores": ["ui-option"]
+            }
+        ],
+        "vue/attributes-order": [
+            "warn",
+            {
+                "order": ["DEFINITION", "LIST_RENDERING", "CONDITIONALS", "RENDER_MODIFIERS", "GLOBAL", ["UNIQUE", "SLOT"], "TWO_WAY_BINDING", "OTHER_DIRECTIVES", "OTHER_ATTR", "EVENTS", "CONTENT"],
+                "alphabetical": true
+            }
+        ],
+        "vue/multiline-html-element-content-newline": [
+            1,
+            {
+                "ignores": ["ui-option"]
+            }
+        ]
+    }
+}

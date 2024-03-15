@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="ICON/14px/编辑_hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <polygon id="路径" points="0 0 14 0 14 14 0 14"></polygon>
+            <path d="M3.7415,9.33333333 L9.65766667,3.41716667 L8.83283333,2.59233333 L2.91666667,8.5085 L2.91666667,9.33333333 L3.7415,9.33333333 Z M4.22508333,10.5 L1.75,10.5 L1.75,8.02491667 L8.42041667,1.3545 C8.64820825,1.1267772 9.01745842,1.1267772 9.24525,1.3545 L10.8955,3.00475 C11.1232228,3.23254158 11.1232228,3.60179175 10.8955,3.82958333 L4.22508333,10.5 Z M1.75,11.6666667 L12.25,11.6666667 L12.25,12.8333333 L1.75,12.8333333 L1.75,11.6666667 Z" id="形状" fill="currentColor" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

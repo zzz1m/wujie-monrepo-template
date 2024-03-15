@@ -1,0 +1,68 @@
+// 分页
+.pager {
+    font-size: 13px;
+    color: #5E6578;
+    a {
+        color: #5E6578;
+        height: 20px;
+        line-height: 20px;
+        min-width: 20px;
+        border: none;
+        border-radius: 2px;
+        margin: 0 20px 0 0;
+        &.selected {
+            border-color: @primary-color;
+        }
+        &.disabled {
+            border-color: #F7F7F7;
+        }
+        &:first-of-type, &:last-of-type {
+            font-size: 12px;
+            color: #8C98AD;
+            border: 1px solid #E8E9ED;
+        }
+        &:hover {
+            color: @primary-color;
+        }
+    }
+    .ui-select {
+        width: 60px;
+    }
+    .ui-select-inner {
+        padding: 2px 18px 1px 3px;
+        text-align: left;
+        .ui-icon-arrow-down {
+            right: 3px;
+        }
+    }
+    .ui-select-dropdown {
+        bottom: 34px;
+    }
+    .options-elevator {
+        margin-left: 30px;
+        .ipt {
+            width: 40px;
+            height: 26px;
+            color: @gray-color;
+            text-align: center;
+            padding: 3px;
+            border: 1px solid #E8E9ED;
+            margin: 0 10px;
+            &:focus {
+                transition: all .3s;
+                box-shadow: 0 1px 2px rgba(44,215,200,.4);
+                border-color: @primary-color;
+            }
+        }
+    }
+    .total {
+        margin-right: 20px;
+    }
+    .options-dropdown {
+        margin-left: 30px;
+        margin-right: 0;
+        .dropdown-select input {
+            width: 60px;
+        }
+    }
+}

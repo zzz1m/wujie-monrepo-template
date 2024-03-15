@@ -1,0 +1,84 @@
+@charset "utf-8";
+/*toast*/
+.toast { position:fixed; width:80%; left:10%; top:0; height:36px; line-height:36px; text-align:center; z-index:1009; -webkit-animation: toastTop .25s ease-out; animation: toastTop .25s ease-out;  -webkit-animation-fill-mode:both; animation-fill-mode:both; }
+.toast.slideup { -webkit-animation-name: toastHide; animation-name: toastHide; }
+.toast-con { display:inline-block; background:#fff; margin:0 auto; padding:0 20px; line-height:50px; box-shadow:0 0 14px rgba(0,0,0,.11); }
+.icon-toast-success,.icon-toast-info,.icon-toast-warning,.icon-toast-error,.icon-toast-loading { display:inline-block; width:20px; height:20px; margin-right:13px; margin-top:-2px; vertical-align:middle; background-image:url(../../images/ui/icons-toast.png); background-repeat:no-repeat; }
+.icon-toast-success { background-position:0 0; }
+.icon-toast-info { background-position:0 -119px; }
+.icon-toast-warning { background-position:0 -60px; }
+.icon-toast-error { background-position:0 -187px; }
+.icon-toast-loading { background-position:0 -232px;-webkit-animation: circle 1.1s infinite linear;animation: circle 1.1s infinite linear; }
+.loading-category-refresh { -webkit-animation: circle .8s infinite linear; animation: circle .8s infinite linear; }
+.btn .icon-toast-loading { background-position:0 -274px; margin:-1px 4px 0 -2px; }
+.btn .icon-toast-loading + span { font-size:14px; }
+@-webkit-keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+}
+}
+@keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes toastTop {
+	0% {
+		opacity:0;
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(45px);
+		transform:translateY(45px);
+	}
+}
+@keyframes toastTop {
+	0% {
+		opacity:0;
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(45px);
+		transform:translateY(45px);
+	}
+}
+
+@-webkit-keyframes toastHide {
+	0% {
+		opacity:1;
+		-webkit-transform:translateY(45px);
+		transform:translateY(45px);
+	}
+	100% {
+		opacity:0;
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+}
+@keyframes toastHide {
+	0% {
+		opacity:1;
+		-webkit-transform:translateY(45px);
+		transform:translateY(45px);
+	}
+	100% {
+		opacity:0;
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+}

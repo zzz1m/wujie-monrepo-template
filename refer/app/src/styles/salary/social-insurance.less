@@ -1,0 +1,21 @@
+.annual-bonus-account-calc {
+    .flex-row {
+        display: flex;
+        align-items: center;
+
+        &+.flex-row {
+            margin-top: 16px;
+        }
+    }
+    .label {
+        white-space: nowrap;
+        min-width: 70px;
+        text-align: right;
+
+        &:before {
+            content: '*';
+            color: red;
+            margin-right: 4px;
+        }
+    }
+}
