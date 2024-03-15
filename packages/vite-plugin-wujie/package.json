@@ -1,0 +1,13 @@
+{
+    "name": "vite-plugin-wujie",
+    "type": "module",
+    "description": "简化无界微前端方案配置的vite插件",
+    "main": "dist/index.cjs",
+    "module": "dist/index.js",
+    "scripts": {
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "vite": "^5.1.6"
+    }
+}

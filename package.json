@@ -1,0 +1,14 @@
+{
+    "name": "wujie-monorepo-template",
+    "description": "简化Wujie无界微前端方案使用配置的vite插件",
+    "private": "true",
+    "scripts": {
+        "dev": "pnpm run dev:base",
+        "dev:base": "turbo dev --filter=base"
+    },
+    "devDependencies": {
+        "config": "workspace:*",
+        "turbo": "^1.12.5",
+        "typescript": "^5.4.2"
+    }
+}
